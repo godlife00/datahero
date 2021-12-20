@@ -1,0 +1,12 @@
+Table	Indicator	isfilter	isprimarykey	ustitle	itoozaindicator	kortitle	unittype	usunitnum	roundtype	usunitnumround	korunitnum	roundtype	korunitnumround
+SEP	ticker	Y	Y	Ticker Symbol		심볼	text						
+SEP	date	Y	Y	Price Date		주가 기준일	date (YYYY-MM-DD)						
+SEP	open	N	N	Open Price - Split Adjusted		시가	USD/share						
+SEP	high	N	N	High Price - Split Adjusted		고가	USD/share						
+SEP	low	N	N	Low Price - Split Adjusted		저가	USD/share						
+SEP	close	N	N	Close Price - Split Adjusted		종가	USD/share		roundup	2			
+SEP	diff_rate					등략율	%						
+SEP	diff_price					변동금액	USD/share						
+SEP	volume	N	N	Volume - Split Adjusted		거래량	numeric						
+SEP	closeunadj	N	N	Close Price - Unadjusted		종가	USD/share						
+SEP	lastupdated	Y	N	Last Updated Date		종가 기준일	date (YYYY-MM-DD)						

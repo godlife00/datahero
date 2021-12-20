@@ -1,0 +1,17 @@
+Table	Indicator	ustitle	itoozaindicator	leveltree	kortitle	YYYY/MM/DD	ratio	usunitnum	roundtype	usunitnumround	korunitnum	roundtype	korunitnumround
+SF1	revenue	Revenues	200000	1	매출액	232,887,000,000	revenue/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	cor	Cost of Revenue	200360	2	매출원가	139,156,000,000	cor/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	gp	Gross Profit	200810	3	매출총이익	93,731,000,000	gp/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	opex	Operating Expenses	200820	4	영업비용	81,310,000,000	opex/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	sgna	Selling, General and Administrative Expense	200820-201130	4-1	판매비와관리비	18,150,000,000	sgna/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	rnd	Research and Development Expense	201130	4-2	연구개발비	28,837,000,000	rnd/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	opexetc	Others	200820-****-201130	4-3	기타	34,323,000,000	opexetc/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	opinc	Operating Income	201370	5	영업이익	12,421,000,000	opinc/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	ebitda	EBITDA	123000	6	EBITDA		ebitda/revenue*100	백만	rounddown	0	억	rounddown	
+SF1	intexp	Interest Expense	202560	7	이자비용	1,417,000,000	intexp/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	nonopinc	Non Operating Income	203170-203150+203130+202560-201370	8	기타영업외이익	266,000,000	nonopinc/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	taxexp	Income Tax Expense	203130	9	법인세비용	1,197,000,000	taxexp/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	netincdis	Net Income from Discontinued Operations	203150	10	중단사업이익	0	netincdis/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	consolinc	Consolidated Income	203170	11	연결 당기순이익	10,073,000,000	consolinc/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	netinc	Net Income	203180	11-1	지배지분 순이익	10,073,000,000	netinc/revenue*100	백만	rounddown	0	억	rounddown	0
+SF1	netincnci	Net Income to Non-Controlling Interests	203190	11-2	비지배지분 순이익	0	netincnci/revenue*100	백만	rounddown	0	억	rounddown	0

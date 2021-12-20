@@ -1,0 +1,700 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+html{font-size:16px} 
+@media (max-width:320px){
+  html{font-size:16px} 
+  .globalStock .sub_service .alliance_wrap .sub_con .sum .img_sum img {width: 108% !important;}
+  .globalStock .sub_service .alliance_wrap .sub_con .sum {padding: 15px 15px !important;}
+  .globalStock .sub_service .sub_con .compare_box {padding: 20px 15px;}
+  .globalStock .sub_service .sub_mid .sub_con .comment {margin: 0 15px 10px !important; padding: 32px 25px 22px !important;}
+  .globalStock .sub_payment .form_area .payment_guide {padding: 22px 20px 0 !important; width: calc(100% - 30px) !important;}
+  .globalStock .sub_payment .payment_note {padding: 10px 20px !important; margin: 0 15px !important;}
+  .globalStock .sub_payment .payBtn {padding: 15px 20px 25px !important; margin: 0 15px !important;}
+  .globalStock .sub_service #follow_btn .event_payment {width: calc(100% - 30px) !important;}
+ }
+@media (min-width:321px) and (max-width:375px){
+ html{font-size:16px} 
+}
+@media (min-width:376px) and (max-width:779px){
+ html{font-size:16px} 
+ .globalStock .sub_service .alliance_wrap .sub_con .sum .title i {top: 3px !important;} 
+ .globalStock .sub_payment .agree_chk .age_link {width: 40px !important; height: 14px !important; background-position-y: 10px !important;}
+ .globalStock .sub_payment .payBtn .btn_save i {top: 16px !important;}
+ 
+}
+@media (min-width:780px) {
+ html{font-size:16px}
+ .globalStock .sub_service .alliance_wrap .sub_con .sum .title i {top: 6px !important;}
+ .globalStock .sub_payment .agree_chk .age_link {width: 44px !important; height: 16px !important; background-position-y: 10px !important;}
+}
+
+*{margin:0;padding:0}
+html,body{width:100%;height:100%}
+body{font-family:'Lato', "Noto Sans KR", "Malgun gothic", "Helvetica Neue", Helvetica, Arial, sans-serif; color:#333}
+
+html,body,div,span,strong,b,em,p,dl,dt,dd,ul,ol,li,a,img,hr,pre,table,caption,thead,tbody,tfoot,tr,th,td,fieldset,legend,summary,label,input,textarea,button,iframe,header,footer,address,nav,main,section,article,aside,canvas,video,audio,time,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border:0;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-break:keep-all;word-wrap:break-word; font-weight: 400;}
+html,body,div,em,p,dl,dt,dd,ul,ol,li,a,img,hr,pre,table,caption,thead,tbody,tfoot,tr,th,td,fieldset,legend,summary,label,input,textarea,button,iframe,header,footer,address,nav,main,section,article,aside,canvas,video,audio,time,h1,h2,h3,h4,h5,h6{}
+ul,ol,dl,dd,dt,li{list-style-type:none}
+legend{display:none}
+blockquote,q{quotes:'none'}
+table{width:100%;border-collapse:collapse;border-spacing:0; border: none;}
+iframe{border:0 none}
+em,address{font-style:normal;font-weight:normal}
+button{cursor:pointer}
+img{border:0;vertical-align:top}
+a{color:#111;text-decoration:none;}
+a:active,a:focus,a:link,a:visited{text-decoration:none}
+a:hover{text-decoration:underline}
+a:hover,a:active:hover,a:focus:hover,a:link:hover,a:visited:hover{text-decoration:underline}
+
+.paginate{margin:37px 0 20px;padding:15px 0;text-align:center}
+.paginate a,
+.paginate strong{display:inline-block;_position:relative;box-sizing: border-box; width: 26px; height: 26px; line-height: 26px; font-size: 13px; color: #888; font-family:'IBM Plex Sans', 'Helvetica', sans-serif; vertical-align: top; }
+.paginate strong{color:#fff !important; background: #5e5ead;}
+.paginate a:hover{color: #4339ce; text-decoration: underline;}
+
+/* btn */
+.globalStock .btnArea {overflow: hidden;}
+.globalStock .btnArea .btn {display: inline-block; border: 1px solid #5e5ead; color: #000; font-size: 13px; text-align: center; box-sizing: border-box; min-width: 108px; padding: 8px 5px; font-size: 0.75rem;}
+.globalStock .btnArea .btn:hover {text-decoration: none;}
+.globalStock .btnArea .btn.fr {float: right;}
+.globalStock .btnArea.edtBtn {margin-top: 35px; width: 100%;}
+.globalStock .btnArea.edtBtn .btn_cncl {background: #ebebeb; border: 1px solid #cfcfcf; color: #555;}
+.globalStock .btnArea.edtBtn .btn_cncl:hover {color: #000;}
+.globalStock .btnArea.edtBtn .btn_save {background: #404fc3; border: 1px solid #404fc3; color: #fff; width: 100%; border-radius: 7px;}
+.globalStock .btnArea.edtBtn .btn_save:hover {text-decoration: none;}
+.globalStock .edtArea {margin: 15px 0;}
+
+/* swiper */  
+.swiper-container {width: 100%;height: 100%;}
+.swiper-slide {display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+
+/* 별점 */
+.starR{
+  background: url('/img/ico_star.png') no-repeat -17px 0;    
+  background-size: auto 100%;
+  width: 14px !important;
+  height: 14px !important;
+  display: inline-block;
+  text-indent: -9999px;
+  cursor: pointer;
+  margin-right: 1px;
+}
+.starR.on{background-position:0 0;}
+.starR.half{background-position:right 0 !important;}
+
+@media (min-width:980px){        
+.starR{    
+  background-position: -21px 0;
+  width: 18px !important;
+  height: 18px !important;
+  margin-right: 1px;
+} 
+}
+
+
+/* tab_menu */
+.tab_list {overflow: hidden;}
+.tab_list button {float: left; outline: none; cursor: pointer; transition: 0.3s;}
+.tabcontent {display: none;}
+
+/* 탭메뉴 */
+ul.tabs {margin: 0;padding: 0;float: left;list-style: none;width: 100%; font-size: 0;}
+ul.tabs li {display: inline-block; text-align:center;cursor: pointer;overflow: hidden;position: relative; font-size: 12px;}
+ul.tabs li.active {}
+.tab_container {clear: both; float: left; width: 100%;}
+.tab_content {display: none; padding: 0}
+.tab_content:first-child {display: block}
+.tab_container .tab_content ul {width:100%;margin:0px;padding:0px;}
+.tab_container .tab_content ul li {padding: 0;}
+
+/* table */
+.tableColtype,.tableColtype th,.tableColtype td{border:0}
+.tableColtype{width:100%; text-align:center;}
+.tableColtype thead {z-index: 99;}
+.tableColtype tbody {z-index: 1; position: relative;}
+.tableColtype caption{display:none}
+.tableColtype th {padding:14px 0 15px;}
+.tableColtype td {padding:11px 0 10px;}
+.tableColtype.sumtable .fntfmly_num th {border-top: 1px solid #d8d8d8; background-color: #404fc3; color: #fff; font-size: 16px; padding: 8px 0; border-bottom: none; text-align: right; padding-right: 10px;}
+.tableColtype.sumtable td {padding:14px 0 14px; background:url('/img/table_border.gif') repeat-x left bottom;}
+.tableColtype th{border-top: 1px solid #aaa; border-bottom: 2px solid #404FC3; background: #fff; color: #000; font-size: 14px;}
+.tableColtype tr.fntfmly_num th {}
+.tableColtype th.thbder400 {border-bottom: none; color: #55517e; font-size: 13px; padding: 6px 0 7px; font-size: 13px;}
+.tableColtype th.thbder400.bdrR {border-right: 1px solid #d8d8d8;}
+.tableColtype th.thbder300 {/*padding: 6px 0 7px;*/ font-size: 13px;}
+.tableColtype th.bdrL {border-left: 1px solid #8a8a8a}
+.tableColtype th.bdrR {background:url('/img/table_borderRWS.gif') repeat-y right top;}
+.tableColtype td{/*border-right: 1px solid #f0f0f0;*/ background:url('/img/table_border.gif') repeat-x left bottom;}
+.tableColtype td span.lock {display: inline-block; width: 100%; text-align: center;}
+.tableColtype td:last-child {border-right: none; background:url('/img/table_border.gif') repeat-x left bottom}
+.tableColtype tr:last-child td {}
+.tableColtype tr{background-color: #fff}
+.tableColtype tr:nth-child(2n) {background-color: #f6f6f9;}
+.tableColtype.tableCash th span,
+.tableColtype.tableReports th span,
+.tableColtype.tableBill th span {font-size: 13px !important;}
+.tableColtype.sumtable .fntfmly_num th span {font-size: 13px !important;}
+
+body.globalStock  {box-sizing: border-box;}
+.globalStock #wrap {margin: 0 auto; width: 100%; box-sizing: border-box; background: #fff; margin: 0 auto; overflow: hidden; padding-bottom: 30px;}
+.globalStock #header {height: 67px; width: 100%; padding: 0 35px; box-sizing: border-box; background-color: #404fc3;}
+.globalStock #container {margin: 0 auto; width: 100%; box-sizing: border-box;}
+.globalStock #container::after {display: block; content: ''; clear: both;}
+.globalStock #footer {clear: both; margin: 35px 35px; background: #F4F4F5;}
+.globalStock .mainbg #footer {margin-top: 60px}
+
+/* header */
+.globalStock #header .headerArea {margin: 0 auto; box-sizing: border-box;}
+.globalStock #header .headerLogo {display: inline-block; vertical-align: top; padding-top: 36px; color: #202091; font-size: 18px; font-weight: bold;}
+.globalStock #header .searchArea {margin-top: 14px; box-sizing: border-box; display: inline-block; margin-left: 0; position: relative; }
+.globalStock #header .searchArea form {position: relative;}
+.globalStock #header .searchArea .searchInput {float: left; outline:none; box-sizing: border-box;  border-radius: 20px; border: 1px solid #6a76d5; padding-left: 58px; color: #909dff; width: 380px; height:40px; border-radius: 20px; background-color: #404fc3}
+.globalStock #header .searchArea .searchInput,
+.globalStock #header .searchArea .searchInput::placeholder {color: #909dff; font-size: 17px; /*line-height: 40px;*/}
+.globalStock #header .searchArea .searchInput::placeholder {font-size: 17px;  color: #909dff; }
+.globalStock #header .searchArea .searchBtn {border:0; border:none;  border-left: 0; outline:none; position: absolute; left: 19px; top: 11px; width: 17px;}
+
+
+
+
+.globalStock #header .searchArea .AutoComplete {display: none; position: absolute; left: 0; right: 0; top:40px; background: #fff; box-sizing: border-box; padding: 5px 10px; border:1px solid #ececec; z-index: 85;
+max-height: 185px; overflow: auto; overflow-x: hidden;
+-webkit-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.09);
+-moz-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.09);
+box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.09);
+}
+.globalStock #header .searchArea .AutoComplete._show {display: block;}
+.globalStock #header .searchArea .AutoComplete li {}
+.globalStock #header .searchArea .AutoComplete li a,
+.globalStock #header .searchArea .AutoComplete li a span {height: 35px; line-height: 35px; box-sizing: border-box; color: #000; font-size: 14px;}
+.globalStock #header .searchArea .AutoComplete li a {display: block; width: 270px;  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.globalStock #header .searchArea .AutoComplete li a .schCode {margin-right: 10px;width: 50px; display: inline-block; font-weight: bold; }
+.globalStock #header .searchArea .AutoComplete li a .schList {}
+.globalStock #header .searchArea .AutoComplete li a .schList strong {color: #260da3; font-weight: bold;}
+.globalStock #header .searchArea .AutoComplete li a._on:hover {}
+.globalStock #header .searchArea .AutoComplete li a._on:hover .schCode {color: #c81d33;}
+
+.globalStock #header .loginArea {float: right; margin-top: 41px; font-size: 12px; color: #fff;}
+.globalStock #header .loginArea a {font-size: 12px; color: #fff;}
+.globalStock #header .loginArea .logLink {position: relative;}
+.globalStock #header .loginArea .loginTitle { position: relative; padding-right: 20px;}
+.globalStock #header .loginArea .loginTitle::before {content: ""; position: absolute; right: 0; top: 2px; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #d5d5df;}
+.globalStock #header .loginArea .loginId {padding-left: 14px;}
+.globalStock #header .loginArea .loginId a {font-weight: bold;}
+.globalStock #header .loginArea .loginId a.logout,
+.globalStock #header .loginArea .loginId a.login {text-decoration: underline;}
+
+/* footer */
+.globalStock #footer .notice {margin: 0 auto; width: 100%; padding: 24px 25px 15px; box-sizing: border-box; position: relative;}
+.globalStock #footer .notice p.txt {color: #8380A0; line-height: 22px; font-size: 13px;}
+.globalStock #footer .notice .info {display: inline-block; font-weight: bold; float: left; margin-right: 15px; color: #000;}
+.globalStock #footer .notice .info i {display: inline-block; margin-left: 5px; width: 6px; height: 9px; background: url(/img/wm/icon/arrow_right.png) no-repeat right 0;}
+.globalStock #footer .notice .list {display: inline-block; float: left; width: 607px; height: 24px;}
+.globalStock #footer .notice .list .txt {display: inline-block; line-height: 22px;}
+.globalStock #footer .f_logo {display: inline-block; width: 104px; position: absolute; left: 25px; bottom: 34px;}
+.globalStock #footer .txt {display: inline-block; vertical-align: top;}
+.globalStock #footer .dataLink {color: #8380A0; margin-top: 8px; padding: 10px 15px; text-align: right;}
+.globalStock #footer .dataLink a,
+.globalStock #footer .dataLink strong {color: #6178F2; text-decoration: none; margin-left: 5px;}
+
+/* .globalStock #container  */
+.globalStock #container {padding: 0 35px; margin-top: 37px;}
+.globalStock #container .lockInfo {clear: both; margin-top: 40px; vertical-align: top; color: #888; font-size: 12px; text-align: left;}
+.globalStock #container .lockInfo .lock {display: inline-block; margin-top: 1px; margin-right: 7px; vertical-align: top;}
+.globalStock #container .lockInfo b {font-weight: bold;}
+.globalStock #container .lockInfo i {text-decoration: underline; font-style: normal;}
+.globalStock #container .lockInfo a {text-decoration: underline; color:#2323c2;  font-style: normal;}
+.globalStock #container .lockInfo .login_trigger {color: #aaa; text-decoration: none; margin-left: 5px;}
+.globalStock #container .schChartTitle {position: relative; border-bottom: 2px solid #404FC3; padding-bottom: 30px; padding-left: 12px;}
+.globalStock #container .schChartTitle .title {vertical-align: top; color:#000; font-size: 20px !important; font-weight: bold;  display: inline-block;}
+.globalStock #container .schChartTitle .title.bd {}
+
+.globalStock #container .schChartTitle .alliance_banner {display: inline-block; position: absolute; right: 0; top: 0; vertical-align: top; background-color: #e3f1ff; border-radius: 10px; z-index: 999;}
+.globalStock #container .schChartTitle .alliance_banner img {display: inline-block; height: 94px;}
+.globalStock #container .schChartTitle .alliance_banner .b_title {color: #114272; font-weight: bold; font-size: 18px; letter-spacing: -0.9px; display: inline-block; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap; width: 100%;}
+.globalStock #container .schChartTitle .alliance_banner .b_pdion {color: #708aa3; font-size: 12px; margin-top: 4px; display: inline-block;}
+.globalStock #container .schChartTitle .alliance_banner .b_pdion span {line-height: 32px; vertical-align: top;}
+.globalStock #container .schChartTitle .alliance_banner .b_pdion strong {color: #ff006c; font-size: 26px; font-weight: 900; font-family: 'Lato'; padding-left: 7px;}
+.globalStock #container .schChartTitle .alliance_banner .link_btn {position: relative; float: right; vertical-align: top; margin-top: 12px; display: inline-block; line-height: 22px; text-align: center; color: #0c345c; font-size: 12px; letter-spacing: -0.6px; width: 123px; height: 22px; padding-right: 4px; border-radius: 11px; background-color: #fff; box-sizing: border-box;}
+.globalStock #container .schChartTitle .alliance_banner .link_btn i {position: absolute; right: 10px; top: 7px; display: inline-block; width: 4px; height: 6.5px; background: url('/img/icon_arrow_y.png') no-repeat 0 0; background-size: 4px 6.5px;}
+
+.globalStock #container .schChartTitle .alliance_banner .e_title {color: #114272; font-weight: bold; font-size: 18px; letter-spacing: -0.9px; display: inline-block; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap;  width: calc(100% - 130px)}
+.globalStock #container .schChartTitle .alliance_banner .e_pdion {color: #708aa3; font-size: 12px; display: inline-block; float: right;}
+.globalStock #container .schChartTitle .alliance_banner .e_pdion span {line-height: 32px; vertical-align: top;}
+.globalStock #container .schChartTitle .alliance_banner .e_pdion strong {color: #ff006c; font-size: 22px; font-weight: 900; font-family: 'Lato'; padding-left: 7px;}
+.globalStock #container .schChartTitle .alliance_banner .event_name {color: #114272; font-size: 1.07rem; letter-spacing: -0.85px; line-height: 1.47; margin-top: 4px; display: inline-block; float: left; display: inline-block; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap; min-width: 110px; max-width: 174px;}
+.globalStock #container .schChartTitle .alliance_banner .e_link_btn {position: relative; float: right; vertical-align: top; margin-top: 4px; display: inline-block; line-height: 22px; text-align: center; color: #0c345c; font-size: 12px; letter-spacing: -0.6px; width: 123px; height: 22px; padding-right: 4px; border-radius: 11px; background-color: #fff; box-sizing: border-box;}
+.globalStock #container .schChartTitle .alliance_banner .e_link_btn i {position: absolute; right: 10px; top: 7px; display: inline-block; width: 4px; height: 6.5px; background: url('/img/icon_arrow_y.png') no-repeat 0 0; background-size: 4px 6.5px;}
+.globalStock #container .schChartTitle .alliance_banner .table_jump {}
+.globalStock #container .schChartTitle .alliance_banner .table_jump th,
+.globalStock #container .schChartTitle .alliance_banner .table_jump td {text-align: left; padding: 0;}
+.globalStock #container .schChartTitle .alliance_banner .table_jump th {font-size: 0.75rem; color: #114272; line-height: 1.43;}
+.globalStock #container .schChartTitle .alliance_banner .table_jump td,
+.globalStock #container .schChartTitle .alliance_banner .table_jump td span {vertical-align: top;}
+.globalStock #container .schChartTitle .alliance_banner .table_jump .th_01 {color: #114272; font-size: 0.9rem;}
+.globalStock #container .schChartTitle .alliance_banner .table_jump .th_03 {text-align: center; color: #708AA3;}
+.globalStock #container .schChartTitle .alliance_banner .table_jump .td_01 {color: #114272; font-size: 1.25rem; letter-spacing: -1px; font-weight: bold;}
+.globalStock #container .schChartTitle .alliance_banner .table_jump .td_01 span {font-weight: bold; display: inline-block; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap; min-width: 110px; max-width: 174px; }
+.globalStock #container .schChartTitle .alliance_banner .table_jump .td_02,
+.globalStock #container .schChartTitle .alliance_banner .table_jump .td_02 span {color: #ff006c; font-size: 1.35rem; font-weight: 900; position: relative; top: -2px;}
+.globalStock #container .schChartTitle .alliance_banner .table_jump .td_03,
+.globalStock #container .schChartTitle .alliance_banner .table_jump .td_03 span {color: #ff006c; font-size: 1.35rem; font-weight: 900; position: relative; top: -2px; text-align: center;}
+.globalStock #container .schChartTitle .alliance_banner .table_jump .td_03 b {display: inline-block; color: #ff006c; font-size: 0.9rem; font-weight: normal; font-family: "Noto Sans KR"; vertical-align: bottom;}
+.globalStock #container .schChartTitle .alliance_banner .j_link_btn {position: relative; float: right; vertical-align: top; margin-top: -2px; display: inline-block; line-height: 22px; text-align: center; color: #0c345c; font-size: 12px; letter-spacing: -0.6px; padding: 0 13px 0 2px; background: url('/img/bg_wline.png') repeat-x 0 calc(100% + 3px);}
+.globalStock #container .schChartTitle .alliance_banner .j_link_btn i {position: absolute; right: 2px; top: 7px; display: inline-block; width: 4px; height: 6.5px; background: url('/img/icon_arrow_y.png') no-repeat 0 0; background-size: 4px 6.5px;}
+
+.globalStock #container .alliance_banner.ab_pc {display: block; box-sizing: border-box; padding: 18px 21px 18px 24px; width: 350px; height: 94px;}
+.globalStock #container .alliance_banner.ab_mobile {display: none;}
+.globalStock #container .schChartTitle .info {vertical-align: top; display: inline-block; line-height: normal;}
+.globalStock #container .schChartTitle .info li {display: inline-block; vertical-align: top;}
+.globalStock #container .schChartTitle .info li.sum {color: #333; font-size: 20px; margin-left: 5px; margin-top: 4px;}
+.globalStock #container .schChartTitle .info li.sum .eng { font-weight: bold; color: #939393;}
+.globalStock #container .schChartTitle .info li.sum .span1 {}
+.globalStock #container .schChartTitle .info li.sum .span2 {padding-left: 2px; position: relative; top: 1px;}
+.globalStock #container .schChartTitle .info li.category {margin-left: 7px; margin-top: 7px; border: none; text-align: center; border-radius: 11px; background-color: #f4f4f5; color: #939393; font-size: 12px; padding: 3px 10px;}
+.globalStock #container .schChartTitle .info li.category a {color: #939393; font-size: 12px;}
+/* .globalStock #container .schChartTitle .info li.attention {cursor: pointer; margin-left: 6px; margin-top: 14px; width: 22px; height: 18px; font-size: 0; letter-spacing: -9999px; background: url('/img/wm/icon/like.gif') no-repeat 0 0;} */
+.globalStock #container .schChartTitle .info li.attention.like {background-position-x: -25px;}
+.globalStock #container .schChartTitle .detail {margin-top: 10px; display: inline-block; vertical-align: top; box-sizing: border-box;}
+.globalStock #container .schChartTitle .detail li {display: inline-block;}
+.globalStock #container .schChartTitle .detail li.num,
+.globalStock #container .schChartTitle .detail li.num span {color: #000; font-size: 40px;}
+.globalStock #container .schChartTitle .detail li.num b,
+.globalStock #container .schChartTitle .detail li.num span b {color: #000; font-weight: 300;}
+.globalStock #container .schChartTitle .detail li.per {margin-left: 10px;}
+.globalStock #container .schChartTitle .detail li.per,
+.globalStock #container .schChartTitle .detail li.per span {font-size: 21px;}
+.globalStock #container .schChartTitle .detail li.per span.increase {color: #ff0000; }
+.globalStock #container .schChartTitle .detail li.per span.decrease {color: #001eff; }
+
+.globalStock #container .schChartTitle .detail li.per span > span {font-size: 16px; padding-left: 1px;}
+.globalStock #container .schChartTitle .detail li.comment {color: #555; font-size: 14px; margin-right: 10px; margin-left: 0 !important; height: 52px; line-height: 52px; position: relative;}
+.globalStock #container .schChartTitle .detail li.comment i {/*margin-left: 36px;*/ display: inline-block; width: 11px; height: 11px; background: url('/img/icon/comment_chk.png') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.comment::before {content: ""; position: absolute; right: -15px; top: 20px; display: inline-block; width: 1px; height: 13px; border-right: 1px solid #bbb;}
+ 
+.globalStock #container .schChartTitle .detail.myOpinion {margin-top: 4px; /*display: none;*/ display: inline-block;} /* 나의 투자의견은? */
+.globalStock #container .schChartTitle .detail.opinion {margin-top: 4px; /*display: none;*/ display: inline-block;} /* 투자의견 */
+.globalStock #container .schChartTitle .detail li.deal {margin-left: 15px; position: relative; top: 9px; margin-right: 36px;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help {top: 33px;  right: -80px; width: 215px; display: none; border:1px solid #ccc; background: #fff;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help p {color: #333;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help a {color: #28359b}
+.globalStock #container .schChartTitle .detail li.deal .ly_help .edge_lft {background:url('/img/icon/bg_layer_edge.gif') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help .edge_cen {background:url('/img/icon/bg_layer_edge.gif') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help.hide {display: none;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help.view {display: block;}
+.globalStock #container .schChartTitle .detail li.day {margin-top: 8px; margin-left: 10px; display: inline-block; font-size: 14px; color: #939393; /**/}
+.globalStock #container .schChartTitle .detail li.deal .buying,
+.globalStock #container .schChartTitle .detail li.deal .sell {cursor: pointer; float: left; position: relative; padding-left: 27px; width: 74px; height: 31px; box-sizing: border-box; background:#e8e8e8; line-height: 31px; font-size: 12px; text-align: center; color: #000; display: inline-block; border:1px solid #e8e8e8; }
+.globalStock #container .schChartTitle .detail li.deal .buying {}
+.globalStock #container .schChartTitle .detail li.deal .sell {margin-left: 10px;}
+
+.globalStock #container .schChartTitle .detail li.deal .buying i,
+.globalStock #container .schChartTitle .detail li.deal .sell i {position: absolute; left: 10px; top: 7px; width: 23px; height: 16px; display: inline-block;}
+.globalStock #container .schChartTitle .detail li.deal .buying i {background: url('/img/icon/buying_off.png') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.deal .sell i {background: url('/img/icon/sell_off.png') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.deal .buying.chk,
+.globalStock #container .schChartTitle .detail li.deal .sell.chk {border: 1px solid #7362eb; background: #fff;}
+.globalStock #container .schChartTitle .detail li.deal .buying.chk {border: 1px solid #c83538}
+.globalStock #container .schChartTitle .detail li.deal .buying.chk i {background: url('/img/icon/buying_chk.png') no-repeat 0 0; background-size: auto 100%;}
+.globalStock #container .schChartTitle .detail li.deal .sell.chk i {background: url('/img/icon/sell_chk.png') no-repeat 0 0; background-size: auto 100%;}
+
+.globalStock #container .schChartTitle .detail .opinion {color: #777; font-size: 11px; text-align: left;}
+.globalStock #container .schChartTitle .detail .opinion.months {margin-left: 5px; vertical-align: middle; position: relative;}
+.globalStock #container .schChartTitle .detail .opinion.months .data {position: absolute; left: 7px; right: 0; bottom:-15px; width: 211px; margin:0 auto;}
+.globalStock #container .schChartTitle .detail .opinion.months .data span {display: inline-block; color: #999;}
+.globalStock #container .schChartTitle .detail .opinion.months .data span:nth-child(1) {float: left; width: 50px; text-align: left;}
+.globalStock #container .schChartTitle .detail .opinion.months .data span:nth-child(2) {width: calc(100% - 100px); text-align: center;}
+.globalStock #container .schChartTitle .detail .opinion.months .data span:nth-child(3) {float: right; width: 50px; text-align: right;}
+
+.globalStock #container .schChartTitle .info_icon {display: none;}
+
+
+.globalStock #container .summary {clear: both; border-top: solid 1px #e6e7f4; background: #fff;  padding: 20px 20px 5px; margin-top: 45px; color: #000; font-size: 13px; line-height: 22px; position: relative;}
+.globalStock #container .summary.big {}
+.globalStock #container .summary.small {}
+.globalStock #container .summary.small p {color: #4d4f60; font-size: 14px; display: -webkit-box; overflow: hidden; width: 100%; max-height: 88px; line-height: 22px; box-sizing: border-box; text-overflow: ellipsis; -webkit-line-clamp: 4;-webkit-box-orient: vertical; word-wrap: break-word;}
+.globalStock #container .summary p {padding-right: 360px; color: #4d4f60; font-size: 14px; line-height: 22px;}
+.globalStock #container .summary .etc {margin-top: 17px; width: 300px; box-sizing: border-box; padding-left: 23px; border-left: solid 1px #e6e7f4;; position: absolute; right: 0; top: 0; bottom: 0; height: auto;}
+.globalStock #container .summary .etc li {display: block; color: #222; font-size: 13px; margin-right: 20px; color: #000; vertical-align: text-top; line-height: 22px; vertical-align: top;}
+.globalStock #container .summary .etc li span {display: inline-block; margin-right: 10px; vertical-align: top; color: #8380a0; vertical-align: top; font-size: 13px; text-align: center; width: 24px; }
+.globalStock #container .summary .etc li a {display: inline-block; font-size: 13px; color: #6178f2; text-decoration: underline;  /*width: 150px;*/ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: top;}
+.globalStock #container .summary .etc li strong {vertical-align: top; display: inline-block; color: #222; font-size: 13px;}
+.globalStock #container .summary .etc li.industry {position: relative; margin-right: 0; width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.globalStock #container .summary .etc li.industry::before {content: ""; position: absolute; right: -27px; top: 4px; display: inline-block; width: 1px; height: 14px; border-right: 1px solid #bbb;}
+.globalStock #container .summary .etc li.home > span {margin-top: 6px;}
+.globalStock #container .summary .etc li.link > span {margin-top: 6px;}
+.globalStock #container .summary .etc li.home > span i {display: inline-block; width: 18px; height: 18px; background: url('/img/home.png') no-repeat 0 0; background-size: 16px 15px;}
+.globalStock #container .summary .etc li.link > span i {display: inline-block; width: 18px; height: 18px; background: url('/img/link.png') no-repeat 0 0; background-size: 15px 15px;}
+.globalStock #container .summary .close {color: #333; font-size: 11px; position: absolute; right: 314px; bottom: 7px; cursor: pointer;}
+.globalStock #container .summary .close i {display: inline-block; width: 9px; height: 6px; background: url('/img/arrow_open.png') no-repeat 0 0; margin-left: 3px; background-size: 9px 6px;}
+.globalStock #container .summary .close.show {color: #fff; bottom: 0;}
+.globalStock #container .summary .close.show i {display: inline-block; width: 9px; height: 6px; bottom: 15px; background: url('/img/arrow_close.png') no-repeat 0 0; margin-left: 3px; background-size: 9px 6px;}
+/* schChartArea */
+.globalStock #container {padding: 0 35px;}
+.globalStock #container .schChartArea {margin-top: 0; font-size: 0;}
+.globalStock #container .schChartArea {margin-top: 0;}
+.globalStock #container .schChartArea .chartSection {font-size: 14px;  width: 100%; margin-top: 19px;}
+.globalStock #container .schChartArea .chartSection {width: calc(100% / 2 - 50px); margin-top: 19px; display: inline-block; vertical-align: top;}
+.globalStock #container .chartSection.chartSection_mobile {display: none;}
+.globalStock #container .schChartArea .chartSection.chartSection_pc {display: inline-block;}
+.globalStock #container #sum_topchart_m {display: none;}
+.globalStock #container .schChartArea .chartSection #sum_topchart {display: block;}
+.globalStock #container .schChartArea .chartSection .containerLine_1 {height: 320px;}
+.globalStock #container .schChartArea .chartDate {font-size: 14px; width: calc(100% / 2 - 150px); margin-left: 200px; margin-top: 10px; display: inline-block; vertical-align: top;}
+.globalStock #container .schChartArea .chartDate .indicator {display: block; text-align: right; position: relative;}
+.globalStock #container .schChartArea .chartDate .indicator img {text-align: right; display: inline-block; cursor: pointer;}
+.globalStock #container .schChartArea .chartDate .indicator .ly_help {top: 17px;  right: 0; /*width: 330px;*/ display: none;}
+.globalStock #container .schChartArea .chartDate .indicator .ly_help.hide {display: none;}
+.globalStock #container .schChartArea .chartDate .indicator .ly_help.view {display: block;}
+.globalStock #container .schChartArea .chartTabsArea,
+.globalStock #container .chartSection.chartSection_mobile .chartTabsArea {margin-bottom: 15px;}
+.globalStock #container .schChartArea .chartTabs,
+.globalStock #container .chartSection.chartSection_mobile .chartTabs {padding-left: 12px; display: inline-block; width: 454px;}
+.globalStock #container .schChartArea .chartTabs span,
+.globalStock #container .chartSection.chartSection_mobile .chartTabs span {display: inline-block; cursor: pointer; margin-right: 22px;}
+.globalStock #container .schChartArea .chartTabs span,
+.globalStock #container .chartSection.chartSection_mobile .chartTabs span {color: #333; font-size: 14px; font-family: "Noto Sans KR";}
+.globalStock #container .schChartArea .chartTabs span:hover,
+.globalStock #container .schChartArea .chartTabs span.active,
+.globalStock #container .chartSection.chartSection_mobile .chartTabs span:hover,
+.globalStock #container .chartSection.chartSection_mobile .chartTabs span:active {color: #404fc3; text-decoration: underline; font-weight: bold;}
+.globalStock #container .schChartArea .sizeCustom {font-size: 11px; cursor: pointer; float: right; padding-right: 50px;}
+.globalStock #container .schChartArea .sizeCustom:hover {color: #2b199e !important; text-decoration: underline;}
+.globalStock #container .schChartArea .sizeCustom i {display: inline-block; width: 10px; height: 10px; background: url('/img/icon/sizeCustom.png') no-repeat 0 0; margin-right: 5px;}
+.globalStock #container .schChartArea .chartSection.sBig {width: 100%; height: 500px}
+.globalStock #container .schChartArea .chartSection #chart-container {height: 100%;}
+.globalStock #container .schChartArea .chartSection #chart-container.sBig {height: 500px}
+.globalStock #container .schChartArea .chartDate.sBig {float: none; overflow: hidden; width: 100%; margin-top: 32px;}
+
+.globalStock #container .schChartArea .arc_left,
+.globalStock #container .schChartArea .arc_right {display: inline-block; width: calc(100% / 2 - 10px); margin-bottom: 20px;}
+.globalStock #container .schChartArea .arc_left {float: left;}
+.globalStock #container .schChartArea .arc_right {float: right; margin-left: 20px;}
+
+.globalStock #container .schChartArea .invest_charm_b {clear: both; width: 100%; margin-top: 12px; padding: 17px 0; border-radius: 10px; background-color: #f0f2f7; box-sizing: border-box;}
+.globalStock #container .schChartArea .invest_charm_b dl {font-size: 0; display: inline-block; width: calc(100% / 3 + 20px); padding-left: 2%; box-sizing: border-box; vertical-align: top; position: relative;}
+.globalStock #container .schChartArea .invest_charm_b dl:first-child {padding-left: 6%;}
+.globalStock #container .schChartArea .invest_charm_b dl:nth-child(2) {width: calc(100% / 3 - 20px);}
+.globalStock #container .schChartArea .invest_charm_b dl:nth-child(3) {width: calc(100% / 3 - 20px);}
+.globalStock #container .schChartArea .invest_charm_b dl::before {content: ""; position: absolute; right: 0; top: -1px; display: inline-block; width: 1px; height: 66px; border-right: 1px solid #5f6dd6; opacity: 0.14;}
+.globalStock #container .schChartArea .invest_charm_b dl:nth-child(3)::before {content: ""; display: none;}
+.globalStock #container .schChartArea .invest_charm_b dl dt,
+.globalStock #container .schChartArea .invest_charm_b dl dd,
+.globalStock #container .schChartArea .invest_charm_b dl dd
+.globalStock #container .schChartArea .invest_charm_b dl dd span {color: #9fa7df; font-size: 14px; text-align: center; text-align: left;}
+.globalStock #container .schChartArea .invest_charm_b dl dt.dt_title {}
+.globalStock #container .schChartArea .invest_charm_b dl dt.dt_title > span {display: inline-block; padding: 0 2px; background: url('/img/bg_line.png') repeat-x 0 calc(100% + 6px);}
+.globalStock #container .schChartArea .invest_charm_b dl dt.dt_title strong {color: #404fc3;}
+.globalStock #container .schChartArea .invest_charm_b dl dd.num {position: relative; display: inline-block; vertical-align: top; color: #404fc3; font-size: 18px; padding-right: 6px; margin-top: 2px;}
+.globalStock #container .schChartArea .invest_charm_b dl dd.num strong {color: #404fc3; font-size: 27px; font-weight: 900;}
+.globalStock #container .schChartArea .invest_charm_b dl dd.prepare {display: inline-block; color: #939393; width: calc(100% / 2 - 14px); vertical-align: top; text-align: left; padding-left: 6px; margin-top: 5px; font-size: 12px;}
+.globalStock #container .schChartArea .invest_charm_b dl dd.prepare strong {font-size: 12px; display: block;}
+.globalStock #container .schChartArea .invest_charm_b dl dd.prepare.increase strong {color: #ff2929; font-weight: bold; line-height: 8px;}
+.globalStock #container .schChartArea .invest_charm_b dl dd.prepare.decrease strong {color: #0094FF; font-weight: bold; line-height: 8px;}
+.globalStock #container .schChartArea .invest_charm_b .proper {margin-top: 6px;}
+.globalStock #container .schChartArea .invest_charm_b .proper .num.increase {color: #ff2929; font-size: 25px; font-weight: bold;}
+.globalStock #container .schChartArea .invest_charm_b .proper .num.increase b {color: #ff2929; font-size: 25px; font-weight: 300;}
+.globalStock #container .schChartArea .invest_charm_b .proper .num.decrease {color: #0094FF; font-size: 25px; font-weight: bold;}
+.globalStock #container .schChartArea .invest_charm_b .proper .num.decrease b {color: #0094FF; font-size: 25px; font-weight: 300;}
+
+.globalStock #container .schChartArea .invest_charm_b dl dd.lock {margin-top: 10px;}
+.globalStock #container .schChartArea .invest_charm_b dl dd.star {margin-top: 15px;}
+.globalStock #container .schChartArea .invest_charm_b dl dd.lock span,
+.globalStock #container .schChartArea .invest_charm_b dl dd.lock span img {display: inline-block; height: 26px; vertical-align: top;}
+.globalStock #container .schChartArea .show_pop {display: inline-block; float: right; position: relative; padding-right: 12px; margin-right: 2px; background: url('/img/bg_line.png') repeat-x 0 calc(100% + 6px); margin-top: 20px; font-size: 14px; color: #222;}
+.globalStock #container .schChartArea .show_pop i {position: absolute; right: 2px; top: 7px; display: inline-block; width: 4px; height: 6.5px; background: url('/img/icon_arrow.png') no-repeat 0 0; background-size: 4px 6.5px;}
+
+.globalStock #container .invest_charm_b.ic_pc {display: block;}
+.globalStock #container .invest_charm_b.ic_mobile {display: none;}
+
+.globalStock #container .schChartArea .chartDate .tableRowtype th,
+.globalStock #container .schChartArea .chartDate .tableRowtype td{border:0; font-weight: normal; height: 45px; padding: 0 10px 0 10px; border-top: 1px solid #e6e7f4; border-bottom: 1px solid #e6e7f4}
+.globalStock #container .schChartArea .chartDate .tableRowtype caption{display:none}
+.globalStock #container .schChartArea .chartDate .tableRowtype th {text-align: left; color: #4d4f60; font-size: 14px;}
+.globalStock #container .schChartArea .chartDate .tableRowtype tr:first-child th,
+.globalStock #container .schChartArea .chartDate .tableRowtype tr:first-child td {border-top: none;}
+.globalStock #container .schChartArea .chartDate .tableRowtype td {text-align: right;  color: #222; font-size: 16px; font-weight: bold; font-family: 'Lato'; } 
+.globalStock #container .schChartArea .chartDate .tableRowtype td span.unit {padding-left: 2px; display: inline; color: #222; font-size: 14px; font-weight: normal;}
+
+.globalStock #container .bannerArea {margin-top: 50px;}
+.globalStock #container .bannerArea img {display: inline-block; width: 100%; /*isplay: none;*/}
+.globalStock #container .tableData {position: relative; clear: both; margin-top: 43px;}
+.globalStock #container .tableData .titleInvestment {margin-bottom: 7px; margin-left: 10px; display: inline-block; float: left; font-size: 24px; color: #222; font-weight: bold;}
+.globalStock #container .tableData .tableTab {position: absolute; right: 0; top: 7px;}
+.globalStock #container .tableData .tableTab .tabsArea {display: inline-block; /*border-left: 1px solid #ccc;*/ padding:0 15px;}
+.globalStock #container .tableData .tableTab .tabsArea:first-child {border: none; padding-left: 0; position: relative;}
+.globalStock #container .tableData .tableTab .tabsArea:last-child {padding-right: 0;}
+.globalStock #container .tableData .tableTab span {display: inline-block; cursor: pointer; font-size: 12px; color: #888; display: inline-block; padding: 0 5px; position: relative; font-family: 'Nanum Gothic', '나눔고딕'; font-weight: bold;}
+.globalStock #container .tableData .tableTab span .ly_help {top: 20px;  right: 0; min-width: 453px; display: none;}
+.globalStock #container .tableData .tableTab span .ly_help.hide {display: none;}
+.globalStock #container .tableData .tableTab span .ly_help.view {display: block;}
+.globalStock #container .tableData .tableTab span:hover {color:#2b199e; font-weight: bold;}
+.globalStock #container .tableData .tableTab span.active {text-decoration: underline; color:#2b199e; font-weight: bold;}
+.globalStock #container .tableData .tableTab strong.info {position: relative; top: 2px; vertical-align: top; cursor: pointer;}
+.globalStock #container .tableData .tableTab strong.info .ly_help.small {right: 0; width: 144px;}
+
+.globalStock #container .tableData.bannerRight .tabsArea {overflow: hidden;}
+.globalStock #container ul.tabs li.fix-active {font-weight: bold;}
+.globalStock #container ul.tabs li.fix-active {font-weight: bold; color: #2B199E; font-weight: bold;}
+.globalStock #container ul.tabs li.fix-active {border-bottom: 3px solid #4D4DA6}
+.globalStock #container .tableData .tableTab span.fix-active {text-decoration: underline; color:#2b199e; font-weight: bold;}
+.globalStock .mainbg #container .tableData .tableColtype {border-bottom: 1px solid #c9c9c9;}
+.globalStock #container .tableData .tableColtype {/*margin-top: 20px;*/}
+
+.globalStock #container .tableData .tableColtype.table_pc {display: block;}
+.globalStock #container .tableData .tableColtype.table_mb {display: none;}
+.globalStock #container .tableData.bannerRight ul.tabs {display: inline-block; width: inherit; margin-bottom: 0; margin-left: 25px; margin-top: 11px; border: none; height: auto;}
+.globalStock #container .tableData.bannerRight ul.tabs li {position: relative; cursor: pointer; display: inline-block; cursor: pointer; margin-right: 17px; font-size: 13px; height: auto; line-height: normal; border: none; padding: 0; overflow: inherit;}
+.globalStock #container .tableData.bannerRight ul.tabs li span {color: #939393;}
+.globalStock #container .tableData.bannerRight ul.tabs li.active {color: #404fc3; text-decoration: none; font-weight: bold;}
+.globalStock #container .tableData.bannerRight ul.tabs li.active span {color: #404fc3; text-decoration: none; font-weight: bold;}
+.globalStock #container .tableData.bannerRight ul.tabs li:first-child::before {content: ""; position: absolute; right: -10px; top: 4px; display: inline-block; width: 1px; height: 14px; border-right: 1px solid #e6e7f4;}
+
+.globalStock #container .tableData .tableColtype td {padding-left: 10px; font-size: 14px; color: #222; text-align: right; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; background-image: none;}
+.globalStock #container .tableData .tableColtype tr:last-child td {background: url(../img/table_border.gif) repeat-x left bottom;}
+
+.globalStock #container .tableData .tableColtype td:nth-child(1) {color: #4d4f60; font-size: 14px; text-align: left; border-right: solid 2px #e6e7f4; letter-spacing: -1px;}
+.globalStock #container .tableData .tableColtype td.eng,
+.globalStock #container .tableData .tableColtype td span.eng {}
+.globalStock #container .tableData p.info {text-align: right; color: #888; font-size: 12px; margin-top: 21px;}
+.globalStock #container .tableData .dataLink {clear: both; color: #999; font-size: 11px; margin-top: 40px; text-align: right;}
+.globalStock #container .tableData .dataLink a {margin-left: 5px; text-decoration: underline;}
+.globalStock #container .tableData .dataLink.mrt_30 {margin-top: 30px; ; }
+.globalStock #container .tableData .categoryBox {display: inline-block; float: left; margin-right: 16px; margin-top: 5px;}
+.globalStock #container .tableData .categoryBox .category {color: #585858; font-size: 11px; display: inline-block; width: 60px; height: 25px; box-sizing: border-box; padding-top: 4px; text-align: center;  border: 1px solid #c6c6c6; border-radius: 12px;}
+.globalStock #container .tableData .btn_delete {background: none; outline: none;}
+
+
+/* 에러페이지 */
+.globalStock #container .errorImg {display: block; margin: 0 auto; text-align: center;}
+.globalStock #container .errorLink {color: #888; text-align: right; text-decoration: underline; padding-right: 100px; box-sizing: border-box; display: block; max-width: 1100px; margin: 0 auto 60px;}
+
+/* media */
+@media (min-width:320px) and (max-width:779px){            
+  .globalStock #wrap {width: 100%; padding: 0;}    
+  .globalStock #header {padding:15px 0; height: auto; background-color: #f4f4f5;}
+  .globalStock #header {margin-bottom: 0;}
+  .globalStock #footer {margin-top: 40px;}    
+  .globalStock #footer {margin: 35px 0 0;}
+  .globalStock #header .searchArea {display: block; margin: 0;}
+  .globalStock #header .searchArea .searchInput {clear: both; float: none; display: block; width: calc(100% - 30px); height: 40px; padding: 5px 10px; margin: 0 auto; background-color: #fff; box-sizing: border-box;}
+  .globalStock #header .searchArea .searchBtn {right: 28px; top: 13px; width: 15px;}
+  .globalStock #header .searchArea .searchInput,
+  .globalStock #header .searchArea .searchInput::placeholder {font-size: 14px; color: #8380a0;}
+  .globalStock #container #sum_topchart_m {display: block; height: 180px; margin: 15px 0;}
+  .globalStock #container .chartSection.chartSection_mobile {display: block;}
+  .globalStock #container .schChartArea .chartSection.chartSection_pc {display: none;}
+  .globalStock #container .schChartArea .chartSection #sum_topchart {display: none;}
+  .globalStock #container .schChartArea .chartSection .containerLine_1 {height: 180px;}
+  .globalStock #header .headerArea {padding: 0 14px;}
+  .globalStock #header .searchArea .searchInput {width: 100%; padding-left: 40px; border: none;}
+  
+  .globalStock #container .alliance_banner.ab_pc {display: none;}
+  .globalStock #container .alliance_banner.ab_mobile {overflow: hidden; display: block; padding: 16px 24px; box-sizing: border-box; width: calc(100% - 30px); margin: 40px auto 0; vertical-align: top; background-color: #e3f1ff; border-radius: 10px;}
+  .globalStock #container .alliance_banner.ab_mobile img {display: inline-block; height: 94px;}
+  .globalStock #container .alliance_banner.ab_mobile .b_title {color: #114272; font-weight: bold; font-size: 18px; letter-spacing: -0.9px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
+  .globalStock #container .alliance_banner.ab_mobile .b_pdion {color: #708aa3; font-size: 12px; margin-top: 4px; display: inline-block;}
+  .globalStock #container .alliance_banner.ab_mobile .b_pdion span {line-height: 32px; vertical-align: top;}
+  .globalStock #container .alliance_banner.ab_mobile .b_pdion strong {color: #ff006c; font-size: 26px; font-weight: 900; font-family: 'Lato'; padding-left: 7px;}
+  .globalStock #container .alliance_banner.ab_mobile .link_btn {position: relative; float: right; vertical-align: top; margin-top: 12px; display: inline-block; line-height: 22px; text-align: center; color: #0c345c; font-size: 12px; letter-spacing: -0.6px; width: 123px; height: 22px; border-radius: 11px; background-color: #fff; box-sizing: border-box;}
+  .globalStock #container .alliance_banner.ab_mobile .link_btn i {position: absolute; right: 8px; top: 7px; display: inline-block; width: 4px; height: 6.5px; background: url('/img/icon_arrow_y.png') no-repeat 0 0; background-size: 4px 6.5px;}
+  
+  .globalStock #container .alliance_banner.ab_mobile .e_title {color: #114272; font-weight: bold; font-size: 18px; letter-spacing: -0.9px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: calc(100% - 130px); height: 27px;}
+  .globalStock #container .alliance_banner.ab_mobile .e_pdion {color: #708aa3; font-size: 12px; display: inline-block; float: right; height: 27px;}
+  .globalStock #container .alliance_banner.ab_mobile .e_pdion span {line-height: 32px; vertical-align: top;}
+  .globalStock #container .alliance_banner.ab_mobile .e_pdion strong {color: #ff006c; font-size: 22px; font-weight: 900; font-family: 'Lato'; padding-left: 7px;}
+  .globalStock #container .alliance_banner.ab_mobile .event_name {color: #114272; font-size: 1.07rem; letter-spacing: -0.85px; line-height: 1.47; margin-top: 4px; display: inline-block; float: left; display: inline-block; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap; min-width: 110px; max-width: 174px;}
+  .globalStock #container .alliance_banner.ab_mobile .e_link_btn {position: relative; float: right; vertical-align: top; margin-top: 4px; display: inline-block; line-height: 22px; text-align: center; color: #0c345c; font-size: 12px; letter-spacing: -0.6px; width: 123px; height: 22px; padding-right: 4px; border-radius: 11px; background-color: #fff; box-sizing: border-box;}
+  .globalStock #container .alliance_banner.ab_mobile .e_link_btn i {position: absolute; right: 10px; top: 7px; display: inline-block; width: 4px; height: 6.5px; background: url('/img/icon_arrow_y.png') no-repeat 0 0; background-size: 4px 6.5px;}
+  .globalStock #container .alliance_banner.ab_mobile .table_jump {}
+  .globalStock #container .alliance_banner.ab_mobile .table_jump th,
+  .globalStock #container .alliance_banner.ab_mobile .table_jump td {text-align: left; padding: 0;}
+  .globalStock #container .alliance_banner.ab_mobile .table_jump th {font-size: 0.75rem; color: #114272; line-height: 1.43; letter-spacing: -0.7px;}
+  .globalStock #container .alliance_banner.ab_mobile .table_jump td,
+  .globalStock #container .alliance_banner.ab_mobile .table_jump td span {vertical-align: top;}
+  .globalStock #container .alliance_banner.ab_mobile .table_jump .th_01 {color: #114272; font-size: 0.9rem; }
+  .globalStock #container .alliance_banner.ab_mobile .table_jump .th_03 {text-align: center; color: #708AA3;}
+  .globalStock #container .alliance_banner.ab_mobile .table_jump .td_01 {color: #114272; font-size: 1.25rem; letter-spacing: -1px; font-weight: bold;}
+  .globalStock #container .alliance_banner.ab_mobile .table_jump .td_01 span {font-weight: bold; display: inline-block; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap; min-width: 110px; max-width: 174px; }
+  .globalStock #container .alliance_banner.ab_mobile .table_jump .td_02,
+  .globalStock #container .alliance_banner.ab_mobile .table_jump .td_02 span {color: #ff006c; font-size: 1.35rem; font-weight: 900; position: relative; top: -2px;}
+  .globalStock #container .alliance_banner.ab_mobile .table_jump .td_03,
+  .globalStock #container .alliance_banner.ab_mobile .table_jump .td_03 span {color: #ff006c; font-size: 1.35rem; font-weight: 900; position: relative; top: -2px; text-align: center;}
+  .globalStock #container .alliance_banner.ab_mobile .table_jump .td_03 b {display: inline-block; color: #ff006c; font-size: 0.9rem; font-weight: normal; font-family: "Noto Sans KR"; vertical-align: bottom;}
+  .globalStock #container .alliance_banner.ab_mobile .j_link_btn {position: relative; float: right; vertical-align: top; margin-top: -2px; display: inline-block; line-height: 22px; text-align: center; color: #0c345c; font-size: 12px; letter-spacing: -0.6px; padding: 0 13px 0 2px; background: url('/img/bg_wline.png') repeat-x 0 calc(100% + 3px);}
+  .globalStock #container .alliance_banner.ab_mobile .j_link_btn i {position: absolute; right: 2px; top: 7px; display: inline-block; width: 4px; height: 6.5px; background: url('/img/icon_arrow_y.png') no-repeat 0 0; background-size: 4px 6.5px;}
+  
+  .globalStock #container .tableData .tableColtype.table_pc {display: none;}
+  .globalStock #container .tableData .tableColtype.table_mb {display: block;}
+  .globalStock #container {/*padding: 0 0 28px;*/ box-sizing: border-box; width: 100%; max-width: auto; min-width: auto;}
+  .globalStock #container {padding: 0; margin: 0;}
+  .globalStock #container .schChartTitle {padding: 15px 22px 20px; background-color: #fff; padding-left: 12px;}
+  .globalStock #container .schChartTitle .title,
+  .globalStock #container .schChartTitle .info li.sum .eng {font-size: 16px;}    
+  /* .globalStock #container .schChartTitle .detail li.num,
+  .globalStock #container .schChartTitle .detail li.num b {font-size: 26px;}     */
+  .globalStock #container .schChartTitle .detail li.per {font-size: 15px; margin-left: 5px;}
+  /* .globalStock #container .schChartTitle .info {line-height: 25px;} */
+  .globalStock #container .schChartTitle .info li.sum {margin-left: 7px; line-height: 25px; margin-top: 4px;} 
+  .globalStock #container .schChartTitle .info li.category {margin-top: 5px; font-size: 10px; display: none;}
+  .globalStock #container .schChartTitle .detail {display: block;}
+  .globalStock #container .schChartTitle .detail.myOpinion {display: block;} 
+  .globalStock #container .schChartTitle .detail.myOpinion .comment {height: 43px;}
+  .globalStock #container .schChartTitle .detail.opinion {width: 100%; padding-bottom: 15px;}
+  .globalStock #container .schChartTitle .detail.opinion .comment {height: 40px; line-height: 40px;}
+  .globalStock #container .schChartTitle .detail .opinion.months {display: block; background: #f2f2f2; padding: 15px 10px 5px; margin: 0 -15px;}
+  .globalStock #container .schChartTitle .detail .opinion.change {display: block; background: #f2f2f2; padding: 0 15px 15px 0; text-align: right; margin: 0 -15px;}
+  .globalStock #container .schChartTitle .detail {height: auto; margin-top: 5px;} 
+  .globalStock #container .schChartTitle .detail li.day {margin: 25px 0 0 5px; float: right; vertical-align: top;}
+  .globalStock #container .schChartTitle .detail li.deal {top:9px; margin: 0;}
+  .globalStock #container .schChartTitle .detail li.comment::before {display: none;} 
+  .globalStock #container .schChartTitle .detail .opinion.months .skillbarArea {display: block; width: 332px; margin: 0 auto;}
+  .globalStock #container .schChartTitle .detail .opinion.months .zt-skill-bar {width: 234px;}
+  .globalStock #container .schChartTitle .detail .opinion.months .data {position: relative; display: block; width: 332px; margin: 0 auto; left: 0; bottom: 0; }
+  .globalStock #container .schChartTitle .detail .opinion.months .data span:nth-child(1) {text-align: center;}
+  .globalStock #container .schChartTitle .detail .opinion.months .data span:nth-child(2) {width: calc(100% - 100px);}
+  .globalStock #container .schChartTitle .detail .opinion.months .data span:nth-child(3) {text-align: center;}
+  .globalStock #container .schChartTitle .detail .opinion.change {text-decoration: underline;}
+  .globalStock #container .schChartTitle .info_icon {display: block;}  
+  .globalStock #container .schChartTitle .info_icon li {display: inline-block; margin-top: 9px; text-align: center; border-radius: 11px; background-color: #f4f4f5; color: #939393; font-size: 12px; padding: 4px 10px;}
+  .globalStock #container .schChartTitle .info_icon li a {color: #939393; font-size: 12px;}
+  .globalStock #container .summary {box-sizing: border-box; padding: 15px 15px; margin: 15px auto 0; background-color: #f4f4f5;}
+  .globalStock #container .summary .etc {width: 100%; position: relative; padding-left: 0; margin-top: 10px; border-left: none;}
+  .globalStock #container .summary p {padding: 0;}
+  .globalStock #container .summary .etc li {display: inline-block; width: calc(100% / 2 - 3px); margin-right: 0;}
+  .globalStock #container .summary .etc li.industry {width: calc(100% / 2 - 3px);}
+  .globalStock #container .summary .etc li span {}
+  .globalStock #container .summary .close {position: relative; display: block; right: 0; bottom: 0; color: #8380a0; font-size: 12px; text-align: right; margin-top: 5px;}
+  .globalStock #container .summary .close::before {content: ""; position: absolute; left: 0; right: 0; top: 11px; display: inline-block; width: calc(100% - 70px); height: 1px; background-color: #e6e7f4;}
+  .globalStock #container .summary .close.show {color: #f4f4f5;}
+
+
+  .globalStock #container .schChartArea {min-width: auto; box-sizing: border-box; margin-top: 10px;}
+  .globalStock #container .schChartArea .chartSection {width: 98%; top: 0; margin-top: 20px;}
+  .globalStock #container .schChartArea .chartSection #container1 {width: 100%; height: 220px;}
+  .globalStock #container .schChartArea .chartDate .indicator {padding-right: 10px; box-sizing: border-box;}
+  .globalStock #container .schChartArea .chartDate {float: none; width: 100%; box-sizing: border-box; margin: 2px auto;}    
+  .globalStock #container .schChartArea .chartDate .tableRowtype.left,
+  .globalStock #container .schChartArea .chartDate .tableRowtype.right {min-width: auto; border: none; float: none; display: block; width: 100%; height: auto; padding: 0; margin:0; box-sizing: border-box;}
+  .globalStock #container .schChartArea .chartDate .tableRowtype.right {margin-top: 0;}
+  .globalStock #container .schChartArea .arc_left,
+  .globalStock #container .schChartArea .arc_right {min-width: auto; width: calc(100% / 2); height: auto; padding: 0; margin: 0; box-sizing: border-box; vertical-align: top;}
+  .globalStock #container .schChartArea .arc_right {margin-top: 0;}
+  .globalStock #container .schChartArea .chartDate .tableRowtype th,
+  .globalStock #container .schChartArea .chartDate .tableRowtype td {height: 41px; width: 100%; padding: 3px 10px; border-top: 1px solid #939393; font-size: 12px;}
+  .globalStock #container .schChartArea .chartDate .tableRowtype.left th,
+  .globalStock #container .schChartArea .chartDate .tableRowtype.left td {border-top: 1px solid #939393; font-size: 12px;}
+  .globalStock #container .schChartArea .chartDate .tableRowtype td span.unit {font-size: 12px;}
+  .globalStock #container .schChartArea .chartTabs {width: 100%; box-sizing: border-box;}
+  .globalStock #container .schChartArea .chartTabs span {font-size: 12px;}
+  
+  .globalStock #container .invest_charm_b {margin-top: 15px;}
+  .globalStock #container .invest_charm_b img {width: 100%; display: inline-block;}
+  .globalStock #container .invest_charm_b.ic_pc {display: none;}
+  .globalStock #container .invest_charm_b.ic_mobile {display: block; position: relative; clear: both; width: calc(100% - 30px); height: 78px; margin: 12px auto 0; padding: 13px 0; border-radius: 10px; background-color: #f0f2f7; box-sizing: border-box;}
+  .globalStock #container .invest_charm_b.ic_mobile .chartData {display: inline-block; width: calc(100% - 70px);}
+  .globalStock #container .invest_charm_b.ic_mobile dl {font-size: 0; display: inline-block; width: calc(100% / 2 - 10px); vertical-align: top; position: relative; padding-left: 5%; box-sizing: border-box; }
+  .globalStock #container .invest_charm_b.ic_mobile dl:nth-child(2) {width: calc(100% / 2 + 5px);}
+  .globalStock #container .invest_charm_b.ic_mobile dl::before {content: ""; position: absolute; right: -8px; top: -1px; display: inline-block; width: 1px; height: 55px; border-right: 1px solid #5f6dd6; opacity: 0.14;}
+  .globalStock #container .invest_charm_b.ic_mobile dl:nth-child(2)::before {content: ""; display: none;}
+
+  .globalStock #container .invest_charm_b.ic_mobile dl dt,
+  .globalStock #container .invest_charm_b.ic_mobile dl dd,
+  .globalStock #container .invest_charm_b.ic_mobile dl dd
+  .globalStock #container .invest_charm_b.ic_mobile dl dd span {color: #9fa7df; font-size: 12px;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dt.dt_title > span {display: inline-block; padding: 0 2px; background: url('/img/bg_line.png') repeat-x 0 calc(100% + 6px);}
+  .globalStock #container .invest_charm_b.ic_mobile dl dt.dt_title strong {color: #404fc3;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.num {position: relative; display: inline-block; vertical-align: top; color: #404fc3; font-size: 16px; padding-right: 6px; margin-top: 2px;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.num strong {color: #404fc3; font-size: 24px; font-weight: 900;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.prepare {display: inline-block; vertical-align: top; text-align: left; padding-left: 6px; margin-top: 1px;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.prepare strong {font-size: 12px; display: block;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.prepare.increase strong {color: #ff2929; line-height: 10px;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.prepare.decrease strong {color: #0094ff; line-height: 10px;}    
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.proper {margin-top: 6px;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.proper .num.increase {color: #ff2929; font-size: 20px; font-weight: bold;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.proper .num.increase b {color: #ff2929; font-size: 20px; font-weight: 300; opacity: 0.7;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.proper .num.decrease {color: #0094FF; font-size: 20px; font-weight: bold;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.proper .num.decrease b {color: #0094FF; font-size: 20px; font-weight: 300; opacity: 0.7;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.lock {margin-top: 10px;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.star {margin-top: 15px;}
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.lock span,
+  .globalStock #container .invest_charm_b.ic_mobile dl dd.lock span img {display: inline-block;  width: 87px; vertical-align: top;}
+  .globalStock #container .invest_charm_b.ic_mobile .show_pop {display: inline-block; padding-right: 12px; position: absolute; right: 16px; bottom: 16px; background: url('/img/bg_line.png') repeat-x 0 calc(100% + 6px); margin-top: 4px; font-size: 12px; color: #222;}
+  .globalStock #container .invest_charm_b.ic_mobile .show_pop i {position: absolute; right: 2px; top: 7px; display: inline-block; width: 4px; height: 6.5px; background: url('/img/icon_arrow.png') no-repeat 0 0; background-size: 4px 6.5px;}
+  
+  .globalStock #container .schChartArea .top5 {margin-top: 40px;}
+  .globalStock #container .schChartArea .top5 .list {width: calc(100% / 2 - 3px); display: none; border-right: none; padding-left: 22px;}
+  .globalStock #container .schChartArea .top5 .list:nth-child(2),
+  .globalStock #container .schChartArea .top5 .list:nth-child(3) {display: inline-block;}
+  .globalStock #container .schChartArea .top5 .more {right: 10px; top: -25px;}
+  .globalStock #container .schChartArea .top5 .more img {display: none;}
+  .globalStock #container .schChartArea .top5 .more::before {content: '더보기 ╋'; display: inline-block; color: #333; font-size: 12px;}
+  .globalStock #container .chartDateInfo {height: auto; border-right: none; border-left: none; margin: 15px 0;}
+  .globalStock #container .chartDateInfo .left,
+  .globalStock #container .chartDateInfo .right {float: none; border: none; width: 100%; padding: 15px 15px;}
+  .globalStock #container .chartDateInfo .left {border-bottom: 1px solid #e3e3e3;}
+  .globalStock #container .chartDateInfo .eventTop2 {width: 100%;}
+  .globalStock #container .chartDateInfo .eventTop2 li {width: 100%; box-sizing: border-box; margin-left: 0; padding-top: 5px; padding-left: 8px; background-position-y: 18px;}
+  .globalStock #container .chartDateInfo .eventTop2 li a {width: calc(100% - 80px);}
+  .globalStock #container .chartDateInfo .eventTop2 li .day {width: 70px;}
+  .globalStock #container .bannerArea {margin-top: 20px;}
+  .globalStock #container .tableData.bannerRight {display: block; width: 100%; margin-top: 40px;}
+  .globalStock #container .tableData .titleInvestment {padding: 0 15px; margin-bottom: 10px; margin-left: 0; font-size: 15px;}
+  .globalStock #container .tableData.bannerRight ul.tabs li {font-size: 12px;}
+  .globalStock #container .tableData .dataLink {padding-right: 15px; box-sizing: border-box;}
+  .globalStock #container .lockInfo {line-height: 1.6; padding: 0 15px; box-sizing: border-box; margin-top: 15px;}
+  .globalStock #container .sum_rightbanner {display: none;}
+  /* .globalStock #footer {display: none;} */
+  .globalStock #footer .notice p.txt {font-size: 12px; line-height: 18px;}
+  .globalStock #footer .dataLink {margin-top: 30px; padding-right: 0; font-size: 10px;}
+  .globalStock #footer .f_logo {bottom: 55px;}
+  .globalStock #container .tableData .tableColtype.pc {display: none;}
+  .globalStock #container .tableData .tableColtype.mb {display: block;}
+  .globalStock #container .tableData .tableColtype th.thbder400 {font-size: 12px; letter-spacing: -1px;}    
+  .globalStock #container .tableData .tableColtype td {padding: 11px 2px 11px; font-size: 13px !important; text-align: center; position: relative;}     
+  .globalStock #container .tableData .tableColtype td:nth-child(1) {padding-left: 5px; border-right: none;}
+  .globalStock #container .tableData .tableColtype tr {position: relative;}
+  .globalStock #container .tableData .tableColtype tr:nth-child(7) td:nth-child(1) {padding-top: 20px;}
+  .globalStock #container .tableData .tableColtype tr:nth-child(7)::after  {content: ""; position: absolute; left: 0; right: 0; top: 424px; display: block; width: 100%; height: 2px; background-color: #404fc3;}
+  .globalStock #container .tableData .tableTab span .ly_help {width: 360px; min-width: auto; right: 6px; padding: 10px 10px;}
+  .globalStock #container .tableData.bannerRight ul.tabs {margin-left: 5px; margin-top: 2px;}
+  .globalStock #container .tableData .tableTab {top: 37px;}
+  .tableColtype.sumtable .fntfmly_num th {border-top:1px solid #939393; text-align: center; padding: 8px 0;}
+  .tableColtype.sumtable .fntfmly_num th span {font-size: 11px !important; padding: 0 3px; letter-spacing: -0.025rem;}    
+  .tableColtype th {border-bottom: 1px solid #939393;}
+  }
+  
+  @media (min-width:779px){            
+      .globalStock #container .schChartArea .chartSection {width: calc(100% / 2 - 50px); margin-left: 40px; }
+      .globalStock #container .schChartArea .chartDate {width: calc(100% / 2 - 10px); margin-left: 0;}
+     }
+  
+  @media (min-width:980px){        
+   .globalStock #wrap {width: 100%; padding: 0; box-sizing: border-box;}
+   .globalStock #container .schChartArea .chartSection {width: calc(100% / 2 - 50px); margin-left: 40px; }
+   .globalStock #container .schChartArea .chartDate {width: calc(100% / 2 - 20px); margin-left: 0;}
+  }
+  
+  @media (min-width:1200px){        
+   .globalStock #wrap {width: 100%; padding: 0; box-sizing: border-box;}
+  }
+  
+  @media (min-width:1401px){        
+   .globalStock #wrap {max-width: 100%; padding: 0; box-sizing: border-box;}
+  }
+
+
+
+
+/* 프린트 */
+@media only print {
+    .globalStock #header,
+    .globalStock #nav {display: none;}
+    a[href]::after {content: none !important;}
+}
+
+.globalStock #container .imsi_div {clear: both; background: #9ea7b2;}
+.globalStock #container .imsi_div {clear: both; background: #9ea7b2;}

@@ -1,0 +1,624 @@
+{
+    "properties": {
+
+
+        "sf1_id": {
+            "type": "long"
+        },
+
+
+        "sf1_accoci": {
+            "type": "long"
+        },
+
+
+        "sf1_assets": {
+            "type": "long"
+        },
+
+
+        "sf1_assetsavg": {
+            "type": "long"
+        },
+
+
+        "sf1_assetsq": {
+            "type": "long"
+        },
+
+
+        "sf1_assetsc": {
+            "type": "long"
+        },
+
+
+        "sf1_assetscetc": {
+            "type": "long"
+        },
+
+
+        "sf1_assetsnc": {
+            "type": "long"
+        },
+
+
+        "sf1_assetsncetc": {
+            "type": "long"
+        },
+
+
+        "sf1_capex": {
+            "type": "long"
+        },
+
+
+        "sf1_cashneq": {
+            "type": "long"
+        },
+
+
+        "sf1_cashnequsd": {
+            "type": "long"
+        },
+
+
+        "sf1_cor": {
+            "type": "long"
+        },
+
+
+        "sf1_consolinc": {
+            "type": "long"
+        },
+
+
+        "sf1_debt": {
+            "type": "long"
+        },
+
+
+        "sf1_debtc": {
+            "type": "long"
+        },
+
+
+        "sf1_liabilitiescetc": {
+            "type": "long"
+        },
+
+
+        "sf1_debtnc": {
+            "type": "long"
+        },
+
+
+        "sf1_debtusd": {
+            "type": "long"
+        },
+
+
+        "sf1_deferredrev": {
+            "type": "long"
+        },
+
+
+        "sf1_depamor": {
+            "type": "long"
+        },
+
+
+        "sf1_deposits": {
+            "type": "long"
+        },
+
+
+        "sf1_ebit": {
+            "type": "long"
+        },
+
+
+        "sf1_ebitda": {
+            "type": "long"
+        },
+
+
+        "sf1_ebitdausd": {
+            "type": "long"
+        },
+
+
+        "sf1_ebitusd": {
+            "type": "long"
+        },
+
+
+        "sf1_ebt": {
+            "type": "long"
+        },
+
+
+        "sf1_equity": {
+            "type": "long"
+        },
+
+
+        "sf1_equityavg": {
+            "type": "long"
+        },
+
+
+        "sf1_equityusd": {
+            "type": "long"
+        },
+
+
+        "sf1_ev": {
+            "type": "long"
+        },
+
+
+        "sf1_evebit": {
+            "type": "long"
+        },
+
+
+        "sf1_fcf": {
+            "type": "long"
+        },
+
+
+        "sf1_gp": {
+            "type": "long"
+        },
+
+
+        "sf1_intangibles": {
+            "type": "long"
+        },
+
+
+        "sf1_intexp": {
+            "type": "long"
+        },
+
+
+        "sf1_invcap": {
+            "type": "long"
+        },
+
+
+        "sf1_invcapavg": {
+            "type": "long"
+        },
+
+
+        "sf1_inventory": {
+            "type": "long"
+        },
+
+
+        "sf1_investments": {
+            "type": "long"
+        },
+
+
+        "sf1_investmentsc": {
+            "type": "long"
+        },
+
+
+        "sf1_investmentsnc": {
+            "type": "long"
+        },
+
+
+        "sf1_liabilities": {
+            "type": "long"
+        },
+
+
+        "sf1_liabilitiesc": {
+            "type": "long"
+        },
+
+
+        "sf1_liabilitiesnc": {
+            "type": "long"
+        },
+
+
+        "sf1_liabilitiesncetc": {
+            "type": "long"
+        },
+
+
+        "sf1_marketcap": {
+            "type": "long"
+        },
+
+
+        "sf1_ncf": {
+            "type": "long"
+        },
+
+
+        "sf1_ncfbus": {
+            "type": "long"
+        },
+
+
+        "sf1_ncfcommon": {
+            "type": "long"
+        },
+
+
+        "sf1_ncfdebt": {
+            "type": "long"
+        },
+
+
+        "sf1_ncfdiv": {
+            "type": "long"
+        },
+
+
+        "sf1_ncff": {
+            "type": "long"
+        },
+
+
+        "sf1_ncfi": {
+            "type": "long"
+        },
+
+
+        "sf1_ncfinv": {
+            "type": "long"
+        },
+
+
+        "sf1_ncfo": {
+            "type": "long"
+        },
+
+
+        "sf1_ncfx": {
+            "type": "long"
+        },
+
+
+        "sf1_netinc": {
+            "type": "long"
+        },
+
+
+        "sf1_netinccmn": {
+            "type": "long"
+        },
+
+
+        "sf1_netinccmnusd": {
+            "type": "long"
+        },
+
+
+        "sf1_netincdis": {
+            "type": "long"
+        },
+
+
+        "sf1_netincnci": {
+            "type": "long"
+        },
+
+
+        "sf1_opex": {
+            "type": "long"
+        },
+
+
+        "sf1_opexetc": {
+            "type": "long"
+        },
+
+
+        "sf1_opinc": {
+            "type": "long"
+        },
+
+
+        "sf1_payables": {
+            "type": "long"
+        },
+
+
+        "sf1_ppnenet": {
+            "type": "long"
+        },
+
+
+        "sf1_prefdivis": {
+            "type": "long"
+        },
+
+
+        "sf1_receivables": {
+            "type": "long"
+        },
+
+
+        "sf1_retearn": {
+            "type": "long"
+        },
+
+
+        "sf1_revenue": {
+            "type": "long"
+        },
+
+
+        "sf1_revenueusd": {
+            "type": "long"
+        },
+
+
+        "sf1_rnd": {
+            "type": "long"
+        },
+
+
+        "sf1_sbcomp": {
+            "type": "long"
+        },
+
+
+        "sf1_sgna": {
+            "type": "long"
+        },
+
+
+        "sf1_sharesbas": {
+            "type": "long"
+        },
+
+
+        "sf1_shareswa": {
+            "type": "long"
+        },
+
+
+        "sf1_shareswadil": {
+            "type": "long"
+        },
+
+
+        "sf1_tangibles": {
+            "type": "long"
+        },
+
+
+        "sf1_taxassets": {
+            "type": "long"
+        },
+
+
+        "sf1_taxexp": {
+            "type": "long"
+        },
+
+
+        "sf1_nonopinc": {
+            "type": "long"
+        },
+
+
+        "sf1_taxliabilities": {
+            "type": "long"
+        },
+
+
+        "sf1_workingcapital": {
+            "type": "long"
+        },
+
+        "sf1_ticker": {
+            "type": "text",
+            "fielddata" : true,
+            
+            "fields": {
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+
+        "sf1_dimension": {
+            "type": "text",
+            "fielddata" : true,
+            
+            "fields": {
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+
+        "sf1_calendardate": {
+            "type": "date",
+            "format": "yyyy-MM-dd"
+        },
+
+        "sf1_datekey": {
+            "type": "date",
+            "format": "yyyy-MM-dd"
+        },
+
+        "sf1_reportperiod": {
+            "type": "date",
+            "format": "yyyy-MM-dd"
+        },
+
+        "sf1_lastupdated": {
+            "type": "date",
+            "format": "yyyy-MM-dd"
+        },
+
+        "sf1_created_at": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss"
+        },
+
+        "sf1_updated_at": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss"
+        },
+
+        "sf1_assetturnover": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_bvps": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_currentratio": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_de": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_divyield": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_dps": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_ebitdamargin": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_eps": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_epsdil": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_epsusd": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_evebitda": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_fcfps": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_fxusd": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_grossmargin": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_netmargin": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_payoutratio": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_pb": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_pe": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_pe1": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_price": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_ps": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_ps1": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_roa": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_roe": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_roic": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_ros": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_sharefactor": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_sps": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        },
+
+        "sf1_tbvps": {
+            "type": "scaled_float",
+            "scaling_factor": 1000
+        }
+
+    }
+}

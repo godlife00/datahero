@@ -1,0 +1,1 @@
+a:2:{i:0;a:2:{s:10:"tkr_ticker";s:3:"MFA";s:12:"tkr_currency";s:3:"USD";}i:1;a:2:{s:10:"tkr_ticker";s:3:"MFA";s:12:"tkr_currency";s:3:"USD";}}

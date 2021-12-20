@@ -1,0 +1,74 @@
+Table	Indicator	ustitle	description	unittype	ustitleacronym	itoozaindicator	servicecategory	kortitle	korunittype	usunitnum	roundtype	usunitnumround	korunitnum	roundtype	korunitnumround
+SF1	eps	Earnings per Basic Share	[Income Statement] Earnings per share as calculated and reported by the company. Approximates to the amount of [NetIncCmn] for the period per each [SharesWA].	currency/share	EPS	312000	주당지표	"주당순이익(달러)
+EPS"			roundup	2			
+SF1	epsdil	Earnings per Diluted Share	[Income Statement] Earnings per diluted share as calculated and reported by the company. Approximates to the amount of [NetIncCmn] for the period per each [SharesWADil].	currency/share	EPS	310100	주당지표	"주당순이익(달러)
+EPS"			roundup	2			
+SF1	bvps	Book Value per Share	[Metrics] Measures the ratio between [EQUITY] and [SHARESWA].	currency/share	BPS	314000	주당지표	"주당순자산(달러)
+BPS"			roundup	2			
+SF1	dps	Dividends per Basic Common Share	[Income Statement] Aggregate dividends declared during the period for each split-adjusted share of common stock outstanding.	currency/share	DPS	423400	주당지표	"주당배당금(달러)
+DPS"			roundup	2			
+SF1	sps	Sales per Share	[Metrics] Sales per Share measures the ratio between [REVENUEUSD] and [SHARESWA].	USD/share	SPS	318000	주당지표	"주당매출액(달러)
+SPS"			roundup	2			
+SF1	cps	Cash Flow per Share	[Metrics] Sales per Share measures the ratio between [NCFO] and [SHARESWA].		CPS		주당지표	"주당현금흐름(달러)
+CPS"			roundup	2			
+SF1	fcfps	Free Cash Flow per Share	[Metrics] Free Cash Flow per Share is a valuation metric calculated by dividing [FCF] by [SHARESWA].	currency/share	FCFPS	101200/701400	주당지표	"주당 잉여현금흐름(달러)
+FCFPS"			roundup	2			
+SF1	tbvps	Tangible Assets Book Value per Share	[Metrics] Measures the ratio between [TANGIBLES] and [SHARESWA].	currency/share	TBPS	110020/701400	주당지표	"주당유형자산(달러)
+TBPS"			roundup	2			
+SF1	pe	Price Earnings (Damodaran Method)	[Metrics] Measures the ratio between [MARKETCAP] and [NETINCCMNUSD]	ratio	PER	전일시가총액/203180	가치평가	"주가수익배수(배)
+PER"	배		roundup	2			
+SF1	pe1	Price to Earnings Ratio	[Metrics] An alternative to [PE] representing the ratio between [PRICE] and [EPSUSD].	ratio	PER	전일종가/312000	가치평가	"주가수익배수(배)
+PER"	배		roundup	2			
+SF1	pb	Price to Book Value	[Metrics] Measures the ratio between [MARKETCAP] and [EQUITYUSD].	ratio	PBR	전일시가총액/120000	가치평가	"주가순자산배수(배)
+PBR"	배		roundup	2			
+SF1	ps1	Price to Sales Ratio	[Metrics] An alternative calculation method to [PS], that measures the ratio between a company's [PRICE] and it's [SPS].	ratio	PSR	전일종가/318000	가치평가	"주가매출액배수(배)
+PSR"	배		roundup	2			
+SF1	ps	Price Sales (Damodaran Method)	[Metrics] Measures the ratio between a companies [MARKETCAP] and [REVENUEUSD].	ratio	PSR	전일시가총액/200000	가치평가	"주가매출액배수(배)
+PSR"	배		roundup	2			
+SF1	pc	Price to cash flow	[Metrics] Measures the ratio between [MARKETCAP] and [NCFO].	ratio	PCR		가치평가	"주가현금흐름배수(배)
+PCR"	배		roundup	2			
+SF1	evebitda	Enterprise Value over EBITDA	[Metrics] Measures the ratio between [EV] and [EBITDAUSD].	ratio	EV/EBITDA	213000/123000	가치평가	EV/EBITDA(배)	배		roundup	2			
+SF1	evebit	Enterprise Value over EBIT	[Metrics] Measures the ratio between [EV] and [EBITUSD].	ratio	EV/EBIT	213000/292300	가치평가	EV/EBIT(배)	배		roundup	2			
+SF1	divyield	Dividend Yield	[Metrics] Dividend Yield measures the ratio between a company's [DPS] and its [PRICE].	%	DY	431800	가치평가	배당수익률(%) DY	%		roundup	2			
+SF1	grossmargin	Gross Margin	[Metrics] Gross Margin measures the ratio between a company's [GP] and [REVENUE].	%	Gross Margin	200810/200000	수익성	매출총이익률(%)	%		roundup	2			
+SF1	costrevenueratio	Cost of revenue ratio	[Metrics] Measures the ratio between a company's [COR] and [REVENUE].	%	COR	200360/200000	수익성	매출원가율(%)	%						
+SF1	opmargin	Operating Profit Margin	[Metrics] Measures the ratio between a company's [OPINC] and [REVENUE].	%	OP Margin		수익성	영업이익률(%)	%						
+SF1	netmargin	Profit Margin	[Metrics] Measures the ratio between a company's [NETINCCMN] and [REVENUE].	%	ROS	203180/200000	수익성	순이익률(%)	%		roundup	2			
+SF1	ros	Return on Sales	[Metrics] Return on Sales is a ratio to evaluate a company's operational efficiency, calculated by dividing [EBIT] by [REVENUE]. ROS is often a component of [DUPONTROE].	%	ROS	292300/200000	수익성	매출수익률(%)	%						
+SF1	ebitdamargin	EBITDA Margin	[Metrics] Measures the ratio between a company's [EBITDA] and [REVENUE].	%	EBITDA Margin	123000/200000	수익성	EBITDA 이익률(%)	%		roundup	2			
+SF1	fcfonrevenue	FCF on Revenue	[Metrics] Measures the ratio between a company's [FCF] and [REVENUE].	%	FCF Margin	101200/200000	수익성	잉여현금흐름 비율(%)	%						
+SF1	roe	Return on Average Equity	[Metrics] Return on equity measures a corporation's profitability by calculating the amount of [NETINCCMN] returned as a percentage of [EQUITYAVG].	%	ROE	211500	수익성	"자기자본이익률(%)
+ROE"	%		roundup	2			
+SF1	roa	Return on Average Assets	[Metrics] Return on assets measures how profitable a company is [NETINCCMN] relative to its total assets [ASSETSAVG].	%	ROA	211600	수익성	"총자산이익률(%)
+ROA"	%		roundup	2			
+SF1	roic	Return on Invested Capital	[Metrics] Return on Invested Capital is ratio estimated by dividing [EBIT] by [INVCAPAVG]. [INVCAP] is calculated as: [DEBT] plus [ASSETS] minus [INTANGIBLES] minus [CASHNEQ] minus [LIABILITIESC]. Please note this calculation method is subject to change.	%	ROIC	211700	수익성	"투하자본이익률(%)
+ROIC"	%		roundup	2			
+SF1	de	Debt to Equity Ratio	[Metrics] Measures the ratio between [LIABILITIES] and [EQUITY].	%	Debt Ratio	130000/120000	안전성	부채비율(%)	%		roundup	2			
+SF1	currentratio	Current Ratio	[Metrics] The ratio between [ASSETSC] and [LIABILITIESC], for companies that operate a classified balance sheet.	%	Current Ratio	112830/131580	안전성	유동비율(%)	%		roundup	2			
+SF1	intexpcoverage	Interest Coverage Ratio	[Metrics] calculated by dividing [OPINC] by [INTEXP]	ratio	ICR	201370/202560	안전성	이자보상배수(배)	배						
+SF1	borrowtoassets	Borrowing to Assets Ratio	[Metrics] calculated by dividing [DEBTC]+[DEBTNC] by [ASSETS]	%	Borrowing to Assets Ratio	(131650+190720)/110000	안전성	차입금비율(%)	%		roundup	2			
+SF1	intexprevenue	Financial Cost of Revenue		%	Financial Cost of Revenue	202560/200000	안전성	금융비용 비율(%)	%		roundup	2			
+SF1	assetturnover	Asset Turnover	[Metrics] Asset turnover is a measure of a firms operating efficiency, calculated by dividing [REVENUE] by [ASSETSAVG]. Often a component of [DUPONTROE] analysis.	%	Asset Turnover	200000/110000	효율성	자산회전율(%)	%		roundup	2			
+SF1	receiveturnoverdays	Days of turnover of accounts receivable		days	RTD	365/(200000/113350)	효율성	매출채권 회전일수(일)	일						
+SF1	inventoryturnoverdays	Days of turnover of inventory		days	ITD	365/(200360/112840)	효율성	재고자산 회전일수(일)	일						
+SF1	payableturnoverdays	Days of turnover of Payable		days	PTD		효율성	매입채무 회전일수(일)	일						
+SF1	cashconversioncycle	Cash Conversion Cycle	receiveturnoverdays+inventoryturnoverdays-payableturnoverdays	days	CCC		효율성	현금 회전일수(일)	일						
+SF1	payoutratio	Payout Ratio	[Metrics] The percentage of earnings paid as dividends to common stockholders. Calculated by dividing [DPS] by [EPSUSD].	%	Payout Ratio	451200	배당	배당성향(%)	%						
+SF1	fcf	Free Cash Flow	[Metrics] Free Cash Flow is a measure of financial performance calculated as [NCFO] minus [CAPEX].	currency	FCF	101200	수익	잉여현금흐름	currency						
+SF1	ebt	Earnings before Tax	[Metrics] Earnings Before Tax is calculated by adding [TAXEXP] back to [NETINC].	currency	EBT	203180+203130	수익	세전이익	currency						
+SF1	ebit	Earning Before Interest & Taxes (EBIT)	[Income Statement] Earnings Before Interest and Tax is calculated by adding [TAXEXP] and [INTEXP] back to [NETINC].	currency	EBIT	292300	수익	EBIT	currency						
+SF1	ebitda	Earnings Before Interest, Taxes & Depreciation Amortization (EBITDA)	[Metrics] EBITDA is a non-GAAP accounting metric that is widely used when assessing the performance of companies, calculated by adding [DEPAMOR] back to [EBIT].	currency	EBITDA	123000	수익	EBITDA	currency						
+SF1	ebitdausd	Earnings Before Interest, Taxes & Depreciation Amortization (USD)	[Metrics] [EBITDA] in USD, converted by [FXUSD].	USD	EBITDA	123000	수익	전환 환율 적용 이자, 세금, 감가상각 전 이익	USD						
+SF1	invcap	Invested Capital	[Metrics] Invested capital is an input into the calculation of [ROIC], and is calculated as: [DEBT] plus [ASSETS] minus [INTANGIBLES] minus [CASHNEQ] minus [LIABILITIESC]. Please note this calculation method is subject to change.	currency	IC	124000	투하 자산	투하 자본	currency						
+SF1	equityavg	Average Equity	[Metrics] Average equity value for the period used in calculation of [ROE], derived from [EQUITY].	currency	Equity	(120000+(t-1)120000)/2	투하 자산	평균 자기 자본	currency						
+SF1	assetsavg	Average Assets	[Metrics] Average asset value for the period used in calculation of [ROE] and [ROA], derived from [ASSETS].	currency	Assets	(110000+(t-1)110000)/2	투하 자산	평균 자산	currency						
+SF1	invcapavg	Invested Capital Average	[Metrics] Average invested capital value for the period used in the calculation of [ROIC], and derived from [INVCAP]. Invested capital is an input into the calculation of [ROIC], and is calculated as: [DEBT] plus [ASSETS] minus [INTANGIBLES] minus [CASHNEQ] minus [LIABILITIESC]. Please note this calculation method is subject to change.	currency	IC	(124000+(t-1)124000)/2	투하 자산	평균 투하 자본	currency						
+SF1	tangibles	Tangible Asset Value	[Metrics] The value of tangibles assets calculated as the difference between [ASSETS] and [INTANGIBLES].	currency	TV	110000-110610	투하 자산	유형 자산 가치	currency						
+SF1	capex	Capital Expenditure	[Cash Flow Statement] A component of [NCFI] representing the net cash inflow (outflow) associated with the acquisition & disposal of long-lived, physical & intangible assets that are used in the normal conduct of business to produce goods and services and are not intended for resale. Includes cash inflows/outflows to pay for construction of self-constructed assets & software.	currency	CAPEX	132010	투하 자산	자본적지출	currency						
+SF1	workingcapital	Working Capital	[Metrics] Working capital measures the difference between [ASSETSC] and [LIABILITIESC].	currency	WC	112830-131580	투하 자산	운전자본	currency						
+SF1	marketcap	Market Capitalization	[Metrics] Represents the product of [SHARESBAS], [PRICE] and [SHAREFACTOR].	USD	MKT CAP		시장가치	시가총액	USD						
+SF1	ev	Enterprise Value	[Metrics] Enterprise value is a measure of the value of a business as a whole, calculated as [MARKETCAP] plus [DEBTUSD] minus [CASHNEQUSD].	USD	EV	213000	시장가치	기업 가치	USD						
+															
+SF1	shareswa	Weighted Average Shares	[Income Statement] The weighted average number of shares or units issued and outstanding that are used by the company to calculate [EPS], determined based on the timing of issuance of shares or units in the period.	Units	WAS	701400	주식수	가중평균주식수	units						
+SF1	shareswadil	Weighted Average Shares Diluted	[Income Statement] The weighted average number of shares or units issued and outstanding that are used by the company to calculate [EPSDil], determined based on the timing of issuance of shares or units in the period.	Units	WASD		주식수	가중평균희석주식수	units						
+SF1	sharesbas	sharesbas	[Entity] The number of shares or other units outstanding of the entity's capital or common stock or other ownership interests, as stated on the cover of related periodic report (10-K/10-Q), after adjustment for stock splits.        units	Units	Shares	120670	주식수	기본주식수	units						

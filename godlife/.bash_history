@@ -1,0 +1,400 @@
+#1606378625
+df -lh
+#1606378642
+cd 
+#1606378643
+ls -al
+#1606378646
+pwd
+#1606378672
+ls -al
+#1606378674
+pwd
+#1606378689
+mkdir html
+#1606378690
+ls -al
+#1606378693
+cd html/
+#1606378694
+ls -al
+#1606378701
+mkdir choicestock
+#1606378702
+ls -al
+#1606378704
+cd choicestock/
+#1606378705
+ls -al
+#1606378725
+pwd
+#1606378768
+svn co svn+ssh://localhost/svn/choicestock/trunk .
+#1606378786
+ls -al
+#1606378794
+cd ../
+#1606378795
+ls -al
+#1606378830
+mkdir wallstreet
+#1606378832
+cd wallstreet/
+#1606378850
+svn co svn+ssh://localhost/svn/wallstreet/trunk .
+#1606378886
+cd ../
+#1606378898
+cd 
+#1606378906
+pwd
+#1606378910
+cd html/
+#1606378910
+ls -al
+#1606378920
+mkdir quandl
+#1606378922
+cd quandl/
+#1606378942
+svn co svn+ssh://localhost/svn/quandl/trunk .
+#1606379343
+cd
+#1606379344
+ls -al
+#1606379346
+cd html/
+#1606379348
+ls -al
+#1606379362
+cd /home/
+#1606379363
+ls -al
+#1606379396
+cd godlife/
+#1606379397
+ls -al
+#1606379399
+cd html/
+#1606379400
+ls -al
+#1606379432
+vf
+#1606379433
+cd
+#1606379435
+cd html/
+#1606379436
+ls -al
+#1606379437
+cd 
+#1606379442
+cd /home
+#1606379443
+ls -al
+#1606380472
+exit
+#1608697538
+pwd
+#1608697540
+ls -al
+#1608697542
+cd html/
+#1608697543
+cd choicestock/
+#1608697545
+svn up
+#1608697571
+cd _application/views/
+#1608697572
+ls -al
+#1608697575
+cd ../
+#1608697576
+ls -al
+#1608697577
+cd ../
+#1608697578
+ls -al
+#1608697582
+cd ../wallstreet/
+#1608697583
+svn up
+#1608697643
+cd ../quandl/
+#1608697648
+svn up
+#1608700252
+pwd
+#1608701502
+cd ..
+#1608701503
+ls -al
+#1608701520
+cd ../
+#1608701521
+ls -al
+#1608701554
+cd html/
+#1608701562
+ls -al
+#1608701564
+cd choicestock/
+#1608701565
+ls -al
+#1608701598
+cd _application/
+#1608701600
+ls -al
+#1608701806
+pwd
+#1608702584
+cd ../
+#1608702585
+ls -al
+#1608702586
+cd ..
+#1608702588
+ls -al
+#1608702589
+cd ../
+#1608702590
+ls -al
+#1608702622
+cd html/
+#1608702623
+ls -al
+#1608703199
+cd choicestock/
+#1608703200
+ls -al
+#1608703432
+chmod -r 777 webdata/
+#1608703436
+ls -al
+#1608703450
+cd webdata/
+#1608703451
+ls -al
+#1608703454
+cd ../
+#1608703460
+cd webdata/
+#1608703463
+ls -al
+#1608703475
+cd ../
+#1608703484
+cd ../quandl/
+#1608703485
+ls -al
+#1608703486
+cd webdata/
+#1608703488
+ls -al
+#1608703491
+cd ../
+#1608703498
+cd ../wallstreet/
+#1608703498
+ls -al
+#1608703500
+cd webdata/
+#1608703501
+ls -al
+#1608704453
+cd ../
+#1608704454
+ls -al
+#1608704506
+man chmod
+#1608704556
+ls -al
+#1608704563
+chmod -r 777 webdata/
+#1608704568
+ls -al
+#1608704575
+chmod 777 webdata/
+#1608704577
+ls -al
+#1608704579
+cd webdata/
+#1608704580
+ls -al
+#1608704600
+pwd
+#1608704636
+ls -al
+#1608704665
+chmod 777 attach_data
+#1608704687
+pwd
+#1608704701
+chmod 777 current_data/
+#1608704705
+chmod 777 itooza_cache/
+#1608704706
+ls -al
+#1608704716
+chmod 777 master_data/
+#1608704717
+ls -al
+#1608704844
+cd ../
+#1608704845
+ls -al
+#1608704847
+cd ../
+#1608704848
+ls -al
+#1608704850
+cd ../
+#1608704851
+ls -al
+#1608705024
+cd html/wallstreet/
+#1608705026
+ls -Z
+#1608705073
+cd
+#1608705078
+ls al
+#1608705080
+ls -al
+#1608705084
+cd ../
+#1608705084
+ls -al
+#1608705163
+chmod 711 godlife
+#1608705166
+ls -al
+#1608706601
+cd godlife/
+#1608706601
+ls -al
+#1608706603
+cd html/
+#1608706604
+ls -al
+#1608706606
+cd quandl/
+#1608706607
+ls -al
+#1608706610
+cd webdata/
+#1608706611
+ls -al
+#1608706618
+chmod 777 query_cache/
+#1608706642
+ls -al
+#1608706644
+cd query_cache/
+#1608706644
+ls -al
+#1608706787
+pwd
+#1608706796
+cd ../
+#1608706797
+ls -al
+#1608706798
+cd ../
+#1608706799
+ls -al
+#1608706808
+chmod 777 webdata/
+#1608706843
+cd ../
+#1608706845
+cd wallstreet/
+#1608706846
+ls -al
+#1608706852
+cd webdata/
+#1608706853
+ls -al
+#1608706858
+cd current_data/
+#1608706859
+ls -al
+#1608707372
+cd
+#1608707375
+cd html/quandl/
+#1608707376
+svn up
+#1608707863
+cd ../wallstreet/
+#1608707864
+svn up
+#1608708539
+cd webdata/
+#1608708540
+ls -al
+#1608708605
+cd ../
+#1608708607
+cd ../choicestock/
+#1608708608
+svn up
+#1608708633
+ls -al
+#1608708638
+chmod 777 webdata
+#1608708639
+ls -al
+#1608708641
+svn up
+#1608708691
+cd css
+#1608708691
+ls -al
+#1608708699
+pwd
+#1608708729
+cp /home/hoon/html/choicestock/css/dev_globalstock.css .
+#1608708730
+ls -al
+#1608709747
+pwd
+#1608709767
+cd ../../
+#1608709768
+ls -al
+#1608709846
+cd wallstreet/_application/views/
+#1608709856
+ls -al
+#1608709861
+cd mobile/
+#1608714656
+cd
+#1608714658
+cd html/choicestock/
+#1608714660
+cd css
+#1608714661
+ls -al
+#1608714740
+svn ci cd
+#1608714741
+cd
+#1608714749
+cd html/choicestock/css
+#1609215519
+cd html/choicestock/
+#1609215520
+svn up
+#1609215539
+cd ../wallstreet/
+#1609215540
+svn up
+#1609215545
+cd ../
+#1609215548
+cd quandl/
+#1609215549
+svn up

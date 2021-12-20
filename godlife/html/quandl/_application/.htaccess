@@ -1,0 +1,14 @@
+# php flag
+PHP_FLAG register_globals OFF
+PHP_FLAG allow_url_fopen ON
+PHP_FLAG register_long_arrays 1
+PHP_FLAG register_long_arrays OFF
+PHP_FLAG register_globals 0
+
+
+RewriteEngine On
+RewriteBase /
+RewriteCond $1 !^(index\.php|assets|images|captcha|data|webdata|include|uploads|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [L]

@@ -1,0 +1,32 @@
+/* fix-active */
+
+.globalStock #container ul.tabs li.fix-active {font-weight: bold;}
+.globalStock #container ul.tabs li.fix-active {font-weight: bold; color: #2b199e; font-weight: bold;}
+.globalStock #container ul.tabs li.fix-active {border-bottom: 3px solid #4d4da6}
+
+.globalStock #container .tableData .tableTab span.fix-active {text-decoration: underline; color:#2b199e; font-weight: bold;}
+
+
+.globalStock #container .mainLeft .eventShopping .txtShopping li a.active_fix {border-bottom: 3px solid #b2b2d7; height: 34px; line-height: 32px; text-decoration: none; color: #000; font-size: 15px; font-weight: bold;}
+
+
+.globalStock #header .searchArea .AutoComplete { z-index:10; }
+.globalStock #header .searchArea .AutoComplete li a._on .schCode {color: #c81d33;}
+.globalStock #nav.navFixed .searchFixed .AutoComplete li a._on .schCode {color: #c81d33;}
+
+
+.noneBottomBorder {
+    border-bottom:0px;
+}
+.noneBottomBorder th {
+    border-bottom : 1px;
+}
+.noneBottomBorder th:first {
+    border-bottom:0px;
+}
+.noneBottomBorder th.fix-active {
+    text-decoration:underline;
+    font-weight:bold;
+    color:#c81d33;
+}
+

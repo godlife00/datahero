@@ -1,0 +1,18 @@
+Table	Indicator	ustitle	itoozaindicator	servicecategory	leveltree	kortitle	YYYY/MM/DD	ratio	usunitnum	roundtype	usunitnumround	korunitnum	roundtype	korunitnumround
+SF1	cashneq	Cash and Equivalents	190650	자산	1-1	  현금및현금성자산		cashneq/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	investments	Investments	113090+190310	자산	1-2	  투자자산		investments/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	receivables	Trade and Non-Trade Receivables	113350	자산	1-3	  매출채권및기타채권		receivables/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	inventory	Inventory	112840	자산	1-4	  재고자산		inventory/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	ppnenet	Property, Plant & Equipment Net	110020	자산	1-5	  유형자산		ppnenet/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	intangibles	Goodwill and Intangible Assets	110610	자산	1-6	  무형자산		intangibles/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	taxassets	Tax Assets	108500	자산	1-7	 이연법인세자산		taxassets/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	assetsetc	others	110000-190650-113090-190310-113350-112840-110020-110610-108500	자산	1-8	 기타		assetsetc/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	assets	Total Assets	110000	자산	1-9	자산총계		assets/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	payables	Trade and Non-Trade Payables	132000	부채	2-1	  매입채무및기타채무		payables/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	debt	Debt	131650+190720	부채	2-2	  차입금		debtc/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	deferredrev	Deferred Revenue	131440	부채	2-3	  이연수익		deferredrev/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	taxliabilities	Tax Liabilities	131090	부채	2-4	  이연법인세부채		taxliabilities/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	deposits	Deposit Liabilities	130030	부채	2-5	  예수부채		deposits/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	liabilitiesetc	others	130000-132000-131650-190720-131440-131090-130030	부채	2-6	  기타		liabilitiesetc/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	liabilities	Total Liabilities	130000	부채	2-7	부채총계		liabilities/assets*100	백만	rounddown	0	억	rounddown	0
+SF1	equity	Shareholders Equity	120000	자본	3-1	자본총계		equity/assets*100	백만	rounddown	0	억	rounddown	0

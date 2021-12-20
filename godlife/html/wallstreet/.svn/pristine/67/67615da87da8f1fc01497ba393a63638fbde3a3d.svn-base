@@ -1,0 +1,5 @@
+.globalStock .sub_search .searching .searchArea .searchInput_fixed {padding: 11px 10px 11px 42px; box-sizing: border-box; font-size: 1.2rem; color: #999; width: 100%; outline: none; border-radius: 25px;}
+.globalStock .sub_search .searching .searchArea .searchInput_fixed::placeholder {color: #999;}
+.globalStock .sch_autocomplete {padding-bottom:30px;}
+
+a._on { border:1px solid #ddd; padding:3px; }

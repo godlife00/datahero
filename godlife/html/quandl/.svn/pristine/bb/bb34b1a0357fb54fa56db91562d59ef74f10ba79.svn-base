@@ -1,0 +1,1034 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+*{margin:0;padding:0}
+html,body{width:100%;height:100%}
+body{font-family: 'Nanum Gothic', '나눔고딕', '맑은고딕', 'Helvetica', sans-serif; font-size:14px ; color:#333}
+
+html,body,div,span,strong,b,em,p,dl,dt,dd,ul,ol,li,a,img,hr,pre,table,caption,thead,tbody,tfoot,tr,th,td,fieldset,legend,summary,label,input,textarea,button,iframe,header,footer,address,nav,main,section,article,aside,canvas,video,audio,time,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border:0;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-break:keep-all;word-wrap:break-word; font-weight: 400;}
+html,body,div,em,p,dl,dt,dd,ul,ol,li,a,img,hr,pre,table,caption,thead,tbody,tfoot,tr,th,td,fieldset,legend,summary,label,input,textarea,button,iframe,header,footer,address,nav,main,section,article,aside,canvas,video,audio,time,h1,h2,h3,h4,h5,h6{}
+ul,ol,dl,dd,dt,li{list-style-type:none}
+legend{display:none}
+blockquote,q{quotes:'none'}
+table{width:100%;border-collapse:collapse;border-spacing:0; border: none;}
+iframe{border:0 none}
+em,address{font-style:normal;font-weight:normal}
+button{cursor:pointer}
+img{border:0;vertical-align:top}
+a{color:#111;text-decoration:none;}
+a:active,a:focus,a:link,a:visited{text-decoration:none}
+a:hover{text-decoration:underline}
+a:hover,a:active:hover,a:focus:hover,a:link:hover,a:visited:hover{text-decoration:underline}
+
+.paginate{margin:37px 0 20px;padding:15px 0;text-align:center}
+.paginate a,
+.paginate strong{display:inline-block;_position:relative;box-sizing: border-box; width: 26px; height: 26px; line-height: 26px; font-size: 13px; color: #888; font-family:'IBM Plex Sans', 'Helvetica', sans-serif; vertical-align: top; }
+.paginate strong{color:#fff !important; background: #5e5ead;}
+.paginate a:hover{color: #4339ce; text-decoration: underline;}
+/* .paginate a.cb_pre,
+.paginate a.cb_pre_end,
+.paginate a.cb_next,
+.paginate a.cb_next_end{font-size: 0; background: url('../img/cb_paginate_arrow.png') no-repeat 0 -41px;}
+.paginate a.cb_pre{background-position: -38px -41px; margin-right: 20px;}
+.paginate a.cb_pre_end{background-position: 0 -41px;}
+.paginate a.cb_next{background-position: -77px -41px; margin-left: 20px;}
+.paginate a.cb_next_end{background-position: -120px -41px;}
+.paginate a.cb_pre:hover{background-position: -38px 7px;}
+.paginate a.cb_pre_end:hover{background-position: 0 7px;}
+.paginate a.cb_next:hover{background-position: -77px 7px;}
+.paginate a.cb_next_end:hover{background-position: -120px 7px;} */
+
+/* swiper */  
+.swiper-container {width: 100%;height: 100%;}
+.swiper-slide {display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+
+/* 말풍선 */
+.ly_help{display: none; position:absolute;z-index:10;margin-top:6px; /*border:1px solid #ccc; background:#fff;*/ background: #2c2c60; text-align:left; box-sizing: border-box; padding: 17px 21px;
+-webkit-box-shadow: 0px 0px 7px 2px rgba(223,223,223,1);
+-moz-box-shadow: 0px 0px 7px 2px rgba(223,223,223,1);
+box-shadow: 0px 0px 7px 2px rgba(223,223,223,1);}
+.ly_help .clse{position:absolute;top:3px;right:4px}
+.ly_help strong{display:block;margin-bottom:-5px;padding:9px 0 0 9px;font-size:11px;color:#2c2c2c;letter-spacing:-1px; display: none;}
+.ly_help p{font-size:11px; /*color:#333;*/ color: #fff; line-height: 24px;}
+.ly_help p b {font-weight: normal; display: inline-block; width: 110px;}
+.ly_help p span {/*color: #888;*/ color: #ccc;}
+.ly_help p em{color:#268e00}
+.ly_help .link {margin-top: 12px;}
+.ly_help a {font-size: 11px; /*color: #28359b;*/ color: #7a7bd0; text-decoration: underline; vertical-align: top;}
+.ly_help a i {display: inline-block; width: 7px; height: 5px; margin-left: 5px; background: url('../img/icon/popLink.png') no-repeat 0 0; position: relative; top: 5px;}
+.ly_help .edge_lft{position:absolute;top:0;left:4px;width:11px;height:6px;margin:-6px 0 0 -5px;background:url('../img/icon/_bg_layer_edge.png') no-repeat 0 0;font-size:0}
+.ly_help .edge_cen{position:absolute;top:0;left:50%;width:11px;height:6px;margin:-6px 0 0 -5px;background:url('../img/icon/_bg_layer_edge.png') no-repeat 0 0;font-size:0}
+.ly_help .edge_rgt{position:absolute;top:0;right:3px;width:11px;height:6px;margin-top:-6px;background:url('../img/icon/_bg_layer_edge.png') no-repeat 0 0;font-size:0}
+.ly_help.small {box-shadow: none; padding: 8px 15px;}
+.ly_help.small p{font-size:11px;/*color:#333;*/ color: #fff; letter-spacing:-1px; line-height: 20px;}
+/* .ui-tooltip */
+.ui-tooltip {box-shadow: 0 0 7px #999; color: #fff; background: #2c2c60; padding: 7px 8px;}
+
+/* btn */
+.globalStock .btnArea {overflow: hidden;}
+.globalStock .btnArea .btn {display: inline-block; border: 1px solid #5e5ead; color: #000; font-size: 13px; text-align: center; box-sizing: border-box; min-width: 108px; padding: 11px 5px; font-size: 0.75rem;}
+.globalStock .btnArea .btn:hover {text-decoration: none;}
+.globalStock .btnArea .btn.fr {float: right;}
+.globalStock .btnArea.edtBtn {margin-top: 35px; width: 100%;}
+.globalStock .btnArea.edtBtn .btn_cncl {background: #ebebeb; border: 1px solid #cfcfcf; color: #555;}
+.globalStock .btnArea.edtBtn .btn_cncl:hover {color: #000;}
+.globalStock .btnArea.edtBtn .btn_save {background: #404fc3; border: 1px solid #404fc3; color: #fff; width: 100%; border-radius: 7px;}
+.globalStock .btnArea.edtBtn .btn_save:hover {text-decoration: none;}
+.globalStock .edtArea {margin: 15px 0;}
+
+/* select */
+.select{ display:inline-block; *display:inline; position:relative; background:#fff; line-height:normal; *zoom:1; vertical-align: top; /*top: 1px;*/ top: -2px;}
+.select *{ margin:0; padding:0;}
+.select .my_value{cursor: text; overflow:visible; position:relative; top:0; left:0; z-index:2; border-bottom:1px solid #dddddd; background: #fff; color:#888; text-align:left; line-height:19px; _line-height:normal}
+.select .my_value.selected{}
+.select.open .my_value,
+.select .my_value.outLine{}
+.select button.my_value{ width:100%; height:26px; font-size: 12px; *padding-left:5px; text-indent:5px; *text-indent:0; color: #333; outline: none;}
+.select div.my_value{ height:27px; text-indent:8px}
+.select .ctrl{ position:absolute; top:-1px; right:0; width:18px; height:26px; border:none; background:url('../img/icon/select_ctrl.png') no-repeat 0 0; z-index: 99;}
+.select.open .ctrl {background-position: 0 100%;}
+.select ul{ overflow:hidden; position:absolute; top:25px; left:0; /*width:100%;*/ border:0; border-top:1px solid #888888; border-bottom:1px solid #888888; background:#fff; list-style:none}
+.select ul.a_list{display:none}
+.select.open ul.a_list{ display:block; z-index: 999;}
+.select ul.i_list{ left:-2000%}
+.select.open ul.i_list{ left:0}
+.select li{ overflow:hidden; position:relative; height:28px; padding-right: 10px; border-left:1px solid #888888; border-right:1px solid #888888; white-space:nowrap; text-align: left;}
+.select li input.option{ position:absolute; width:100%; height:27px; line-height:28px}
+.select li label{ position:absolute; top:0; left:0; width:100%; height:27px; background:#fff; color:#767676; line-height:27px; text-indent:8px; *text-indent:6px}
+.select li a{ display:block; height:28px; background:#fff; font-size: 12px; color:#767676; line-height:27px; text-indent:8px; *text-indent:6px; text-decoration:none}
+.select li.hover *{ color:#333; text-decoration: underline;}
+.select_go{ overflow:visible; height:21px; width:28px; *margin:-1px 0 -1px 4px; padding:0; border:1px solid #888888; background:#eee; font:bold 11px Tahoma; color:#767676; line-height:19px; _line-height:normal; vertical-align:middle; cursor:pointer}
+
+/* tab_menu */
+.tab_list {overflow: hidden;}
+.tab_list button {float: left; outline: none; cursor: pointer; transition: 0.3s;}
+.tabcontent {display: none;}
+
+/* 세로 탭메뉴 */
+#vtab {width: 100%; height: 100%; overflow: hidden; height: 244px;}
+#vtab > ul > li {color: #b0b0ff; font-size: 13px; width: 160px; height: 61px; line-height: 18px; padding: 22px 15px 22px 25px;  display: block; position: relative; cursor: pointer; background: #5c5cac; border-top: 1px solid #7777d3; box-sizing: border-box;}
+#vtab > ul > li .selectTxt {display:none;}
+#vtab > ul > li:first-child {border-top: none;}
+#vtab > ul > li.home {}
+#vtab > ul > li.login {}
+#vtab > ul > li.support {}
+#vtab > ul > li.selected {opacity: 1; z-index: 10;position: relative; height: 61px; line-height: 18px; padding: 22px 15px 22px 25px; color: #fff; background:#1f1f4c url('../img/icon/tabs_selected.png') no-repeat 10px 26px; border-top: none; }
+#vtab > ul > li.selected .selectTxt {color: #b1b1d5; font-size: 12px; margin-top:6px; line-height: 18px; display: block;  font-family: 'Nanum Gothic', '나눔고딕', }
+#vtab > ul {float: right; width: 160px; display: block; margin: auto 0; position: relative;}
+#vtab > div {background: #212126; margin-right: 160px; padding: 0; position: relative; z-index: 9;  box-sizing: border-box;}
+#vtab > div:nth-child(3),
+#vtab > div:nth-child(4) {display: none;}
+#vtab > div > h2 {padding-top: 5px;margin-top: 0; color: #fff;}
+
+/* tabs */
+.globalStock #container ul.tabs {/*float: left;*/ width: 100%; height: 47px; box-sizing: border-box; border-top: 1px solid #999; border-bottom: 1px solid #999; margin-top: 35px; margin-bottom: 30px;}
+.globalStock #container ul.tabs li {float: left; cursor: pointer; height: 45px; text-align: center; padding: 0 26px; line-height: 46px; overflow: hidden; position: relative; box-sizing: border-box; /*background: url("/img/wm/txt/txt_schmenu.png") no-repeat 0 14px*/}
+.globalStock #container ul.tabs li a {display: inline-block;}
+.globalStock #container ul.tabs li.active {font-weight: bold;}
+.globalStock #container ul.tabs li:nth-child(8) {display: none;}
+.globalStock #container ul.tabs li:hover,
+.globalStock #container ul.tabs li:hover a {font-weight: bold; color: #7575cd; font-weight: normal;}
+.globalStock #container ul.tabs li.active,
+.globalStock #container ul.tabs li.active a {font-weight: bold; color: #2b199e; font-weight: bold;}
+.globalStock #container ul.tabs li.active,
+.globalStock #container ul.tabs li.active a {border-bottom: 3px solid #4d4da6}
+.globalStock #container .tab_container {clear: both; width: 100%; float: left; margin-top: 30px;}
+.globalStock #container .tab_content {display: none;}
+.globalStock #container .tab_container .tab_content ul {width:100%;}
+.globalStock #container .tab_container .tab_content ul + li {padding:5px;}
+
+/* table */
+.tableColtype,.tableColtype th,.tableColtype td{border:0}
+.tableColtype{width:100%; text-align:center;}
+.tableColtype thead {z-index: 99;}
+.tableColtype tbody {z-index: 1; position: relative;}
+.tableColtype caption{display:none}
+.tableColtype th {padding:14px 0 15px;}
+.tableColtype td {padding:11px 0 10px;}
+.tableColtype.sumtable .fntfmly_num th {border-top: 1px solid #d8d8d8;}
+.tableColtype.sumtable td {padding:14px 0 14px; background:url('../img/table_border.gif') repeat-x left bottom;}
+.tableColtype th{border-top: 1px solid #aaa; border-bottom: 2px solid #555; background: #fff; color: #000; font-size: 14px;}
+.tableColtype tr.fntfmly_num th {}
+.tableColtype th.thbder400 {border-bottom: none; color: #55517e; font-size: 13px; padding: 6px 0 7px; font-size: 13px;}
+.tableColtype th.thbder400.bdrR {border-right: 1px solid #d8d8d8;}
+.tableColtype th.thbder300 {/*padding: 6px 0 7px;*/ font-size: 13px;}
+.tableColtype th.bdrL {border-left: 1px solid #8a8a8a}
+.tableColtype th.bdrR {background:url('../img/table_borderRWS.gif') repeat-y right top;}
+.tableColtype td{/*border-right: 1px solid #f0f0f0;*/ background:url('../img/table_border.gif') repeat-x left bottom;}
+.tableColtype td.bdrRightW {background:url('../img/table_border.gif') repeat-x left bottom, url('../img/table_borderRWS.gif') repeat-y right top;}
+.tableColtype th.bdrRightW {background:#fff url('../img/table_borderRWS.gif') repeat-y right top; border-right: 1px solid #d8d8d8;}
+.tableColtype td span.lock {display: inline-block; width: 100%; text-align: center;}
+.tableColtype td:last-child {border-right: none; background:url('../img/table_border.gif') repeat-x left bottom}
+.tableColtype tr:last-child td {}
+.tableColtype tr{background-color: #fff}
+.tableColtype tr:nth-child(2n) {background-color: #f6f6f9;}
+.tableColtype.tableCash th span,
+.tableColtype.tableReports th span,
+.tableColtype.tableBill th span {font-size: 13px !important;}
+.tableColtype.sumtable .fntfmly_num th span {font-size: 13px !important;}
+
+.globalStock #container .tableData .tableScroll .typeScroll.tableReports th:first-child span {width: 178px;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableReports tr[class^="depth02"] td:first-child span {width: 156px;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableReports td:first-child {width: 157px; background-color: inherit}
+.globalStock #container .tableData .tableScroll .typeScroll.tableInvest {}
+.globalStock #container .tableData .tableScroll .typeScroll.tableInvest tr[class^="depth02"] td:first-child span {/*width: 185px;*/}
+.globalStock #container .tableData .tableScroll .typeScroll.tableInvest tr.depth02 td:first-child {width: 195px;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableInvest th:first-child span {width: 196px;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableInvest tr.depth01 td.tdfix {width: 195px;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableInvest .th_guide {position: relative;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableInvest .th_guide span {cursor: pointer; border-bottom: 1px dotted #999; padding-bottom: 3px; display: inline-block;}
+.th_guide_hide .guide_box {border: 1px solid #E4E7EB; z-index: 80; position: absolute; left: 0; padding: 0 15px; background: #fff; box-sizing: border-box;}
+.th_guide_hide .guide_box .clse {display: inline-block; font-size: 0; width: 16px; height: 16px; position: absolute; right: 15px; top: 15px; background:url('../img/clse.png') no-repeat 0 0; background-size: 100% 100%;}
+.th_guide_hide .guide_box.show {display: block;}
+.th_guide_hide .guide_box.hide {display: none; }
+.th_guide_hide .guide_box .title {font-weight: bold; display: block; color: #333; font-size: 1rem; line-height: 22px; text-align: left;}
+.th_guide_hide .guide_box ul {margin:2px auto;}
+.th_guide_hide .guide_box ul li {color: #8380A0; text-align: left; line-height: 22px; font-size: 0.75rem;}
+.th_guide_hide .guide_box ul li strong {font-weight: bold; color: #444; margin-right: 5px;}
+.th_guide_hide {}
+.th_guide_hide .guide_box {display: none;}
+.th_guide_hide .guide_box.hide {display: none;}
+
+body.globalStock  {box-sizing: border-box;}
+.globalStock #wrap {margin: 0 auto; width: 100%; box-sizing: border-box; background: #fff; width: 790px; margin: 0 auto; overflow: hidden; padding-bottom: 30px;}
+.globalStock #header {height: 87px; width: 100%; box-sizing: border-box;}
+.globalStock #container {margin: 0 auto; width: 790px; box-sizing: border-box;}
+.globalStock #container::after {display: block; content: ''; clear: both;}
+.globalStock #footer {clear: both; margin-top: 70px; background: #F4F4F5;}
+.globalStock .mainbg #footer {margin-top: 60px}
+
+/* header */
+.globalStock #header .headerArea {margin: 0 auto; width: 790px; box-sizing: border-box;}
+.globalStock #header .headerLogo {display: inline-block; vertical-align: top; padding-top: 36px; color: #202091; font-size: 18px; font-weight: bold;}
+.globalStock #header .searchArea {margin-top: 26px; box-sizing: border-box; display: inline-block; margin-left: 18px; position: relative; }
+.globalStock #header .searchArea form {position: relative;}
+.globalStock #header .searchArea .searchInput {float: left; border:1px solid #C7C7C7; outline:none; box-sizing: border-box; padding-left: 5px; width: 300px; height:39px; /*background: url('../img/placeholder.jpg') no-repeat 3px 7px;*/}
+.globalStock #header .searchArea .searchInput,
+.globalStock #header .searchArea .searchInput::placeholder {color: #333; font-size: 13px; }
+.globalStock #header .searchArea .searchInput::placeholder {font-size: 0; letter-spacing: -999px;}
+.globalStock #header .searchArea .searchBtn {border:0; border:none;  border-left: 0; outline:none; position: absolute; right: 12px; top: 11px; width: 17px;}
+
+.globalStock #header .searchArea .AutoComplete {display: none; position: absolute; left: 0; right: 0; top:40px; background: #fff; box-sizing: border-box; padding: 5px 10px; border:1px solid #ececec; z-index: 85;
+max-height: 185px; overflow: auto; overflow-x: hidden;
+-webkit-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.09);
+-moz-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.09);
+box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.09);
+}
+.globalStock #header .searchArea .AutoComplete._show {display: block;}
+.globalStock #header .searchArea .AutoComplete li {}
+.globalStock #header .searchArea .AutoComplete li a,
+.globalStock #header .searchArea .AutoComplete li a span {height: 35px; line-height: 35px; box-sizing: border-box; color: #000; font-size: 14px;}
+.globalStock #header .searchArea .AutoComplete li a {display: block; width: 270px;  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.globalStock #header .searchArea .AutoComplete li a .schCode {margin-right: 10px;width: 50px; display: inline-block; font-weight: bold; }
+.globalStock #header .searchArea .AutoComplete li a .schList {}
+.globalStock #header .searchArea .AutoComplete li a .schList strong {color: #260da3; font-weight: bold;}
+.globalStock #header .searchArea .AutoComplete li a._on:hover {}
+.globalStock #header .searchArea .AutoComplete li a._on:hover .schCode {color: #c81d33;}
+
+.globalStock #header .loginArea {float: right; margin-top: 41px; font-size: 12px; color: #fff;}
+.globalStock #header .loginArea a {font-size: 12px; color: #fff;}
+.globalStock #header .loginArea .logLink {position: relative;}
+.globalStock #header .loginArea .loginTitle { position: relative; padding-right: 20px;}
+.globalStock #header .loginArea .loginTitle::before {content: ""; position: absolute; right: 0; top: 2px; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #d5d5df;}
+.globalStock #header .loginArea .loginId {padding-left: 14px;}
+.globalStock #header .loginArea .loginId a {font-weight: bold;}
+.globalStock #header .loginArea .loginId a.logout,
+.globalStock #header .loginArea .loginId a.login {text-decoration: underline;}
+
+/* footer */
+.globalStock #footer .notice {margin: 0 auto; width: 100%; padding: 24px 25px 15px; box-sizing: border-box; position: relative;}
+.globalStock #footer .notice p.txt {color: #8380A0; line-height: 22px; font-size: 13px;}
+.globalStock #footer .notice .info {display: inline-block; font-weight: bold; float: left; margin-right: 15px; color: #000;}
+.globalStock #footer .notice .info i {display: inline-block; margin-left: 5px; width: 6px; height: 9px; /*background: url('../img/icon/arrow_right.png') no-repeat right 0;*/}
+.globalStock #footer .notice .list {display: inline-block; float: left; width: 607px; height: 24px;}
+.globalStock #footer .notice .list .txt {display: inline-block; line-height: 22px;}
+.globalStock #footer .f_logo {display: inline-block; width: 104px; position: absolute; left: 25px; bottom: 34px;}
+.globalStock #footer .txt {display: inline-block; vertical-align: top;}
+.globalStock #footer .dataLink {color: #8380A0; margin-top: 8px; padding: 10px 15px; text-align: right;}
+.globalStock #footer .dataLink a,
+.globalStock #footer .dataLink strong {color: #6178F2; text-decoration: none; margin-left: 5px;}
+
+/* .globalStock #container  */
+.globalStock #container {padding: 0;}
+.globalStock #container .lockInfo {clear: both; margin-top: 40px; vertical-align: top; color: #888; font-size: 12px; text-align: left;}
+.globalStock #container .lockInfo .lock {display: inline-block; margin-top: 1px; margin-right: 7px; vertical-align: top;}
+.globalStock #container .lockInfo b {font-weight: bold;}
+.globalStock #container .lockInfo i {text-decoration: underline; font-style: normal;}
+.globalStock #container .lockInfo a {text-decoration: underline; color:#2323c2;  font-style: normal;}
+.globalStock #container .lockInfo .login_trigger {color: #aaa; text-decoration: none; margin-left: 5px;}
+.globalStock #container .schChartTitle {}
+.globalStock #container .schChartTitle .title {vertical-align: top; color:#000; font-size: 34px; font-weight: bold;  display: inline-block;}
+.globalStock #container .schChartTitle .title.bd {}
+.globalStock #container .schChartTitle .info {vertical-align: top; display: inline-block; line-height: 42px;}
+.globalStock #container .schChartTitle .info li {display: inline-block; line-height: 42px; vertical-align: top;}
+.globalStock #container .schChartTitle .info li.sum {color: #333; font-size: 20px; margin-left: 25px;}
+.globalStock #container .schChartTitle .info li.sum .eng { font-weight: bold;}
+.globalStock #container .schChartTitle .info li.sum .span1 {}
+.globalStock #container .schChartTitle .info li.sum .span2 {padding-left: 2px; position: relative; top: 1px;}
+.globalStock #container .schChartTitle .info li.category {margin-left: 7px; margin-top: 12px; border: 1px solid #dedede; width: 59px; height: 22px; line-height: 22px; color: #727272; font-size: 11px; text-align: center;  }
+.globalStock #container .schChartTitle .info li.attention {cursor: pointer; margin-left: 6px; margin-top: 14px; width: 22px; height: 18px; font-size: 0; letter-spacing: -9999px; /*background: url(/img/wm/icon/like.gif) no-repeat 0 0;*/}
+.globalStock #container .schChartTitle .info li.attention.like {background-position-x: -25px;}
+.globalStock #container .schChartTitle .detail {margin-top: 10px; display: inline-block; vertical-align: top; box-sizing: border-box;}
+.globalStock #container .schChartTitle .detail li {display: inline-block;}
+.globalStock #container .schChartTitle .detail li.num {color: #000; font-size: 19px; }
+.globalStock #container .schChartTitle .detail li.per {margin-left: 10px; font-size: 18px;}
+.globalStock #container .schChartTitle .detail li.per span.increase {color: #ff0000; }
+.globalStock #container .schChartTitle .detail li.per span.decrease {color: #001eff; }
+
+.globalStock #container .schChartTitle .detail li.per span > span {font-size: 16px; padding-left: 1px;}
+.globalStock #container .schChartTitle .detail li.comment {color: #555; font-size: 14px; margin-right: 10px; margin-left: 0 !important; height: 52px; line-height: 52px; position: relative;}
+.globalStock #container .schChartTitle .detail li.comment i {/*margin-left: 36px;*/ display: inline-block; width: 11px; height: 11px; background: url('../img/icon/comment_chk.png') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.comment::before {content: ""; position: absolute; right: -15px; top: 20px; display: inline-block; width: 1px; height: 13px; border-right: 1px solid #bbb;}
+ 
+.globalStock #container .schChartTitle .detail.myOpinion {margin-top: 4px; /*display: none;*/ display: inline-block;} /* 나의 투자의견은? */
+.globalStock #container .schChartTitle .detail.opinion {margin-top: 4px; /*display: none;*/ display: inline-block;} /* 투자의견 */
+.globalStock #container .schChartTitle .detail li.deal {margin-left: 15px; position: relative; top: 9px; margin-right: 36px;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help {top: 33px;  right: -80px; width: 215px; display: none; border:1px solid #ccc; background: #fff;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help p {color: #333;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help a {color: #28359b}
+.globalStock #container .schChartTitle .detail li.deal .ly_help .edge_lft {background:url('../img/icon/bg_layer_edge.gif') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help .edge_cen {background:url('../img/icon/bg_layer_edge.gif') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help.hide {display: none;}
+.globalStock #container .schChartTitle .detail li.deal .ly_help.view {display: block;}
+.globalStock #container .schChartTitle .detail li.day {margin-top: 8px; margin-left: 2px; display: block; font-size: 11px; color: #999; /**/}
+.globalStock #container .schChartTitle .detail li.deal .buying,
+.globalStock #container .schChartTitle .detail li.deal .sell {cursor: pointer; float: left; position: relative; padding-left: 27px; width: 74px; height: 31px; box-sizing: border-box; background:#e8e8e8; line-height: 31px; font-size: 12px; text-align: center; color: #000; display: inline-block; border:1px solid #e8e8e8; }
+.globalStock #container .schChartTitle .detail li.deal .buying {}
+.globalStock #container .schChartTitle .detail li.deal .sell {margin-left: 10px; border}
+
+.globalStock #container .schChartTitle .detail li.deal .buying i,
+.globalStock #container .schChartTitle .detail li.deal .sell i {position: absolute; left: 10px; top: 7px; width: 23px; height: 16px; display: inline-block;}
+.globalStock #container .schChartTitle .detail li.deal .buying i {background: url('../img/icon/buying_off.png') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.deal .sell i {background: url('../img/icon/sell_off.png') no-repeat 0 0;}
+.globalStock #container .schChartTitle .detail li.deal .buying.chk,
+.globalStock #container .schChartTitle .detail li.deal .sell.chk {border: 1px solid #7362eb; background: #fff;}
+.globalStock #container .schChartTitle .detail li.deal .buying.chk {border: 1px solid #c83538}
+.globalStock #container .schChartTitle .detail li.deal .buying.chk i {background: url('../img/icon/buying_chk.png') no-repeat 0 0; background-size: auto 100%;}
+.globalStock #container .schChartTitle .detail li.deal .sell.chk i {background: url('../img/icon/sell_chk.png') no-repeat 0 0; background-size: auto 100%;}
+
+.globalStock #container .schChartTitle .detail .opinion {color: #777; font-size: 11px; text-align: left;}
+.globalStock #container .schChartTitle .detail .opinion.months {margin-left: 5px; vertical-align: middle; position: relative;}
+.globalStock #container .schChartTitle .detail .opinion.months .data {position: absolute; left: 7px; right: 0; bottom:-15px; width: 211px; margin:0 auto;}
+.globalStock #container .schChartTitle .detail .opinion.months .data span {display: inline-block; color: #999;}
+.globalStock #container .schChartTitle .detail .opinion.months .data span:nth-child(1) {float: left; width: 50px; text-align: left;}
+.globalStock #container .schChartTitle .detail .opinion.months .data span:nth-child(2) {width: calc(100% - 100px); text-align: center;}
+.globalStock #container .schChartTitle .detail .opinion.months .data span:nth-child(3) {float: right; width: 50px; text-align: right;}
+/* .globalStock #container .schChartTitle .detail .opinion span {display: inline-block; box-sizing: border-box; padding: 1px 8px 0; height: 20px; border: 1px solid #ccc; color: #000; font-size: 11px; border-radius: 12px;}
+.globalStock #container .schChartTitle .detail .opinion strong {position: relative; top: 1px; color: #000; font-size: 14px; padding: 0 5px; display: inline-block;}
+.globalStock #container .schChartTitle .detail .opinion.change {position: relative; top: 4px;} */
+
+.skillbarArea {padding: 0; /*overflow: hidden;*/ display: inline-block; margin: 0 2px; vertical-align: top;}
+.zt-skill-bar {color: #fff; line-height: 20px; height: 20px; background:url('../img/skillbar_bg.gif') no-repeat center center; width: 214px; display: inline-block; overflow: hidden;}
+.skillbarArea .inbox {display: inline-block; margin:2px 10px 0; vertical-align: top; position: relative;}
+.skillbarArea .inbox:first-child {top: -3px;}
+.skillbarArea .inbox:last-child {top: -1px;}
+.skillbarArea .inbox img {display: inline-block;}
+
+.zt-skill-bar * {
+webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.zt-skill-bar div {background-color: #c83538; position: relative; width: 0; min-width: 32px; max-width: 182px; box-sizing: border-box;}
+.zt-skill-bar div span {display: inline-block; min-width: 32px; font-size: 11px;}
+.zt-skill-bar div.buyingBar {text-align: left; float: left;}
+.zt-skill-bar div.sellBar {background: #31319e; text-align: right; float: right;}
+.zt-skill-bar div.buyingBar span {padding-left: 6px;}
+.zt-skill-bar div.sellBar span {padding-right: 6px;}
+
+
+
+.globalStock #container .summary {clear: both; background: #f5f5f5; padding: 30px 20px 20px; color: #000; font-size: 13px; line-height: 22px; position: relative;}
+.globalStock #container .summary.big {}
+.globalStock #container .summary.small { padding: 30px 20px 20px;}
+.globalStock #container .summary.small p {max-height: 90px; display: -webkit-box; overflow: hidden; width: 100%; max-height: 88px; line-height: 22px; box-sizing: border-box; text-overflow: ellipsis; -webkit-line-clamp: 4;-webkit-box-orient: vertical; word-wrap: break-word;}
+.globalStock #container .summary .etc {margin-top: 17px;}
+.globalStock #container .summary .etc li {display: inline-block; color: #777; font-size: 11px; margin-right: 20px; color: #000; vertical-align: text-top; line-height: 22px; vertical-align: top;}
+.globalStock #container .summary .etc li span {display: inline-block; margin-right: 10px; vertical-align: top; color: #777; vertical-align: top;}
+.globalStock #container .summary .etc li a {display: inline-block; color: #2b199e; text-decoration: underline;  /*width: 150px;*/ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: top;}
+.globalStock #container .summary .etc li strong {vertical-align: top; display: inline-block;}
+.globalStock #container .summary .etc li.industry {position: relative; margin-right: 0; width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.globalStock #container .summary .etc li.industry::before {content: ""; position: absolute; right: -27px; top: 4px; display: inline-block; width: 1px; height: 14px; border-right: 1px solid #bbb;}
+.globalStock #container .summary .etc li.home > span {margin-top: 6px;}
+.globalStock #container .summary .etc li.link > span {margin-top: 6px;}
+.globalStock #container .summary .close {color: #333; font-size: 11px; position: absolute; right: 24px; bottom: 7px; cursor: pointer;}
+.globalStock #container .summary .close i {display: inline-block; width: 12px; height: 7px; background: url('../img/arrow_open.png') no-repeat 0 0; background-size: 12px 7px; margin-left: 7px;}
+.globalStock #container .summary .close.show {color: #f5f5f5; bottom: 11px;}
+.globalStock #container .summary .close.show i {display: inline-block; width: 12px; height: 7px; bottom: 15px; background: url('../img/arrow_close.png') no-repeat 0 0; background-size: 12px 7px; margin-left: 7px;}
+/* schChartArea */
+.globalStock #container .schChartArea {margin-top: 27px; font-size: 0;}
+.globalStock #container .schChartArea .chartSection {font-size: 14px; width: 100%; margin-top: 15px;}
+.globalStock #container .schChartArea .chartDate {font-size: 14px; margin-top: 30px;}
+.globalStock #container .schChartArea .chartDate .indicator {display: block; text-align: right; position: relative;}
+.globalStock #container .schChartArea .chartDate .indicator img {text-align: right; display: inline-block; cursor: pointer;}
+.globalStock #container .schChartArea .chartDate .indicator .ly_help {top: 17px;  right: 0; /*width: 330px;*/ display: none;}
+.globalStock #container .schChartArea .chartDate .indicator .ly_help.hide {display: none;}
+.globalStock #container .schChartArea .chartDate .indicator .ly_help.view {display: block;}
+.globalStock #container .schChartArea .chartTabsArea {}
+.globalStock #container .schChartArea .chartTabs {padding-left: 12px; display: inline-block; width: 454px;}
+.globalStock #container .schChartArea .chartTabs span {display: inline-block; cursor: pointer; margin-right: 30px;}
+.globalStock #container .schChartArea .chartTabs span {color: #333; font-size: 12px;}
+.globalStock #container .schChartArea .chartTabs span:hover,
+.globalStock #container .schChartArea .chartTabs span.active {color: #dc2428; text-decoration: underline;}
+.globalStock #container .schChartArea .sizeCustom {font-size: 11px; cursor: pointer; float: right; padding-right: 50px;}
+.globalStock #container .schChartArea .sizeCustom:hover {color: #2b199e !important; text-decoration: underline;}
+.globalStock #container .schChartArea .sizeCustom i {display: inline-block; width: 10px; height: 10px; background: url('../img/icon/sizeCustom.png') no-repeat 0 0; margin-right: 5px;}
+
+.globalStock #container .schChartArea .chartSection.sBig {width: 100%; height: 500px}
+.globalStock #container .schChartArea .chartSection #chart-container {height: 100%;}
+.globalStock #container .schChartArea .chartSection #chart-container.sBig {height: 500px}
+.globalStock #container .schChartArea .chartDate.sBig {float: none; overflow: hidden; width: 100%; margin-top: 32px;}
+
+.globalStock #container .schChartArea .chartSwiper {}
+.globalStock #container .schChartArea .chartSwiper .swiper-container {padding-bottom: 30px;}
+.globalStock #container .schChartArea .chartSwiper .swiper-container .swiper-pagination {}
+.globalStock #container .schChartArea .chartSwiper .swiper-container .swiper-pagination .swiper-pagination-bullet {width: 7px; height: 7px;}
+.globalStock #container .schChartArea .chartSwiper .swiper-container .swiper-pagination .swiper-pagination-bullet-active {background:#4949a0;}
+
+.globalStock #container .schChartArea .chartDate .tableRowtype {text-align:center; margin-top: 10px;}
+.globalStock #container .schChartArea .arc_left,
+.globalStock #container .schChartArea .arc_right {display: inline-block; width: calc(100% / 2 - 10px);}
+.globalStock #container .schChartArea .chartDate .tableRowtype th,
+.globalStock #container .schChartArea .chartDate .tableRowtype td{border:0; font-weight: normal; height: 47px; padding: 0 5px 0 10px; border-bottom: 1px solid #d4d4d4}
+.globalStock #container .schChartArea .chartDate .tableRowtype caption{display:none}
+.globalStock #container .schChartArea .chartDate .tableRowtype th {text-align: left; color: #555; font-size: 13px;}
+.globalStock #container .schChartArea .chartDate .tableRowtype td {text-align: right;  color: #000; font-size: 15px;} 
+.globalStock #container .schChartArea .chartDate .tableRowtype td span.unit {padding-left: 2px; }
+.globalStock #container .schChartArea .top5 {clear: both; position: relative; font-size: 14px; margin-top: 32px; box-sizing: border-box; background: #f2f2f2;}
+.globalStock #container .schChartArea .top5 .more {position: absolute; right: 21px; top: 12px;}
+.globalStock #container .schChartArea .top5 .list {padding-top: 12px; padding-left: 10px; height: 56px; box-sizing: border-box; display: inline-block; width: 177px; width: calc(100% / 5 - 15px); font-size: 0; border-right: 1px solid #e7e7e7; vertical-align: top;}
+.globalStock #container .schChartArea .top5 .list:last-child {border-right: none;}
+.globalStock #container .schChartArea .top5 .list dt,
+.globalStock #container .schChartArea .top5 .list dd {display: inline-block; /*;*/}
+.globalStock #container .schChartArea .top5 .list dt {font-size: 13px; color:#333; font-weight: bold; width: 60px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: top;}
+.globalStock #container .schChartArea .top5 .list dd {font-size: 14px; color:#000;}
+.globalStock #container .schChartArea .top5 .list dd.num {}
+.globalStock #container .schChartArea .top5 .list dd.per {font-size: 12px; display: block;padding-left: 33px; box-sizing: border-box; margin-top: 2px;}
+.globalStock #container .schChartArea .top5 .list dd.per span span {padding-left: 2px;}
+.globalStock #container .schChartArea .top5 .list dd.per span.increase {font-size: 12px; display: inline-block; color: #ff0000; }
+.globalStock #container .schChartArea .top5 .list dd.per span.decrease {font-size: 12px; display: inline-block; color: #001eff; }
+.globalStock #container .bannerArea {margin-top: 50px;}
+.globalStock #container .bannerArea img {display: inline-block; width: 100%; /*isplay: none;*/}
+.globalStock #container .tableData {position: relative; clear: both;}
+.globalStock #container .tableData .titleInvestment {margin-bottom: 25px;}
+.globalStock #container .tableData .tableTab {position: absolute; right: 0; top: 6px;}
+.globalStock #container .tableData .tableTab .tabsArea {display: inline-block; /*border-left: 1px solid #ccc;*/ padding:0 15px;}
+.globalStock #container .tableData .tableTab .tabsArea:first-child {border: none; padding-left: 0; position: relative;}
+
+.globalStock #container .tableData .tableTab .tabsArea:last-child {padding-right: 0;}
+.globalStock #container .tableData .tableTab span {display: inline-block; cursor: pointer; font-size: 12px; color: #888; display: inline-block; padding: 0 5px; position: relative; font-family: 'Nanum Gothic', '나눔고딕', font-weight: bold;}
+.globalStock #container .tableData .tableTab span .ly_help {top: 20px;  right: 0; min-width: 453px; display: none;}
+.globalStock #container .tableData .tableTab span .ly_help.hide {display: none;}
+.globalStock #container .tableData .tableTab span .ly_help.view {display: block;}
+.globalStock #container .tableData .tableTab span:hover {color:#2b199e; font-weight: bold;}
+.globalStock #container .tableData .tableTab span.active {text-decoration: underline; color:#2b199e; font-weight: bold;}
+.globalStock #container .tableData .tableTab strong.info {position: relative; top: 2px; vertical-align: top; cursor: pointer;}
+.globalStock #container .tableData .tableTab strong.info .ly_help.small {right: 0; width: 144px;}
+.globalStock #container ul.tabs li.fix-active {font-weight: bold;}
+.globalStock #container ul.tabs li.fix-active {font-weight: bold; color: #2B199E; font-weight: bold;}
+.globalStock #container ul.tabs li.fix-active {border-bottom: 3px solid #4D4DA6}
+.globalStock #container .tableData .tableTab span.fix-active {text-decoration: underline; color:#2b199e; font-weight: bold;}
+.globalStock .mainbg #container .tableData .tableColtype {border-bottom: 1px solid #c9c9c9;}
+.globalStock #container .tableData .tableColtype {/*margin-top: 20px;*/}
+.globalStock #container .tableData .tableColtype td {padding-left: 10px; font-size: 14px; color: #000; text-align: right; padding-right: 10px; }
+.globalStock #container .tableData .tableColtype td.line {background:url('../img/table_border.gif') repeat-x left bottom, url('../img/table_borderRWS.gif') repeat-y right top; border-right: 1px solid #d8d8d8;}
+.globalStock #container .tableData .tableColtype td:nth-child(1) {font-size: 12px; text-align: left; }
+.globalStock #container .tableData .tableColtype td.eng,
+.globalStock #container .tableData .tableColtype td span.eng {;}
+.globalStock #container .tableData p.info {text-align: right; color: #888; font-size: 12px; margin-top: 21px;}
+.globalStock #container .tableData .dataLink {clear: both; color: #999; font-size: 11px; margin-top: 40px; text-align: right;}
+.globalStock #container .tableData .dataLink a {margin-left: 5px; text-decoration: underline;}
+.globalStock #container .tableData .dataLink.mrt_30 {margin-top: 30px; ; }
+.globalStock #container .tableData .categoryBox {display: inline-block; float: left; margin-right: 16px; margin-top: 5px;}
+.globalStock #container .tableData .categoryBox .category {color: #585858; font-size: 11px; display: inline-block; width: 60px; height: 25px; box-sizing: border-box; padding-top: 4px; text-align: center;  border: 1px solid #c6c6c6; border-radius: 12px;}
+.globalStock #container .tableData .btn_delete {background: none; outline: none;}
+
+/* 경쟁사 */
+.globalStock #container .tableData .competitors {display: inline-block; margin-top: 32px; margin-bottom: 20px;}
+.globalStock #container .tableData .competitors li {display: inline-block; margin-right: 20px; vertical-align: top; color: #888; font-size: 17px; font-weight: bold;}
+.globalStock #container .tableData .competitors li a {color: #888; font-size: 17px;}
+.globalStock #container .tableData .competitors li a.active,
+.globalStock #container .tableData .competitors li a:hover{font-weight: bold;  color: #000;}
+.globalStock #container .tableData .competitors li:last-child {margin-right: 0;}
+.globalStock #container .tableData .tableInfo {text-align: right; color: #888; font-size: 12px; margin-top: 20px;}
+.globalStock #container .tableData .standard {clear: both; float: right; vertical-align: top; /*margin-top: 9px;*/ margin-top: 35px; margin-bottom: 8px;}
+.globalStock #container .tableData .standard.top {clear: none; float: right; text-align: right; position: relative; top: -18px;}
+.globalStock #container .tableData .standard .title {color: #666; font-size: 12px; font-weight: bold; padding-right: 30px; position: relative; display: inline-block; }
+.globalStock #container .tableData .standard .title::before {content: ""; position: absolute; right: 15px; top: 5px; display: inline-block; width: 1px; height: 10px; border-right: 1px solid #ddd;}
+.globalStock #container .tableData .standard .simple {border: none; outline: none; background: none; /*width: 68px;*/ height: 26px; line-height: 26px; color: #888; font-size: 12px; margin-left: 15px;}
+.globalStock #container .tableData .standard .simple.chk {color: #333; /*border: 1px solid #888;*/ }
+.globalStock #container .tableData .standard .simple i {background: url('../img/icon/arrow_simple_chk.png') no-repeat 0 0; display: inline-block; width: 15px; height: 15px; position: relative; right: 3px; top: 2px;}
+.globalStock #container .tableData .standard .simple.chk i {background-position: 0 -25px;}
+.globalStock #container .table_nav {display: inline-block; clear: both; text-align: right; margin-top: 9px; margin-left: 30px; padding-left: 30px; position: relative;}
+.globalStock #container .table_nav::before {content: ""; position: absolute; left: 0; top: 5px; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #d5d5df;}
+.globalStock #container .table_nav span {color: #888; font-size: 12px; padding-right: 20px; margin-right: 3px; background: url(/img/wm/icon/table_nav.png) no-repeat right 3px;}
+.globalStock #container .table_nav span:last-child {color: #000; padding-right: 0; margin-right: 0; background: none;}
+.globalStock #container .tableColtype.typeOrder {}
+.globalStock #container .tableColtype.typeOrder tr:hover {background: #f8d3d4;}
+.globalStock #container .tableColtype.typeOrder th {font-weight: normal; font-size: 13px;}
+.globalStock #container .tableColtype.typeOrder td {padding-top:11px; padding-bottom:11px;}
+.globalStock #container .tableColtype.typeOrder .drop {display: inline-block; width:105px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color: #000; font-size: 14px; }
+.globalStock #container .tableColtype.typeOrder .eng {display: block; width:105px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color: #aaa; font-size: 12px; margin-top: 3px; }
+.globalStock #container .tableColtype.typeOrder .ascending,
+.globalStock #container .tableColtype.typeOrder .descending {display: inline-block; width: 6px; height: 5px; background: url(/img/wm/icon/data_order.gif) no-repeat 0 0; position: relative; top:-2px; right: -9px;}
+.globalStock #container .tableColtype.typeOrder .ascending {}
+.globalStock #container .tableColtype.typeOrder .descending {background-position-y:bottom;}
+.globalStock #container .tableColtype.typeOrder .increase {color: #ff0000;}
+.globalStock #container .tableColtype.typeOrder .decrease {color: #001eff;}
+.globalStock #container .tableColtype.typeOrder .same {color: #888;}
+.globalStock #container .tableColtype.typeOrder.bdrNone {margin-top: 26px;}
+.globalStock #container .tableColtype.typeOrder.bdrNone td {border-right: none; text-align: center;}
+.globalStock #container .tableColtype.typeOrder.bdrNone td:nth-child(1) {text-align: left; padding-left: 15px;}
+.globalStock #container .tableColtype.typeOrder.bdrNone .category {text-align: left;}
+.globalStock #container .tableColtype.typeOrder.bdrNone .category span {color:#585858; font-size: 11px; display: inline-block; text-align: left; margin-right: 5px;}
+.globalStock #container .tableColtype.typeOrder.bdrNone .category span:nth-child(2n) {margin-right: 0;}
+.globalStock #container .tableData .competitors.txtCompetitors li {font-size: 15px; color: #888;}
+.globalStock #container .tableData .competitors.txtCompetitors li a {font-size: 15px; color: #888; display: inline-block;}
+.globalStock #container .tableData .competitors.txtCompetitors li a.active {font-weight: bold; color: #000; text-decoration: underline !important;}
+.globalStock #container .tableData .competitors.txtCompetitors li a:hover {font-weight: bold; color: #000; text-decoration: none;}
+
+.globalStock #container .chartDateInfo {clear: both; border: 1px solid #e3e3e3; box-sizing: border-box; margin-top: 30px; margin-bottom: 43px; font-size: 13px; overflow: hidden;}
+.globalStock #container .chartDateInfo .left {float: left; width: 50%; box-sizing: border-box; border-right: 1px solid #e3e3e3; padding: 14px 25px;}
+.globalStock #container .chartDateInfo .right {float: left; width: 50%; box-sizing: border-box; padding: 14px 25px;}
+.globalStock #container .chartDateInfo .infoTitle {display: inline-block; background: #c5c5c5; color: #fff; font-size: 12px; padding: 0 7px; height: 21px; line-height: 21px; vertical-align: top;   margin-top: 5px;}
+.globalStock #container .chartDateInfo .left .infoTitle {color: #000; background: #ffd735; }
+.globalStock #container .chartDateInfo .eventTop2 {display: inline-block;}
+.globalStock #container .chartDateInfo .eventTop2 li {width: 340px; height:27px; line-height: 27px;  background: url('../img/icon/dot_gray.gif') no-repeat left 13px; padding-left: 14px; display: inline-block; box-sizing: border-box; margin-top: 5px;}
+.globalStock #container .chartDateInfo .eventTop2 li a {color: #555; width: 240px;  font-size: 13px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.globalStock #container .chartDateInfo .eventTop2 li .day {vertical-align: top; float: right; }
+.globalStock #container .tableColtype .competitorsTable {}
+.globalStock #container .tableColtype .competitorsTable td {background:url('../img/table_border.gif') repeat-x left bottom, url('../img/table_borderR.gif') repeat-y right top;}
+.globalStock #container .competitorsTable tr {background:transparent !important; }
+.globalStock #container .competitorsTable tr.active {background:#fffcf3 url('../img/table_border.gif') repeat-x left bottom !important;}
+.globalStock #container .competitorsTable tr.active td:first-child {/*background:url('../img/icon/present_poi.png') no-repeat 7px 21px, url(/img/wm/table_border.gif) repeat-x left bottom; padding-left: 30px;*/}
+.globalStock #container .competitorsTable tr.active td {color: #592dc7; background: none;}
+.globalStock #container .tableData .standard_reports {float: right; margin-top: 23px;}
+.globalStock #container .tableData .standard_reports .tableTab.positionRe {float: none; margin-top: 5px;}
+.globalStock #container .tableData .standard_reports .standard.top {float: none; display: inline-block; top:0; margin-top: 10px; margin-left: 30px;}
+.globalStock #container .tableData .standard_reports .tableTab .tabsArea:first-child::before {content: ""; position: absolute; right: -4px; top: 7px; display: inline-block; width: 1px; height: 10px; border-right: 1px solid #ddd;}
+
+
+/* 재무차트 */
+.globalStock #container .vchart_mid .chart_tabsArea {margin-top: 62px;}
+.globalStock #container .vchart_mid .chart_tabsArea .chart_tabs {display: inline-block;}
+.globalStock #container .vchart_mid .chart_tabsArea .chart_tabs li {display: inline-block; margin-right: 20px;}
+.globalStock #container .vchart_mid .chart_tabsArea .chart_tabs li:last-child {margin-right: 0;}
+.globalStock #container .vchart_mid .chart_tabsArea .chart_tabs li a {color: #888; font-size: 15px; font-weight: bold;}
+.globalStock #container .vchart_mid .chart_tabsArea .chart_tabs li a.active {color: #000; text-decoration: underline !important; }
+.globalStock #container .vchart_mid .chart_tabsArea .chart_tabs li a:hover { color: #000; text-decoration: none; }
+.globalStock #container .vchart_mid .chart_tabsArea .chart_viewAll {margin-left:20px;  display: inline-block; color: #000; font-size: 15px; font-weight: bold; text-decoration: underline;}
+.globalStock #container .no_data {height: 530px; box-sizing: border-box; padding-top: 100px;}
+.globalStock #container .no_data p {color: #939393; font-size: 16px; text-align: center;}
+.globalStock #container .vchart_btm .layout_btn_area {box-sizing: border-box; text-align: right; margin-top: 10px;}
+.globalStock #container .vchart_btm .layout_btn_area .title {display: inline-block; margin-top: 25px; color: #000; font-size: 14px; font-weight: bold; opacity: .7;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter {display: block; margin-top: 25px;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .i_text {vertical-align: top; padding: 0 5px; text-align: center; width: 70px;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter label {vertical-align: top;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .calendar {vertical-align: top; cursor: pointer; margin-top: 1px;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .to {padding: 0 3px 0 10px;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .tabsArea {display: block; vertical-align: middle; vertical-align: top;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .tabsArea::after {content: ""; position: absolute; left: 0; top: 2px; display: inline-block; width: 1px; height: 10px; border-right: 1px solid #ddd;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .tabsArea span {color: #888; font-size: 12px; vertical-align: top; cursor: pointer; margin-left: 12px;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .tabsArea span:hover {color:#2b199e; font-weight: bold;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .tabsArea span.active {text-decoration: underline; color:#2b199e; font-weight: bold;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .indicator {display: inline-block; text-align: right; position: relative; vertical-align: middle; margin-top: -12px;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .indicator img {text-align: right; display: inline-block; cursor: pointer;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .indicator .ly_help {top: 17px;  right: 0; /*width: 330px;*/ display: none;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .indicator .ly_help.hide {display: none;}
+.globalStock #container .vchart_btm .layout_btn_area .chart_filter .indicator .ly_help.view {display: block;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ .globalStock #container .vchart_btm .layout_btn_area .chart_filter .tabsArea {margin-top: 0;}
+ .globalStock #container .vchart_btm .layout_btn_area .chart_filter .indicator {margin-top: 0;}
+}
+@-moz-document url-prefix(){
+ .globalStock #container .vchart_btm .layout_btn_area .chart_filter .calendar {margin-top: 4px;}
+}
+.globalStock #container .vchart_btm .chart_wrap {}
+.globalStock #container .vchart_btm .chart_wrap .title_area {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.globalStock #container .vchart_btm .chart_wrap .title {padding-left: 18px; margin-right: 25px; margin-bottom: 30px; color: #000; font-size: 19px; font-weight: bold; display: inline-block; position: relative;}
+.globalStock #container .vchart_btm .chart_wrap .title::after {content: ""; position: absolute; left: 0; top: 4px; display: inline-block; width: 1px; height: 18px; border-left: 3px solid #9292e6;}
+.globalStock #container .vchart_btm .chart_wrap .chart_bdr {clear: both; float: none; border: 1px solid #ddd; margin-top: 23px;}
+/* V차트 서브페이지 기본 : basic */
+.globalStock #container .vchart_btm .chart_wrap .chart_area {height: 450px; display: block; margin: 30px 30px 0 30px; vertical-align: top;
+-webkit-transition:all ease-out 0.3s;
+-moz-transition:all ease-out 0.3s;
+-o-transition:all ease-out 0.3s;
+transition:all ease-out 0.3s;
+}
+.globalStock #container .vchart_btm .chart_wrap .sum {color: #555; font-size: 16px;}
+.globalStock #container .vchart_btm .chart_wrap .unit {color: #999; font-size: 13px; float: right; margin-top: 7px;}
+.globalStock #container .vchart_btm .chart_wrap .chart_layout {margin:0 40px 0 0; height: 400px;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp {height: auto; display: inline-block; background: #fcfcfc; margin-top: 30px; padding: 30px 20px 20px; box-sizing: border-box; border-left: 1px solid #eee;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_area {overflow: hidden;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_area .explanation {display: inline-block; border: 1px solid #6b6bd5; text-align: center; padding: 6px 15px; box-sizing: border-box; border-radius: 20px;  color: #1e1eae; font-weight: bold; margin-bottom: 15px;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_area .aha {margin: 25px 0 15px; display: inline-block; color: #fff; font-size: 12px; width: 52px; height: 21px; line-height: 21px; padding-left:8px; box-sizing: 8px; font-weight: bolder;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_area .txt {color: #000; font-size: 14px; margin-bottom: 12px; padding-left: 3px; opacity: 0.5; width: 100%; line-height: 18px; display: inline-block; display: -webkit-box; overflow: hidden; height: 44px; line-height: 22px; box-sizing: border-box; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_btm {margin-top: 10px; position: relative;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_btm .more {text-decoration: underline; cursor: pointer; color: #333; font-size: 12px; font-weight: bold; display: block; text-align: right; background: url('../img/more_btn.png') no-repeat calc(100% - 43px);}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_btm .exp_pop {position: absolute; left: 10px; right: 0; bottom: 0; background: #fff; overflow: hidden; width: 90%; padding: 15px; border-radius: 15px; box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3); box-sizing: border-box; z-index: 999; display: none;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_btm .exp_pop .txt {color: #000; font-size: 14px; line-height: 22px; margin-bottom: 12px; padding-left: 3px;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_btm .exp_pop .clse {position: absolute; right: 15px; top: 15px; width: 20px; height: 20px; display: inline-block; cursor: pointer;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_btm .exp_pop .clse img {display: inline-block; width: 100%;}
+.globalStock #container .vchart_btm .chart_wrap .chart_exp .exp_btm .copyright {color: #bbb; font-size: 12px; margin-top: 35px;}
+.globalStock #container .vchart_btm .chart_wrap .highcharts-container  { width: 100% !important;}
+.globalStock #container .vchart_btm .chart_wrap .highcharts-container svg {width: 100% !important;}
+
+/* V차트 서브페이지 크게보기 : big */
+.globalStock #container .vchart_btm .chart_wrap.big .chart_area {/*width: 100%;*/}
+.globalStock #container .vchart_btm .chart_wrap.big .chart_exp {display:none;}
+/* V차트 서브페이지 간단히 : simply */
+.globalStock #container .vchart_btm .chart_wrap.simply .chart_bdr {display: inline-block; width: calc(100% / 2 - 17px); margin-right: 25px;
+-webkit-transition:all ease-out 0.3s;
+-moz-transition:all ease-out 0.3s;
+-o-transition:all ease-out 0.3s;
+transition:all ease-out 0.3s;
+}
+.globalStock #container .vchart_btm .chart_wrap.simply .chart_bdr:nth-child(2n) {margin-right: 0;}
+.globalStock #container .vchart_btm .chart_wrap.simply .chart_area {width: 100%;}
+.globalStock #container .vchart_btm .chart_wrap.simply .sum {display: none;}
+.globalStock #container .vchart_btm .chart_wrap.simply .chart_exp {display:none;}
+/* V차트 서브페이지 전체보기 : all */
+.globalStock #container .vchart_btm .chart_wrap.all .chart_bdr {display: inline-block; width: calc(100% / 2 - 17px); margin-right: 25px; vertical-align: top;
+-webkit-transition:all ease-out 0.3s;
+-moz-transition:all ease-out 0.3s;
+-o-transition:all ease-out 0.3s;
+transition:all ease-out 0.3s;
+}
+.globalStock #container .vchart_btm .chart_wrap.all .chart_bdr:nth-child(2n) {margin-right: 0;}
+.globalStock #container .vchart_btm .chart_wrap.all .chart_bdr.bg_gray {background: #fbfbfb; padding: 0; height: auto;}
+.globalStock #container .vchart_btm .chart_wrap.all .chart_layout {height: 265px;}
+.globalStock #container .vchart_btm .chart_wrap.all .chart_area {width: 100%; height: 350px; box-sizing: border-box;}
+.globalStock #container .vchart_btm .chart_wrap.all .sum {display: none;}
+.globalStock #container .vchart_btm .chart_wrap.all .chart_exp {display:none;}
+.globalStock #container .vchart_btm .chart_wrap.all .category  {color: #000; font-size: 17px; padding-right: 15px; margin-right: 15px; vertical-align: top; background: url('../img/bg_arrow.png') no-repeat right 7px;}
+
+/* 주가차트 */
+.globalStock #container .chartArea {clear: both; padding-top: 8px;}
+.globalStock #container .chartArea h3 img {display: none; height: 0; width: 0;}
+.globalStock #container .chartArea .chartSection {}
+.globalStock #container .chartArea .chartTabsArea {background: #f6f6f6; border: 1px solid #bbb; border-bottom: none;}
+.globalStock #container .chartArea .chartTabsArea .chartTabs {}
+.globalStock #container .chartArea .chartTabsArea .chartTabs span {display: inline-block; color: #333; font-size: 14px; padding: 15px 17px; cursor: pointer;}
+.globalStock #container .chartArea .chartTabsArea .chartTabs span.active {color: #000; font-weight: bold; text-decoration: underline;}
+
+/* 재무재표 */
+.globalStock #container .tableData .competitors.txtCalculation li {font-size: 15px; color: #888;}
+.globalStock #container .tableData .competitors.txtCalculation li a {font-size: 15px; color: #888; display: inline-block; font-family: 'Nanum Gothic', '나눔고딕', font-weight: bold;}
+.globalStock #container .tableData .competitors.txtCalculation li img {visibility: hidden;}
+.globalStock #container .tableData .competitors.txtCalculation li a.active {/*font-weight: bold;*/ color: #000; text-decoration: underline !important;}
+.globalStock #container .tableData .competitors.txtCalculation li a:hover { color: #000; text-decoration: none; }
+
+.globalStock #container .tableData .tableTab.positionRe {clear: both; display: inline-block; position: relative; float: right; text-align: right; margin-top: 5px; margin-bottom: 35px;}
+.globalStock #container .tableData .tableScroll {clear: both; overflow: auto; overflow-y:hidden; /*margin-top: 20px;*/ padding-bottom: 10px; padding-right: 1px;}
+.globalStock #container .tableData .tableScroll .typeScroll {margin-top: 0;}
+.globalStock #container .tableData .tableScroll .typeScroll th {/*width: 95px;*/ z-index: 70; box-sizing: border-box; text-align: right;}
+/* .globalStock #container .tableData .tableScroll .typeScroll th:first-child {position: absolute; width: 161px; height: 49px; box-sizing: border-box;} */
+.globalStock #container .tableData .tableScroll .typeScroll tr.fix_tr {width: 100%;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.trFixed {position: relative; width: 100%; z-index: 80; background: #fff;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.trFixed th {position: relative; padding: 0; /*padding-top: 14px;*/ padding-top: 40px; z-index: 40;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.trFixed th span {display: inline-block; height: 32px; border-bottom: 2px solid #555}
+.globalStock #container .tableData .tableScroll .typeScroll td {width: 100px;font-size: 13px; height: 19px; padding-top: 14px; /*color: #555;*/}
+/* .globalStock #container .tableData .tableScroll .typeScroll td.line2 {padding-top: 6px; padding-bottom: 2px; height: 35px; line-height: 15px; color: #555;}
+.globalStock #container .tableData .tableScroll .typeScroll td.line2 span {background-position: 0 6px !important;} */
+.globalStock #container .tableData .tableScroll .typeScroll td span {display: inline-block;}
+.globalStock #container .tableData .tableScroll .typeScroll td:first-child {border-right: 1px solid #555; /*border-top: 1px solid #d4d4d4;*/ position: absolute; left: 0; width: 140px; background-color:inherit;}
+.globalStock #container .tableData .tableScroll .typeScroll.typeScroll_mouseover td:first-child {position: relative;}
+.globalStock #container .tableData .tableScroll .typeScroll th span {display: inline-block; width: 100px; font-size: 14px; /*;*/}
+.globalStock #container .tableData .tableScroll .typeScroll th:first-child span {width: 161px;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth01 {background-color: #f6f6f9}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth01 td {background-color: #f6f6f9; border-right: none;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth01 td.tdfix {position: absolute; left: 0; width: 160px; z-index: 39; border-bottom: none;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth02 {background-color: #fff;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth03 {background-color: #fff;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth04 {background-color: #fff;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.asset {background-color: #f8d3d4;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth01:first-child td:first-child {border-top: none;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth01 td:first-child {/*color: #1f1f9c; font-size: 14px;*/}
+.globalStock #container .tableData .tableScroll .typeScroll tr[class^="depth02"] td:first-child {color: #000;}
+/*.globalStock #container .tableData .tableScroll .typeScroll tr.depth01 td:first-child span {background: url('../img/icon/td_arrow.png') no-repeat 0 6px;}*/
+.globalStock #container .tableData .tableScroll .typeScroll tr[class^="depth02"] td:first-child span {/*background: url('../img/icon/td_depth.png') no-repeat 0 6px;*/}
+/*.globalStock #container .tableData .tableScroll .typeScroll tr.depth01 td:first-child span {padding-left: 5px;}*/
+.globalStock #container .tableData .tableScroll .typeScroll tr[class^="depth02"] td:first-child span {padding-left: 7px; /*width: 130px;*/}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth03 td:first-child span {padding-left: 12px; /*font-size: 12px;*/}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth04 td:first-child span {padding-left: 24px;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth01 td {/*border-top: 1px solid #ccc;*/ color: #000; font-size: 13px;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.asset td:first-child {color: #000;  font-size: 12px;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.totalAsset {background-color: #fdfbec;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.totalAsset td {color: #000; font-size: 13px;background-color: #fdfbec;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.totalAsset td:first-child span {/*background: url('../img/icon/td_totalAsset.png') no-repeat 0 6px;*/}
+.globalStock #container .tableData .tableScroll .typeScroll tr.totalAsset td:first-child span {padding-left: 0}
+.globalStock #container .tableData .tableScroll .typeScroll.tableCash {}
+.globalStock #container .tableData .tableScroll .typeScroll.tableCash tr.depth01 {background: #fff;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableCash tr.depth01 td {background-color: #fff; background:url(/img/wm/table_border.gif) repeat-x left bottom;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableCash tr.depth01:nth-child(2n) td {background-color: #f6f6f9;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableCash tr.depth01 td:first-child {background:url(/img/wm/table_border.gif) repeat-x left bottom, url('../img/table_borderRW.gif') repeat-y right top;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableCash tr.depth01 td:first-child {background-color: #fff; border-right: 1px solid #555;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableCash tr.depth01:nth-child(2n) td:first-child {background-color: #f6f6f9;}
+
+.globalStock #container .summary_ftr {margin-top: 40px; height: 20px; overflow: hidden; clear: both; background: #f5f5f5; padding: 20px 20px 20px; color: #000; font-size: 13px; line-height: 22px; position: relative;}
+.globalStock #container .summary_ftr .sumInfo {margin-left: 40px;}
+.globalStock #container .summary_ftr .sumInfo ul {width: 47%; display: inline-block; vertical-align: top; margin: 40px 20px 40px 0;}
+.globalStock #container .summary_ftr .sumInfo ul li {color: #000; font-size: 13px; padding-right: 30px; padding: 20px 5px 3px 0;}
+.globalStock #container .summary_ftr .sumInfo ul li strong {color: #000; font-size: 13px;}
+.globalStock #container .summary_ftr .sumInfo ul li.line .title {display: block;}
+.globalStock #container .summary_ftr .sumInfo ul li.line {/*color: #555;*/ font-size: 13px; display: inline-block;}
+.globalStock #container .summary_ftr .sumInfo ul li i {color: #4d5dae; font-size: 11px; margin-left: 225px; font-style: normal;}
+.globalStock #container .summary_ftr .sumInfo ul li .title {width: 226px; display: inline-block;}
+.globalStock #container .summary_ftr .sumInfo ul:nth-child(2) {width: 46%; display: inline-block; vertical-align: top; margin: 40px 0;}
+.globalStock #container .summary_ftr .sumInfo ul:nth-child(2) li {padding-top: 15px;}
+
+.globalStock #container .summary_ftr p {font-size: 12px; color: #333;}
+.globalStock #container .summary_ftr strong {font-size: 16px; /*color: rgb(94, 46, 46);*/ font-weight: bold;}
+.globalStock #container .summary_ftr.big {overflow: hidden;}
+.globalStock #container .summary_ftr.small {}
+.globalStock #container .summary_ftr p.small{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:80%;}
+.globalStock #container .summary_ftr .etc {margin-top: 17px;}
+.globalStock #container .summary_ftr .etc li {display: inline-block; color: #777; font-size: 11px; margin-right: 20px; color: #000;}
+.globalStock #container .summary_ftr .etc li span {display: inline-block; margin-right: 10px; vertical-align: top; color: #777;}
+.globalStock #container .summary_ftr .etc li a {color: #2b199e; text-decoration: underline;}
+.globalStock #container .summary_ftr .etc li.industry {position: relative; margin-right: 40px;}
+.globalStock #container .summary_ftr .etc li.industry::before {content: ""; position: absolute; right: -27px; top: 4px; display: inline-block; width: 1px; height: 14px; border-right: 1px solid #bbb;}
+.globalStock #container .summary_ftr .etc li.home > span {margin-top: 6px;}
+.globalStock #container .summary_ftr .etc li.link > span {margin-top: 6px;}
+.globalStock #container .summary_ftr .close .txt {color: #333; font-size: 11px;}
+.globalStock #container .summary_ftr .close {color: #333; font-size: 11px; position: absolute; right: 24px; top: 22px; cursor: pointer;}
+.globalStock #container .summary_ftr .close i {display: inline-block; width: 12px; height: 7px; background: url("/img/arrow_close.png") no-repeat 0 0; margin-left: 7px;}
+.globalStock #container .summary_ftr .close.show i {display: inline-block; width: 12px; height: 7px; top: 22px; background: url("/img/arrow_open.png") no-repeat 0 0; margin-left: 7px;}
+
+/* 최근 실적발표 */
+.globalStock #container .performance_card {width: 100%; box-sizing: border-box; margin-top: 25px;}
+.globalStock #container .performance_card .title {color: #202091; font-size: 19px; font-weight: bold;}
+.globalStock #container .performance_card .title .day {font-size: 15px; color: #9a9a9a; padding-left: 10px;}
+.globalStock #container .performance_card .chartDate.chartcard {border: 1px solid #DDDDDD; vertical-align: top; margin-top: 17px; margin-right: 10px; display: inline-block; width: calc(100% / 3 - 10px); box-sizing: border-box; padding: 10px 0 0;}
+.globalStock #container .performance_card .chartDate.chartcard:nth-child(3n + 1) {margin-right: 0;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle {position: relative; padding: 0 10px;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .title {font-size: 19px; width: 210px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: bold;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .info {line-height: 28px; display: block;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .info .sum {line-height: 28px; margin-left: 0; position: relative; top: 3px;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .info .sum .eng {font-size: 14px; color: #8c8c8c; font-weight: normal;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .info .day_txt {color: #999; font-size: 12px; line-height: 32px; float: right;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .info li.category {margin-top: 7px; height: 18px; line-height: 18px;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .chartLink {position: absolute; right: 13px; top: 6px; display: none;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .detail li {display: inline-block;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .detail li.num {}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .detail li.per span.increase {font-size: 18px;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .detail li.per span.increase span {font-size: 14px;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .detail li.per span.decrease {font-size: 16px;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .detail li.per span.decrease span {font-size: 14px;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .detail li.day {font-size: 11px; color: #9a9a9a; display: inline-block;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .detail li.category {font-size: 11px; color: #9a9a9a; display: inline-block; margin-left: 10px;}
+.globalStock #container .performance_card .chartDate.chartcard .schChartTitle .detail {padding-bottom: 15px;}
+.globalStock #container .performance_card .chartDate.chartcard .total {color: #8380A0; font-size: 14px; padding: 7px 10px; background: #F4F4F5;}
+.globalStock #container .performance_card .chartDate.chartcard .total strong {color: #333333; font-weight: normal; float: right;}
+.globalStock #container .performance_card .chartDate.chartcard .total:nth-child(2) strong {font-weight: bold;}
+.globalStock #container .performance_card .chartDate.chartcard .total strong.increase { color: #ff0000; }
+.globalStock #container .performance_card .chartDate.chartcard .total strong.decrease { color: #001eff; }
+.globalStock #container .performance_card .btnArea {margin: 30px auto 0; width: 60%; }
+.globalStock #container .performance_card .btnArea .btn_more {position: relative; width: 100%; border-radius: 7px; font-weight: bold; background: #5e5ead; color: #fff; font-size: 15px; padding-top: 13px; height: 45px;}
+.globalStock #container .performance_card .btnArea .btn_more i {border: solid #fff; position: absolute; right: calc(50% - 46px); top: 17px;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px; 
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* 산업동향 */
+.globalStock #container .trends_list {margin-top: 25px;}
+.globalStock #container .trends_list .standard {margin-top: 35px;} 
+.globalStock #container .trends_list .standard .select {padding-right: 18px; box-sizing: border-box; min-width: 120px;}
+.globalStock #container .trends_list .standard .select button.my_value {font-size: 18px; font-weight: bold;}
+.globalStock #container .trends_list .standard .select li a {font-size: 14px;}
+.globalStock #container .trends_list .standard .trends_num {font-size: 15px; color: #333; padding-left: 10px;}
+.globalStock #container .trends_list .standard .trends_num strong {font-weight: bold;}
+.globalStock #container .trends_list .title {color: #202091; font-size: 19px; font-weight: bold;}
+.globalStock #container .trends_list .title .day {font-size: 15px; color: #9a9a9a; padding-left: 10px;}
+.globalStock #container .trends_list .h2_title {color: #333; font-size: 17px; font-weight: bold; margin-top: 25px;}
+.globalStock #container .trends_list .table_left,
+.globalStock #container .trends_list .table_right {display: inline-block; width: calc(100% / 2 - 27px);}
+.globalStock #container .trends_list .table_left {margin-right: 25px;}
+.globalStock #container .trends_list .tableColtype.trends {margin-top: 16px; border-bottom: 2px solid #AAA;}
+.globalStock #container .trends_list .tableColtype.trends th,
+.globalStock #container .trends_list .tableColtype.trends td {font-size: 14px; text-align: center;}
+.globalStock #container .trends_list .tableColtype.trends th {font-size: 13px; padding: 9px 2px; color: #333; border-bottom: 2px solid #747474;}
+.globalStock #container .trends_list .tableColtype.trends td {padding: 12px 2px 13px; box-sizing: border-box; background-image: none;}
+.globalStock #container .trends_list .tableColtype.trends tr {background: #fff;}
+.globalStock #container .trends_list .tableColtype.trends td:nth-child(1) {}
+.globalStock #container .trends_list .tableColtype.trends td:nth-child(2) {width: 90px;}
+.globalStock #container .trends_list .tableColtype.trends td:nth-child(3) {width: 160px;}
+.globalStock #container .trends_list .tableColtype.trends td:nth-child(4) {}
+.globalStock #container .trends_list .tableColtype.trends .title {text-align: left !important;}
+.globalStock #container .trends_list .tableColtype.trends .title a {color: #333; font-size: 15px; box-sizing: border-box; display: inline-block; width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.globalStock #container .trends_list .tableColtype.trends .title a .ticker {display: block; line-height: 1.2rem; color: #999;  max-width: 85px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 1px;}
+.globalStock #container .trends_list .tableColtype.trends .num {}
+.globalStock #container .trends_list .tableColtype.trends .num span {font-size: 15px; font-weight: bold; color: #333; margin-top: 1px;}
+.globalStock #container .trends_list .tableColtype.trends .num .increase {display: block; color: #f50317; font-size: 11px;}
+.globalStock #container .trends_list .tableColtype.trends .num .decrease {display: block; color: #478eff; font-size: 11px;}
+.globalStock #container .trends_list .tableColtype.trends .moti {text-align: center;}
+.globalStock #container .trends_list .tableColtype.trends .moti span {font-size: 15px; font-weight: normal; color: #333;}
+.globalStock #container .trends_list .tableColtype.trends .moti span span {font-size: 12px;}
+.globalStock #container .trends_list .tableColtype.trends .moti .increase {display: inline-block; color: #f50317;}
+.globalStock #container .trends_list .tableColtype.trends .moti .decrease {display: inline-block; color: #478eff;}
+
+
+/* 투자지표 */
+.globalStock #container .tableData .competitors.txtInvest li {font-size: 0; letter-spacing: -9999px; }
+.globalStock #container .tableData .competitors.txtInvest li a {font-size: 0; display: inline-block; width: 100px; height: 19px; background: url(/img/wm/txt/txt_calculation.png) no-repeat 0 0;}
+.globalStock #container .tableData .competitors.txtInvest li:nth-child(2) a {background-position-x: -95px}
+.globalStock #container .tableData .competitors.txtInvest li:nth-child(3) a{background-position-x: -195px}
+.globalStock #container .tableData .competitors.txtInvest li a.active,
+.globalStock #container .tableData .competitors.txtInvest li a:hover {background-position-y: bottom;}
+
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover {margin-top: 0;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr:hover {background: #f8d3d4 !important;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover td {font-size: 13px; height: 48px; box-sizing: border-box; color: #000;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover td.na {text-align: center;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover td span {display: inline-block;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover td:first-child {/*border-right: 1px solid #555;*/}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover th span {display: inline-block; width: 95px; font-size: 14px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover th:first-child span {width: 161px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth01 {background: #f6f6f9}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth02 {background: #fff;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth03 {background: #fff;}
+/* .globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.asset {background: #f8d3d4;} */
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth01:first-child td:first-child {border-top:none; border-bottom:none; height: 47px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth01 td:first-child {color: #1f1f9c; font-size: 13px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth02 td:first-child {color: #000; font-size: 12px;  position: absolute; left: 0;  width: 160px; z-index: 38; background-color:inherit; border-bottom: none;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth03 td:first-child {position: absolute; left: 0;  width: 160px; z-index: 70; background-color: #fff;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth01 td:first-child span {display: inline-block;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth01 td:first-child span {}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth02 td:first-child span {padding-left: 0;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth03 td:first-child span {padding-left: 15px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth01 td {/*border-top: 1px solid #ccc;*/ color: #000; font-size: 13px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.depth03 td {color: #555; font-size: 12px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.asset td:first-child {color: #000;  font-size: 12px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.totalAsset {background: #fdfbec;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.totalAsset td {color: #000; font-size: 13px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.totalAsset td:first-child span {background: url('../img/icon/td_totalAsset.png') no-repeat 0 8px;}
+.globalStock #container .tableData .tableScroll .typeScroll_mouseover tr.totalAsset td:first-child span {padding-left: 15px;}
+.globalStock #container .tableData .tableScroll tr.depth01.lineSolo,
+.globalStock #container .tableData .tableScroll tr.depth01.lineSolo td {/*background-color: #fff*/}
+.globalStock #container .tableData .tableScroll tr.depth01.lineSolo td:first-child {border-bottom: none;}
+.globalStock #container .tableData .tableScroll tr.depth01.lineSolo td:first-child span {background-image:none; padding-left: 0; color: #000}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill {border-bottom: 1px solid #c9c9c9;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr {}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr td,
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr th {}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr td {background:url('../img/table_borderS.gif') repeat-x left bottom}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr.depth01 td {background-color: #fff;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr.depth01 td.na {text-align: center;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr.depth01 td:first-child {border-right: 1px solid #555;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr.depth02 {background: #f3f3f3;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr.depth02:first-child {}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr.depth02 td {background-image: none; background-color: #f7f7f7 !important;  height: 16px; padding-top: 10px; font-size: 13px;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr.depth02 td.na {text-align: center;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr.lastD01 td {background-color: #fff !important; background:url('../img/table_borderS.gif') repeat-x left bottom}
+.globalStock #container .tableData .tableScroll .typeScroll.tableBill tr.lastD02 td {background:url('../img/table_border.gif') repeat-x left bottom}
+.globalStock #container .tableData.bannerRight {display: inline-block; width: 100%; margin-top: 43px;}
+
+/* main */
+.globalStock .mainbg {background: url('../img/bg_mainbg.gif') repeat-x 0 147px;}
+.globalStock #container .indicators {background: #f2f2f2; position: relative; height: 41px; margin-top: 30px;}
+.globalStock #container .indicators .update_time {text-align: right; color: #8380A0; font-size: 12px; margin-top: 10px;}
+.globalStock #container .indicators .update_time strong {font-weight: bold;}
+.globalStock #container .indicators .indicatorsSwiper {padding-left: 125px;}
+.globalStock #container .indicators .title {position: absolute; left: 0; top: 0; color: #000; font-size: 15px; font-weight: bold; display: inline-block; width: 125px; height: 69px; line-height: 69px; border-right: 1px solid #e6e6e6; text-align: center;}
+.globalStock #container .indicators .list {display: inline-block; }
+.globalStock #container .indicators .list dt,
+.globalStock #container .indicators .list dd {display: inline-block;  height: 69px; line-height: 69px; font-size: 13px;}
+.globalStock #container .indicators .list dt {padding-right: 10px; }
+.globalStock #container .indicators .list dd.num {color: #000; }
+.globalStock #container .indicators .list dd.per {color: #000; font-size: 14px;}
+.globalStock #container .indicators .list dd.per span {font-size: 13px;}
+.globalStock #container .indicators .list dd.per span.increase { color: #ff0000; }
+.globalStock #container .indicators .list dd.per span.decrease { color: #001eff; }
+
+.globalStock #container .mainTheme {width: 100%; margin-left: auto; margin-right: auto;}
+.globalStock #container .mainTheme .update_time {text-align: right; color: #8380A0; font-size: 12px; margin-bottom: 10px;}
+.globalStock #container .mainTheme .update_time strong {font-weight: bold;}
+.globalStock #container .mainTheme .chartFour {font-size: 0; background:#212126; width:calc(100% - 160px );} 
+.globalStock #container .mainTheme .chartFour .chartData {width: 120px; display: inline-block; vertical-align: top; margin-right: 10px;}
+.globalStock #container .mainTheme .chartFour .chartSheet {width: calc(100% - 130px); /*height: 124px;*/ display: inline-block; vertical-align: top}
+.globalStock #container .mainTheme .chartFour .chartSheet .mainTheme_chart1 {width: 160px; height: 99px;}
+.globalStock #container .mainTheme .chartFour .schChartTitle {width: calc(100% / 2); box-sizing: border-box; display: inline-block; padding: 15px 0 7px 15px; border-right: 1px solid #333350; border-bottom: 1px solid #333350;}
+.globalStock #container .mainTheme .chartFour .schChartTitle:nth-child(2n) {}
+.globalStock #container .mainTheme .chartFour .schChartTitle .title {color: #fff; font-size: 16px; font-weight: normal; display: inline-block; width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .title a {color: #fff; font-size: 16px; font-weight: normal;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .info {display: block; line-height: 16px;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .info .sum {margin-left: 0; line-height: 16px;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .info .sum .eng {color: #727272; font-size: 12px; font-weight: normal;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .detail {margin-top: 7px;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .detail .num {color: #ddd; font-size: 20px !important; font-weight: bold;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .detail .per {display: block; margin-top: 5px; margin-left: 0;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .detail .per span {color: #ddd; font-size: 12px;  display: inline-block;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .detail .increase { color: #ff0000 !important; font-size: 16px;}
+.globalStock #container .mainTheme .chartFour .schChartTitle .detail .decrease { color: #478eff !important; font-size: 16px;}
+
+.globalStock #container .mainTheme .chartTwo {font-size: 0; /*height: 320px;*/ background: url('../img/bg_chartTwo.png') no-repeat center center;}
+.globalStock #container .mainTheme .chartTwo .chartData {height: 72px;}
+.globalStock #container .mainTheme .chartTwo .chartSheet {margin-top: 4px; width: 92%;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle {width: 49.7%; /*height: 320px;*/ display: inline-block; padding: 15px 0 7px 15px; box-sizing: border-box; vertical-align: top;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle:nth-child(2n) {padding-left: 34px;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle .title {color: #fff; font-size: 21px; font-weight: normal; vertical-align: top; /*display: inline-block; width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;*/}
+.globalStock #container .mainTheme .chartTwo .schChartTitle .title a {color: #fff; }
+.globalStock #container .mainTheme .chartTwo .schChartTitle .info {margin-left: 20px; position: relative; top: 5px; line-height: 26px; vertical-align: top;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle .info .sum {margin-left: 0; line-height: 20px;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle .info .sum .eng {color: #999; font-size: 13px; font-weight: normal; vertical-align: top;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle .detail {margin-top: 0; display: block;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle .detail .num {color: #ddd; font-size: 26px !important; font-weight: bold;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle .detail .per {margin-top: 5px; margin-left: 24px;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle .detail .increase { color: #ff0000; font-size: 14px;}
+.globalStock #container .mainTheme .chartTwo .schChartTitle .detail .decrease { color: #478eff; font-size: 14px;}
+.globalStock #container .mainTheme .chartTwo .chartSheet .mainTheme2_chart1 {width: 100%; height: 146px;}
+.globalStock #container .mainDivision {position: relative; margin-top: 55px;}
+.globalStock #container .mainLeft {width: 100%; box-sizing: border-box; padding-right: 300px;}
+.globalStock #container .mainRight {position: absolute; right: 0; top: 0; width: 300px; box-sizing: border-box; padding-left: 20px;}
+.globalStock #container .mainLeft .title,
+.globalStock #container .mainRight .title {color: #202091; font-size: 19px; font-weight: bold;}
+.globalStock #container .mainLeft .title .day {font-size: 15px; color: #9a9a9a; padding-left: 10px;}
+.globalStock #container .mainLeft .chartDate.chartcard {border: 1px solid #DDDDDD; vertical-align: top; margin-top: 17px; height: 250px; display: inline-block; width: calc(100% / 2 - 7px); box-sizing: border-box; padding: 10px 0 0;}
+.globalStock #container .mainLeft .chartDate.chartcard:nth-child(2n + 1) {margin-left: 10px;;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle {position: relative; padding: 0 10px;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .title {font-size: 19px; width: 210px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: bold;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .info {line-height: 28px; padding-right: 35px;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .info .sum {line-height: 28px; margin-left: 0; position: relative; top: 3px;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .info .sum .eng {font-size: 14px; color: #8c8c8c; font-weight: normal;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .info li.category {margin-top: 7px; height: 18px; line-height: 18px;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .chartLink {position: absolute; right: 13px; top: 6px; display: none;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .detail li {display: inline-block;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .detail li.num {}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .detail li.per span.increase {font-size: 18px;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .detail li.per span.increase span {font-size: 14px;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .detail li.per span.decrease {font-size: 16px;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .detail li.per span.decrease span {font-size: 14px;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .detail li.day {font-size: 11px; color: #9a9a9a; display: inline-block;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .detail li.category {font-size: 11px; color: #9a9a9a; display: inline-block; margin-left: 10px;}
+.globalStock #container .mainLeft .chartDate.chartcard .schChartTitle .detail {padding-bottom: 6px;}
+.globalStock #container .mainLeft .chartDate.chartcard .sum_txt {color: #999; font-size: 14px; border-top: 1px solid #E0E4E9; padding: 10px 14px 0; margin-bottom: 6px; display: inline-block; display: -webkit-box; overflow: hidden; height: 2.8em; line-height: 1.4em; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; }
+.globalStock #container .mainLeft .chartDate.chartcard .total {color: #8380A0; font-size: 14px; padding: 10px 14px; background: #F4F4F5; border-bottom: 1px solid #E0E4E9; }
+.globalStock #container .mainLeft .chartDate.chartcard .total strong {color: #333333; font-weight: normal; float: right;}
+.globalStock #container .mainLeft .chartDate.chartcard .tableRowtype.card {background: #F4F4F5; margin: 0 auto;}
+.globalStock #container .mainLeft .chartDate.chartcard .tableRowtype.card th,
+.globalStock #container .mainLeft .chartDate.chartcard .tableRowtype.card td {text-align: left; padding: 5px 0; box-sizing: border-box;}
+.globalStock #container .mainLeft .chartDate.chartcard .tableRowtype.card th {color: #8380A0; font-size: 13px; padding-top: 10px;}
+.globalStock #container .mainLeft .chartDate.chartcard .tableRowtype.card td {color: #333333; padding-bottom: 10px;}
+.globalStock #container .mainLeft .chartDate.chartcard .tableRowtype.card tr:nth-child(1) th,
+.globalStock #container .mainLeft .chartDate.chartcard .tableRowtype.card tr:nth-child(2) td {padding-left: 10px;}
+.globalStock #container .mainLeft .chartDate.chartcard .tableRowtype.card tr:nth-child(2) td {font-size: 12px;}
+.globalStock #container .mainRight .tableColtype.performance {margin-top: 16px; border-bottom: 2px solid #AAA;}
+.globalStock #container .mainRight .tableColtype.performance th,
+.globalStock #container .mainRight .tableColtype.performance td {font-size: 13px;}
+.globalStock #container .mainRight .tableColtype.performance th {font-size: 12px; padding: 9px 2px; color: #999; border-bottom: 2px solid #747474;}
+.globalStock #container .mainRight .tableColtype.performance td {padding: 12px 2px 13px; box-sizing: border-box; background-image: none;}
+.globalStock #container .mainRight .tableColtype.performance tr {background: #fff;}
+.globalStock #container .mainRight .tableColtype.performance td:nth-child(1) {}
+.globalStock #container .mainRight .tableColtype.performance td:nth-child(2) {width: 48px;}
+.globalStock #container .mainRight .tableColtype.performance td:nth-child(3) {width: 48px;}
+.globalStock #container .mainRight .tableColtype.performance td:nth-child(4) {}
+.globalStock #container .mainRight .tableColtype.performance .title {text-align: left !important;}
+.globalStock #container .mainRight .tableColtype.performance .title a {color: #333; font-size: 15px; box-sizing: border-box; display: inline-block; width: 85px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.globalStock #container .mainRight .tableColtype.performance .title a .ticker {display: block; line-height: 1.2rem; color: #999;  max-width: 85px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 1px;}
+.globalStock #container .mainRight .tableColtype.performance .num {text-align: right;}
+.globalStock #container .mainRight .tableColtype.performance .num span {font-size: 14px; font-weight: normal; color: #333; margin-top: 1px;}
+.globalStock #container .mainRight .tableColtype.performance .num .increase {display: block; color: #f50317; font-size: 11px;}
+.globalStock #container .mainRight .tableColtype.performance .num .decrease {display: block; color: #478eff; font-size: 11px;}
+.globalStock #container .mainRight .tableColtype.performance .per {text-align: left; padding: 10px 0 5px;}
+.globalStock #container .mainRight .tableColtype.performance .per span {font-size: 14px; font-weight: normal; color: #333;}
+.globalStock #container .mainRight .tableColtype.performance .per .increase {display: block; color: #f50317;}
+.globalStock #container .mainRight .tableColtype.performance .per .decrease {display: block; color: #478eff;}
+.globalStock #container .mainRight .tableColtype.performance .profit span {font-size: 14px; font-weight: normal; color: #333; margin-top: 1px;}
+.globalStock #container .mainRight .tableColtype.performance .profit span .dollar {font-size: 12px; display: block; color: #999;}
+.globalStock #container .mainRight .tableColtype.performance .profit .increase {display: block; color: #f50317;}
+.globalStock #container .mainRight .tableColtype.performance .profit .decrease {display: block; color: #478eff;}
+.globalStock #container .mainRight .tableColtype.performance .profit,
+.globalStock #container .mainRight .tableColtype.performance .moti {text-align: right;}
+.globalStock #container .mainRight .tableColtype.performance .moti span {font-size: 14px; font-weight: normal; color: #333;}
+.globalStock #container .mainRight .tableColtype.performance .moti .increase {display: block; color: #f50317;}
+.globalStock #container .mainRight .tableColtype.performance .moti .decrease {display: block; color: #478eff;}
+.globalStock #container .mainRight .tableColtype.performance .score {text-align: right; padding-right: 10px;}
+.globalStock #container .mainRight .tableColtype.performance .score span {font-size: 1rem; font-weight: normal; color: #8380A0;}
+.globalStock #container .mainRight .tableColtype.performance .recom {text-align: right;}
+.globalStock #container .mainRight .tableColtype.performance .recom span {font-size: 1rem; font-weight: normal; color: #8380A0;}
+.globalStock #container .mainRight .tableColtype.performance .allocation {text-align: right;}
+.globalStock #container .mainRight .tableColtype.performance .allocation span {font-size: 1rem; font-weight: normal; color: #8380A0; }
+
+
+/* 토론 */
+.globalStock #container .subDivision .subLeft .investmentOpinion {background: #f2f2f2; position: relative; height: 48px; line-height: 48px; padding: 0 20px; box-sizing: border-box;}
+.globalStock #container .subDivision .subLeft .investmentOpinion .title {color: #000; font-size: 14px; font-weight: bold; background: url('../img/icon/icon_investmentOpinion.png') no-repeat 0 4px; padding-left: 18px;}
+.globalStock #container .subDivision .subLeft .investmentOpinion dl,
+.globalStock #container .subDivision .subLeft .investmentOpinion dt,
+.globalStock #container .subDivision .subLeft .investmentOpinion dd {display: inline-block; color: #000; font-size: 13px;}
+.globalStock #container .subDivision .subLeft .investmentOpinion dl {margin-left: 30px;}
+.globalStock #container .subDivision .subLeft .investmentOpinion dt {position: relative; padding-right: 0.7rem;}
+.globalStock #container .subDivision .subLeft .investmentOpinion dt::before {content: ""; position: absolute; right: 14px; top: 18px; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #d5d5df;}
+.globalStock #container .subDivision .subLeft .investmentOpinion dd {padding-right: 15px; font-size: 12px;}
+
+.globalStock #container .subDivision .subRight {}
+.globalStock #container .subDivision .subRight .rightTop .rankingTitle {color: #000; font-size: 16px; margin-top: 3px;}
+.globalStock #container .subDivision .subRight .rightTop .rankingTitle:nth-child(3){margin-top: 37px;}
+.globalStock #container .subDivision .subRight .rightTop .tableRanking {display: inline-block; margin-top: 20px; padding-bottom: 10px;} 
+.globalStock #container .subDivision .subRight .rightTop td {color: #000; font-size: 14px;  height: 31px; box-sizing: border-box;}
+.globalStock #container .subDivision .subRight .rightTop .title {font-size: 14px;}
+.globalStock #container .subDivision .subRight .rightTop .title a {display: inline-block; width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.globalStock #container .subDivision .subRight .rightTop .rank {color: #adadad;}
+.globalStock #container .subDivision .subRight .rightTop .num {padding:0 2px 0 5px; font-size: 13px; text-align: right;}
+.globalStock #container .subDivision .subRight .rightTop .per {font-size: 12px; text-align: right;}
+.globalStock #container .subDivision .subRight .rightTop .per span.increase { color: #ff0000; }
+.globalStock #container .subDivision .subRight .rightTop .per span.decrease { color: #001eff; }
+.globalStock #container .subDivision .subRight .rightTop .term {color: #999; font-size: 11px; display: block; text-align: right; padding-right: 7px;}
+.globalStock #container .subDivision .subRight .rightTop .swiper-container .swiper-pagination {bottom: 0; text-align: left;}
+.globalStock #container .subDivision .subRight .rightTop .swiper-container .swiper-pagination .swiper-pagination-bullet {width: 7px; height: 7px;}
+.globalStock #container .subDivision .subRight .rightTop .swiper-container .swiper-pagination .swiper-pagination-bullet-active {background:#4949a0;}
+.globalStock #container .subDivision .subRight .rightTop .condition {color:#000; font-size: 13px;}
+.globalStock #container .subDivision .subRight .rightTop .condition i {display: inline-block; width:12px; height: 12px; background: url('../img/icon/condition.png') no-repeat 0 0; margin-right: 6px;}
+.globalStock #container .subDivision .subRight .rightTop .condition.sell {}
+.globalStock #container .subDivision .subRight .rightTop .condition.buying {}
+.globalStock #container .subDivision .subRight .rightTop .condition.sell i {background-position-y: 0;}
+.globalStock #container .subDivision .subRight .rightTop .condition.buying i {background-position-y: bottom;}
+.globalStock #container .subDivision .subRight .rightTop .re {color: #777; font-size: 12px;  text-align: right;}
+
+/*박미연 추가*/
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth03 td{ padding-top: 8px; padding-bottom: 8px; height: 16px;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth03 td span{ color: #000;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth01 td:first-child span strong,
+.globalStock #container .tableData .tableScroll .typeScroll tr.totalAsset td:first-child span strong{ font-weight: 700;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.totalAsset td {background:#fdfbec url('../img/bg_tr_totalasset_line.png') repeat-x 0 top, url('../img/table_border.gif') repeat-x left bottom;}
+.globalStock #container .tableData .tableScroll .typeScroll tr.depth02_totalAsset td {background-color: #fdfbec !important;}
+
+/* 재무제표*/
+.globalStock #container .tableData .tableScroll .typeScroll.tableReports tr.depth03 td {background-image: none; background-color: inherit; color: #000;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableReports tr.depth03.last03 {background:url('../img/table_border.gif') repeat-x left bottom, url('../img/table_borderR.gif') repeat-y right top;}
+.globalStock #container .tableData .tableScroll .typeScroll.tableReports tr.depth03.last03 td:first-child {background:#fff url('../img/table_border.gif') repeat-x left bottom;}
+
+/* modal */
+.globalStock .mw_priceview{display:none; position:fixed;_position:absolute;top:0;left:0;z-index:10000;width:100%;height:100%}
+.globalStock .mw_priceview.open{display:block}
+.globalStock .mw_priceview .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.5;filter:alpha(opacity=50)}
+.globalStock #priceview{position:absolute;top:50%;left:50%; width:800px; margin:-350px 0 0 -470px;padding:57px 65px;border:3px solid #898add;background:#fff;line-height:normal;white-space:normal}
+.globalStock #priceview .close {display: inline-block; position: absolute; right: 47px; top: 31px;}
+.globalStock #priceview h1 {color: #222175; font-size: 25px;}
+.globalStock #priceview .priceview_table {border-top: 1px solid #999; border-bottom: 1px solid #bbb; margin-top: 35px;}
+.globalStock #priceview .priceview_table th,
+.globalStock #priceview .priceview_table td {border-bottom: 1px solid #e2e2e2; border-right: 1px solid #e2e2e2; height: 59px; text-align: center; font-family: '맑은 고딕'}
+.globalStock #priceview .priceview_table tr:last-child td {border-bottom: none;}
+.globalStock #priceview .priceview_table th:last-child,
+.globalStock #priceview .priceview_table td:last-child {border-right: none;}
+.globalStock #priceview .priceview_table th {color: #000; font-size: 18px; font-weight: bold; border-bottom: 1px solid #bbb;}
+.globalStock #priceview .priceview_table tr.td_title {background: #f6f6f6; }
+.globalStock #priceview .priceview_table td.title {color: #000; font-size: 15px; font-weight: 600;}
+.globalStock #priceview .priceview_table td {  }
+.globalStock #priceview .priceview_table td span {display: inline-block;}
+.globalStock #priceview .priceview_table td span.basic {color: #888; position: relative; padding: 0 15px; width: 111px; box-sizing: border-box; margin-right: 40px;}
+.globalStock #priceview .priceview_table td span.sale {color: #888; position: relative; padding: 0 10px; width: 121px; box-sizing: border-box; margin-right: 40px;}
+.globalStock #priceview .priceview_table td span.sale::before {content: ''; background: url('../img/pay02_lineBB.png') no-repeat right 0; position: absolute;  left: 0; top: 50%; margin-top: -2px; width: 100%; height: 7px;}
+.globalStock #priceview .priceview_table td span.discount {color: #050505; font-size: 15px; font-weight: bold; position: relative;}
+.globalStock #priceview .priceview_table td span.percent {color: #ff4058; font-size: 13px; margin-left: 12px; position: absolute; right: -50px; top: 3px; }
+.globalStock #priceview .priceview_table td span.percent i {margin-left: 4px; display: inline-block; background: url('../img/icon/percent.png') no-repeat right top; width: 8px; height: 10px;}
+
+/* 에러페이지 */
+.globalStock #container .errorImg {display: block; margin: 0 auto; text-align: center;}
+.globalStock #container .errorLink {color: #888; text-align: right; text-decoration: underline; padding-right: 100px; box-sizing: border-box; display: block; max-width: 1100px; margin: 0 auto 60px;}

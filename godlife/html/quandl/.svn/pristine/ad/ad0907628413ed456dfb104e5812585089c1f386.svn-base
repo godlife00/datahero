@@ -1,0 +1,32 @@
+table	indicator	isfilter	isprimarykey	title	kortitle	description	unittype	korunitnum	korunittype	roundtype	usunitnumround	usunitnum
+TICKERS	table	Y	Y	Sharadar Table		The database table which the ticker is featured in. Examples are: "SF1" or "SEP.	text					
+TICKERS	permaticker	Y	Y	Permanent Ticker Symbol		The permaticker is a unique and unchanging identifier for an issuer in the dataset.	text					
+TICKERS	ticker	Y	Y	Ticker Symbol		The ticker is a unique identifer for an issuer in the database. Where a ticker contains a "." or a "-" this is removed from the ticker. For example BRK.B is BRKB. We include the BRK.B ticker in the Related Tickers field. Where a company is delisted and the ticker is recycled, we use that ticker for the currently active company and append a number to the ticker of the delisted company. eg GM is the current actively traded entity, & GM1 is the entity that filed for bankruptcy in 2009.	text					
+TICKERS	name	N	N	Issuer Name	종목명	The name of the security issuer.	text					
+TICKERS	exchange	N	N	Stock Exchange	거래소	The exchange on which the security trades. Examples are: "NASDAQ","NYSE","NYSEARCA","BATS","OTC" and "NYSEMKT" (previously the American Stock exchange).	text					
+TICKERS	isdelisted	N	N	Is Delisted?	상장폐지여부	Is the security delisted? [Y]es or [N]o.	Y/N					
+TICKERS	sector	N	N	Sector	섹터	Sharadar's sector classification based on SIC codes in a format which approximates to GICS.	text					
+TICKERS	industry	N	N	Industry	산업	Sharadar's industry classification based on SIC codes in a format which approximates to GICS.	text					
+TICKERS	scalemarketcap	N	N	Company Scale - Market Cap	회사 규모 - 시가 총액	This field is experimental and subject to change. It categorises the company according to it's maximum observed market cap as follows: 1 - Nano <$50m; 2 - Micro < $300m; 3 - Small < $2bn; 4 - Mid <$10bn; 5 - Large < $200bn; 6 - Mega >= $200bn	text			roundup	0	
+TICKERS	scalerevenue	N	N	Company Scale - Revenue	회사 규모 - 수익(매출)	This field is experimental and subject to change. It categorises the company according to it's maximum observed annual revenue as follows: 1 - Nano <$50m; 2 - Micro < $300m; 3 - Small < $2bn; 4 - Mid <$10bn; 5 - Large < $200bn; 6 - Mega >= $200bn	text					
+TICKERS	relatedtickers	N	N	Related Tickers	관련 티커	Where related tickers have been identified this field is populated. Related tickers can include the prior ticker before a ticker change, and it tickers for alternative share classes.	text					
+TICKERS	currency	N	N	Currency	통화	The company functional reporting currency for the SF1 Fundamentals table or the currency for EOD prices in SEP and SFP.	text					
+TICKERS	location	N	N	Location	위치	The company location as registered with the Securities and Exchange Commission.	text					
+TICKERS	lastupdated	Y	N	Last Updated Date	최종 업데이트 날짜	Last Updated is a column field available in the new datatable API which represents the last date that this database entry was updated, which is useful to users when updating their local records.	date (YYYY-MM-DD)					
+TICKERS	firstadded	N	N	First Added Date	처음 추가 된 날짜	The date that the ticker was first added to coverage in the dataset.	date (YYYY-MM-DD)					
+TICKERS	firstpricedate	N	N	First Price Date	최초 가격 날짜	The date of the first price observation for a given ticker. Can be used as a proxy for IPO date. Minimum value of 1986-01-01 for IPO's that occurred prior to this date. Note: this does not necessarily represent the first price date available in our datasets since our end of day price history currently starts in December 1998.	date (YYYY-MM-DD)					
+TICKERS	lastpricedate	N	N	Last Price Date	마지막 가격 날짜	The most recent price observation available.	date (YYYY-MM-DD)					
+TICKERS	firstquarter	N	N	First Quarter	첫번째 분기	The first financial quarter available in our dataset.	date (YYYY-MM-DD)					
+TICKERS	lastquarter	N	N	Last Quarter	마지막 분기	The last financial quarter available in our dataset.	date (YYYY-MM-DD)					
+TICKERS	secfilings	N	N	SEC Filings URL	SEC 전자공시	The URL pointing to the SEC filings which also contains the Central Index Key (CIK).	text					
+TICKERS	companysite	N	N	Company Website URL	홈페이지 주소	The URL pointing to the company website.	text					
+TICKERS	avg5ype	N	N	Average 5 years PE	5년 평균 PER	daily table의 pe 5년 값의 평균	ratio		배	roundup	2	
+TICKERS	avg5ypb	N	N	Average 5 years PB	5년 평균 PBR	daily table의 pb 5년 값의 평균	ratio		배	roundup	2	
+TICKERS	avg5yroe	N	N	Average 5 years ROE	5년 평균 ROE	sf1 table의 roe (MRT) 20개 분기 값의 평균	%		%	roundup	2	
+TICKERS	avg5yevebitda	N	N	Average 5 years EV/EBITDA	5년 평균  EV/EBITDA	daily table의 evebita 5년 값의 평균	ratio		배	roundup	2	
+COMPANY	korname				한글 종목명		text					
+COMPANY	breifcompanyoverview				기업개요 요약		text					
+COMPANY	companyoverview				기업개요 전체		text					
+DAILY	marketcap				시가총액		USD	억				백만
+SF1	revenueusd				매출액(USD)		USD	억				백만
+SF1	revenue				매출액		USD	억				백만

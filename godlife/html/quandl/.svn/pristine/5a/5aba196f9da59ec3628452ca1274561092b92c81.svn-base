@@ -1,0 +1,116 @@
+.control-label {
+    text-align: left!important;
+    padding-top: 4px!important;
+    padding-left: 30px;
+}
+.bs-example {
+    position: relative;
+    padding: 15px 15px 15px;
+    margin: 0 0px 15px;
+    background-color: #fafafa;
+    border-color: #e5e5e5 #eee #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+/* Echo out a label for the example */
+.bs-example:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.radio {
+    margin : 0px;
+}
+#image_table tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.tree {
+    font-size: 8pt;
+}
+.tree ul ul {
+    padding-left: 29px;
+    padding-top: 0px;
+}
+.tree li.parent_li>span {
+    cursor: pointer;
+    padding: 3px;
+}
+.tree input[type=checkbox] {
+    vertical-align: text-bottom;
+    margin: 0 0 0 0;
+}
+.tree li {
+    padding: 3px;
+}
+.tree li:before {
+    top: 0px;
+}
+.tree li:after {
+    top: 15px;
+    width: 23px;
+}
+.product_tit header{
+    height: 35px;
+    /*background: #496949;*/
+    background: #4c4f53;
+    padding: 3px 5px;
+    color: #FFF;
+}
+.description_tit header{
+    background: #666;
+}
+.input-icon-left>i, .input-icon-right>i {
+    right: 24px;
+    top: 25%;
+    font-size: 12px;
+}
+.ui-jqgrid .ui-jqgrid-bdiv {   
+    height: auto!important;
+}
+.ui-jqgrid tr.jqgrow td {
+    vertical-align:middle !important
+}
+.required-atr {
+    font-size: 7pt;
+    color: #D40707;
+}
+.invalid {
+    font-size: 8pt;
+    color: #D40707;
+}
+.state-error input{
+    background: #fff0f0;
+    border-color: #A90329;
+}
+.state-disabled {
+    cursor: default!important;
+    opacity: .6!important;
+}
+.file-op {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    filter: Alpha(opacity=0);
+    opacity: 0;
+    /*border: 1px solid #000;*/
+    margin-left: 15px;
+    z-index: 1;
+}
+.note-editor button{
+    padding: 1px 5px;
+}
+fieldset {
+    font-size: 9pt;
+}
+.note-editable {
+    font-size: 9pt;
+}

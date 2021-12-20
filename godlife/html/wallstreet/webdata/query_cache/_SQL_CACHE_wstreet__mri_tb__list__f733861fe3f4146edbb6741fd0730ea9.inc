@@ -1,0 +1,1 @@
+a:5:{i:0;a:2:{s:8:"m_ticker";s:4:"CTAS";s:17:"m_biz_total_score";s:2:"85";}i:1;a:2:{s:8:"m_ticker";s:4:"HBAN";s:17:"m_biz_total_score";s:2:"80";}i:2;a:2:{s:8:"m_ticker";s:1:"K";s:17:"m_biz_total_score";s:2:"84";}i:3;a:2:{s:8:"m_ticker";s:3:"MCO";s:17:"m_biz_total_score";s:2:"83";}i:4;a:2:{s:8:"m_ticker";s:3:"PGR";s:17:"m_biz_total_score";s:3:"100";}}

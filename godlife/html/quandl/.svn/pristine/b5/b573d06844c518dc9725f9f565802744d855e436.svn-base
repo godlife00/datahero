@@ -1,0 +1,8 @@
+Table	Indicator	ustitle	itoozaindicator	leveltree	kortitle	YYYY/MM/DD	usunitnum	roundtype	usunitnumround	korunitnum	roundtype	korunitnumround
+SF1	ncfo	Net Cash Flow from Operations	400000	1	영업활동 현금흐름	30,723,000,000	백만	rounddown	0	억	rounddown	0
+SF1	ncfi	Net Cash Flow from Investing	402340	2	투자활동 현금흐름	-12,369,000,000	백만	rounddown	0	억	rounddown	0
+SF1	ncff	Net Cash Flow from Financing	403630	3	재무활동 현금흐름	-7,686,000,000	백만	rounddown	0	억	rounddown	0
+SF1	ncfx	Effect of Exchange Rate Changes on Cash	404380	4	환율변동 효과	-351,000,000	백만	rounddown	0	억	rounddown	0
+SF1	ncf	Net Cash Flow / Change in Cash & Cash Equivalents	404390	5	현금의 증감	10,317,000,000	백만	rounddown	0	억	rounddown	0
+SF1	capex	Capital Expenditure		6	자본적지출(CAPEX)	-10,089,000,000	백만	rounddown	0	억	rounddown	0
+SF1	fcf	Free Cash Flow	101200	7	잉여현금흐름(FCF)	19,400,000,000	백만	rounddown	0	억	rounddown	0

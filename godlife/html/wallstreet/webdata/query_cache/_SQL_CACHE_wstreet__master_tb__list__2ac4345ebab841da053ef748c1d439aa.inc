@@ -1,0 +1,18 @@
+a:4:{i:0;a:13:{s:5:"ms_id";s:1:"3";s:7:"ms_guru";s:11:"Bill Nygren";s:10:"ms_korguru";s:16:"빌 나이그렌";s:9:"ms_stocks";s:2:"51";s:12:"ms_newstocks";s:1:"1";s:15:"ms_10yavgreturn";s:5:"12.50";s:16:"ms_portfolioname";s:12:"Oakmark Fund";s:16:"ms_portfoliodate";s:10:"2021-09-30";s:12:"ms_introduce";s:844:"오크마크 펀드의 포트폴리오 매니저로 위스콘신 -매디슨 대학에서 금융학 학위를 받았고, 미네소타 대학에서 회계 학위를 취득했습니다.
+</br></br>
+
+<b>- 투자철학 (Investing Philosophy)</b></br>
+빌 나이그렌은 가치투자자로 사업가치 대비 할인 받고 있는 회사에 투자합니다. 할인 받고 있던 주가는 시간이 지남에 따라 회사의 사업가치를 반영해 상승할 것이라 믿습니다. 투자를 결정할 때 사업가치 대비 주가가 충분히 할인돼 거래되는지, 회사내 여유 현금에 대한 현명한 투자 집행과 잉여 현금, 높은 수준의 관리자 오너십이 있는지 등을 집중해서 분석합니다. 매수할때는 주식을 사는 것이 아니라 사업의 일부를 매입하는 것처럼 투자합니다.
+";s:8:"ms_image";s:36:"b9c79b8897e54bed85041de1f25a8dad.png";s:24:"ms_representative_ticker";s:20:"ALLY,COF,GOOGL,C,EOG";s:13:"ms_created_at";s:19:"2020-01-05 16:53:05";s:13:"ms_updated_at";s:19:"2021-12-10 13:18:32";}i:1;a:13:{s:5:"ms_id";s:1:"4";s:7:"ms_guru";s:8:"Yacktman";s:10:"ms_korguru";s:9:"야크만";s:9:"ms_stocks";s:2:"62";s:12:"ms_newstocks";s:1:"0";s:15:"ms_10yavgreturn";s:5:"11.40";s:16:"ms_portfolioname";s:25:"Yacktman Asset Management";s:16:"ms_portfoliodate";s:10:"2021-09-30";s:12:"ms_introduce";s:992:"야크만 에셋 매니지먼트의 최고 투자 책임자이자 포트폴리오 관리자입니다. 2011년 모닝스타 올해의 국내 최고 관리자 상을 수상했습니다. 브리검 영 대학에서 경제학 학위와 MBA를 취득했습니다.
+</br></br>
+<b>- 투자철학 (Investing Philosophy)</b></br>
+성장 기업을 싼 가격에 사는 성장과 가치를 결합한 투자전략으로 운영합니다. 야크만 에셋 매니지먼트는 좋은 사업, 주주 중심 경영, 낮은 주가 등 3가지를 중점으로 투자를 고려합니다.
+
+좋은 사업은 높은 시장 점유율, 유형자산 대비 높은 수익률, 고객의 재구매 주기가 짧고 제품의 라이프 사이클이 긴 기업입니다.주주 중심 경영은 수익을 사업에 재투자하고도 초과 현금을 가지고 있는 등 현금을 현명하게 배분하는 기업을 말합니다. 낮은 주가는 기업의 실제 가치에 비해 싸게 거래되는 주가를 말합니다. ";s:8:"ms_image";s:36:"7ae7f01649689836dbef0f37cffd3de9.png";s:24:"ms_representative_ticker";s:21:"PEP,GOOGL,CNQ,MSFT,PG";s:13:"ms_created_at";s:19:"2020-01-05 16:53:54";s:13:"ms_updated_at";s:19:"2021-11-18 09:58:47";}i:2;a:13:{s:5:"ms_id";s:1:"2";s:7:"ms_guru";s:12:"Seth Klarman";s:10:"ms_korguru";s:16:"세스 클레먼";s:9:"ms_stocks";s:2:"56";s:12:"ms_newstocks";s:1:"7";s:15:"ms_10yavgreturn";s:5:"12.80";s:16:"ms_portfolioname";s:17:"The Baupost Group";s:16:"ms_portfoliodate";s:10:"2021-09-30";s:12:"ms_introduce";s:861:"바우포스트 그룹(The Baupost Group)의 포트폴리오 매니저로 2019년 11월 기준 70억 달러를 운영하며, 매년 평균 수익률 20%를 유지하는 놀라운 성과를 내고 있습니다. 가치투자의 핵심 개념 중 하나인 '안전마진(Margin of Safety)'의 저자입니다. 코넬 대학교 경제학 학위를 취득했고, 하버드에서 MBA 과정을 졸업했습니다.
+</br></br>
+
+<b>- 투자철학 (Investing Philosophy)</b></br>
+전통적인 가치주뿐만 아니라 부실채권, 외국주식, 채권 등 안전마진이 있는 자산에 광범위하게 투자합니다. 그러나, 투자 기회가 없다고 판단될 때는 현금으로 남겨 두며 "아무것도 하지 않는다"는 투자철학을 실천합니다. 실제로 2005년과 2006년에는 포트폴리오의 절반을 현금으로 유지했습니다.
+";s:8:"ms_image";s:36:"a123abef4db030af09851e2231498da4.png";s:24:"ms_representative_ticker";s:26:"LBTYA,INTC,VSAT,QRVO,GOOGL";s:13:"ms_created_at";s:19:"2020-01-05 16:52:14";s:13:"ms_updated_at";s:19:"2021-11-17 16:48:11";}i:3;a:13:{s:5:"ms_id";s:1:"1";s:7:"ms_guru";s:14:"Warren Buffett";s:10:"ms_korguru";s:12:"워렌버핏";s:9:"ms_stocks";s:2:"43";s:12:"ms_newstocks";s:1:"2";s:15:"ms_10yavgreturn";s:5:"11.20";s:16:"ms_portfolioname";s:18:"Berkshire Hathaway";s:16:"ms_portfoliodate";s:10:"2021-09-30";s:12:"ms_introduce";s:906:"'오마하의 현인'으로 불리는 역사상 가장 존경받고 성공한 투자자입니다. 콜롬비아 대학에서 가치투자의 창시자로 불리는 벤저민 그레이엄에게 투자를 배웠습니다. 현재 버크셔 해서웨이의 회장으로 왕성한 투자활동을 하고 있습니다.  </br></br> - <b>투자철학 (Investing Philosophy)</b></br> 벤저민 그레이엄의 접근 방식에 맞는 가치 투자 전략을 따릅니다. 내재가치 보다 싸게 거래되는 대기업을 인수해 오랫동안 보유합니다. 자신이 이해하는 사업에만 투자하며, 항상 내재가치와 주가를 비교하는 안전마진을 중요하게 생각합니다. 버핏은 “이해할 수 있고, 장기 전망이 좋으며, 정직하고 유능한 사람이 운영하고, 매우 매력적인 가격에 구매할 수 있는 사업을  선호한다”고 밝혔습니다.
+
+";s:8:"ms_image";s:36:"20212c9284dfc283cd9a25a1fe76c428.png";s:24:"ms_representative_ticker";s:19:"AAPL,BAC,AXP,KO,KHC";s:13:"ms_created_at";s:19:"2020-01-05 16:40:47";s:13:"ms_updated_at";s:19:"2021-11-17 10:48:23";}}
